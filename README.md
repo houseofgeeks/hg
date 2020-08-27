@@ -13,7 +13,7 @@
   ### PR rules:
    - Every PR should accompany an issue.
    - Make a relevant PR title and mention the issue in the description
- A good PR looks like this:
+ #### A good PR looks like this:
   ```
    Title : Added Navbar component
    Description:
