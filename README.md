@@ -2,7 +2,7 @@
 
 This repo consists of the source code for website of House of Geeks,
 the Technical Society of 
-[Indian Institute of Information Technology, Ranchi.](http://iiitranchi.ac.in/)
+[Indian Institute of Information Technology, Ranchi](http://iiitranchi.ac.in/).
 
 ## Getting started
 
@@ -16,7 +16,7 @@ working together as a team with various unique experiences and minds culminated
 into a single project. This is only possible if we respect each other.
 
 Kindly go through our 
-[Code of Conduct](https://github.com/houseofgeeks/hg/CODE_OF_CONDUCT.md)
+[Code of Conduct](CODE_OF_CONDUCT.md)
 to take a moment and familiarise with the spirit of opensource.
 
 ## Contributing Guide
@@ -28,4 +28,4 @@ and same goes for the back-end too.
 - Kindly follow the Pull Request template provided.
 
 For more details kindly go through our 
-[Contributing Guidelines.](https://github.com/houseofgeeks/hg/CONTRIBUTING.md)
+[Contributing Guidelines.](CONTRIBUTING.md)
