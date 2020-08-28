@@ -2,7 +2,7 @@
 
 This repo consists of the source code for website of House of Geeks,
 the Technical Society of 
-[Indian Institute of Information Technology, Ranchi.](iiitranchi.ac.in).
+[Indian Institute of Information Technology, Ranchi.](http://iiitranchi.ac.in/)
 
 ## Getting started
 
