@@ -8,6 +8,8 @@ the Technical Society of
 
 - Fork the repository.
 - Clone it to your machine.
+- Open your terminal/cmd in the `hg/client` folder
+- Run `npm start` to start the development server.
 
 ## Code of Conduct
 
