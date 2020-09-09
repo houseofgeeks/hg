@@ -4,7 +4,7 @@ import './Members.css';
 
 function Members() {
   return (
-    <div className="Members">
+    <div className="members-component">
       <h1>This is the Members page.</h1>
     </div>
   );

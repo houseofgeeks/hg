@@ -4,7 +4,7 @@ import './Event.css';
 
 function Event() {
   return (
-    <div className="Event">
+    <div className="event-component">
       <h1>This is the Event page.</h1>
     </div>
   );

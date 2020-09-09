@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     const [active, setActive] = useState('Home');
     return (
-        <div className="Navbar-component">
+        <div className="navbar-component">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
 
                 <Link to ="/" id="navLink">
