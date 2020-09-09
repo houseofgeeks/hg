@@ -8,6 +8,7 @@ import Event from './components/Event/Event';
 import Community from './components/Community/Community';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path="/sponsors" exact component={Sponsors} />
           <Route path="/event" exact component={Event} />
           <Route path="/community" exact component={Community} />
-          <Route path="/" component={Home} />
+          <Route path="/" exact component={Home} />
+          <Route path="/" component={NotFound} />
         </Switch>
         <Footer />
       </Router>
