@@ -26,7 +26,7 @@ router.post("/", function (req, res, next) {
 });
 
 // Returns all the Notices (sorted : latest first)
-router.get("/all", (req, res, next) => {
+router.get("/", (req, res, next) => {
   Notice.find({})
   .sort({createdAt: -1})
     .then((result) => {
