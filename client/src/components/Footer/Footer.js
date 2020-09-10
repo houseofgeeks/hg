@@ -3,6 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
 import Hog from './img/hog.png';
 import { Link } from 'react-router-dom';
+import { ReactComponent as Linkedin } from './img/linkedin-brands.svg';
+import { ReactComponent as Github } from './img/github-brands.svg';
+import { ReactComponent as Mail } from './img/envelope-solid.svg';
+import { ReactComponent as Insta } from './img/instagram-brands.svg';
+import { ReactComponent as Facebook } from './img/facebook-brands.svg';
+import { ReactComponent as Youtube } from './img/youtube-brands.svg';
+import { ReactComponent as Developer } from './img/dev.svg';
+import { ReactComponent as Up } from './img/up.svg';
+ 
 
 function Footer() {
   return (
@@ -14,12 +23,12 @@ function Footer() {
              <hr></hr>
              <h3> Contact Us</h3>
              <div className="mt-5 mb-3">
-                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://"><i  className="iconer fab fa-linkedin fa-3x"></i></a>
-                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/houseofgeeks"><i  className=" iconer fab fa-github fa-3x"></i></a>
-                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="mailto:iiitranchi@contact.info"><i  className="iconer fas fa-envelope fa-3x"></i></a>
-                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/search/top?q=house%20of%20geeks%20-%20technical%20society%20of%20iiit%20ranchi"><i  className="iconer fab fa-facebook fa-3x"></i></a>
-                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hg.iiitranchi/"><i  className="iconer fab fa-instagram fa-3x"></i></a>
-                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCvbh6phGLwpOnoM8g_GwlmQ"><i  className="iconer fab fa-youtube fa-3x"></i></a>
+                  <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://"><Linkedin className="icons"/></a>
+                  <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/houseofgeeks"><Github className="icons"></Github></a>
+                  <a className="text-white" target="_blank" rel="noopener noreferrer" href="mailto:iiitranchi@contact.info"><Mail className="icons"></Mail></a>
+                  <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/hG.iiitranchi"><Facebook className="icons"></Facebook></a>
+                  <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hg.iiitranchi/"><Insta className="icons"></Insta></a>
+                  <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCvbh6phGLwpOnoM8g_GwlmQ"><Youtube className="icons"></Youtube></a>
              </div>
            </div>
          </div>
@@ -58,12 +67,12 @@ function Footer() {
 
         <div className="container-fluid">
             <div className="row justify-content-center mt-2 mb-0 pt-3">
-                <div  className="col-2 col-sm-1 "><button id="dev" className=" btn text-white " data-toggle="modal" data-target="#exampleModal"><i className="iconer fas fa-laptop-code fa-2x"></i><small>Developers</small></button></div>
+                <div  className="col-2 col-sm-1 "><button id="dev" className=" btn text-white " data-toggle="modal" data-target="#exampleModal"><Developer className="icon-small"></Developer><small>Developers</small></button></div>
                 <div className="col-6 col-sm-10 text-center">
                    <hr id="footer-hr"></hr>
                    <p className="text-white ">House Of Geeks © Copyright 2020 </p>
                 </div>
-                <div className="col-2 col-sm-1"><a id="up" className=" btn text-white " rel="noopener noreferrer" href="https://"><i className="iconer fas fa-chevron-circle-up fa-2x" id="to-top" onClick={window.scrollTo({top:0,behavior:'smooth'})}></i><br></br><small>Back to Top</small></a></div>
+                <div className="col-2 col-sm-1"><a id="up" className=" btn text-white " rel="noopener noreferrer" href="https://" onClick={window.scrollTo({top:0,behavior:'smooth'})}><Up className="icon-small"></Up><br></br><small className="d-block d-sm-none">Top</small><small className="d-none d-sm-block">Back to Top</small></a></div>
             </div>
         </div>
         
