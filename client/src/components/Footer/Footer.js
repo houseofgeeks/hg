@@ -14,11 +14,11 @@ function Footer() {
              <h3> Contact Us</h3>
              <div className="mt-5 mb-3">
                   <a className=" btn text-white" rel="noopener noreferrer" href="https://"><i  className="iconer fab fa-linkedin fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://"><i  className=" iconer fab fa-github fa-3x"></i></a>
+                  <a className=" btn text-white" rel="noopener noreferrer" href="https://github.com/houseofgeeks"><i  className=" iconer fab fa-github fa-3x"></i></a>
                   <a className=" btn text-white" rel="noopener noreferrer" href="mailto:iiitranchi@contact.info"><i  className="iconer fas fa-envelope fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://"><i  className="iconer fab fa-facebook fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://"><i  className="iconer fab fa-instagram fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://"><i  className="iconer fab fa-youtube fa-3x"></i></a>
+                  <a className=" btn text-white" rel="noopener noreferrer" href="https://www.facebook.com/search/top?q=house%20of%20geeks%20-%20technical%20society%20of%20iiit%20ranchi"><i  className="iconer fab fa-facebook fa-3x"></i></a>
+                  <a className=" btn text-white" rel="noopener noreferrer" href="https://www.instagram.com/hg.iiitranchi/"><i  className="iconer fab fa-instagram fa-3x"></i></a>
+                  <a className=" btn text-white" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCvbh6phGLwpOnoM8g_GwlmQ"><i  className="iconer fab fa-youtube fa-3x"></i></a>
              </div>
            </div>
          </div>
@@ -35,7 +35,7 @@ function Footer() {
                         <a className="  text-white"  href="https://">About</a><br></br>
                         <a className="  text-white"  href="https://">Socities</a><br></br>
                         <a className="  text-white"  href="https://">Projects</a><br></br>
-                        <a className="  text-white"  href="mailto:iiitranchi@contact.info">IIITRanchi</a>
+                        <a className="  text-white"  href="http://iiitranchi.ac.in/">IIITRanchi</a>
                 </div>
                 <div className="col-12 col-md-4 links">
                     <hr className="d-md-none"></hr>
@@ -51,7 +51,7 @@ function Footer() {
 		                </address>
                 </div>
                 {/* HG logo will be rendered only on screen-width greater than 768px */}
-                <div className="col-12 col-md-4 d-none d-md-block"><img src={Hog} className="logo"></img></div>
+                <div className="col-12 col-md-4 d-none d-md-block"><img src={Hog} className="logo" alt="HG logo"></img></div>
             </div>
         </div>
 
@@ -62,7 +62,7 @@ function Footer() {
                    <hr id="footer-hr"></hr>
                    <p className="text-white ">House Of Geeks © Copyright 2020 </p>
                 </div>
-                <div className="col-2 col-sm-1"><a id="up" className=" btn text-white " rel="noopener noreferrer" ><i className="iconer fas fa-chevron-circle-up fa-2x" id="to-top" onClick={window.scrollTo({top:0,behavior:'smooth'})}></i><br></br><small>Back to Top</small></a></div>
+                <div className="col-2 col-sm-1"><a id="up" className=" btn text-white " rel="noopener noreferrer" href="https://"><i className="iconer fas fa-chevron-circle-up fa-2x" id="to-top" onClick={window.scrollTo({top:0,behavior:'smooth'})}></i><br></br><small>Back to Top</small></a></div>
             </div>
         </div>
         
