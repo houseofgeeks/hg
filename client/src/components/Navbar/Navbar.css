@@ -1,4 +1,50 @@
 .navbar-component .active {
-    font-weight: 900;
-    color: black;
+    font-weight: 500;
+  color: white;}
+.navbar{
+background-color: #080808;
+padding: 3px 15px 3px 10px;
+
+
+}
+.bg-nav{
+opacity: 0.8;
+}
+
+#navLink{
+font-weight: 400;
+font-style: oblique;
+color: #fff;
+}
+
+
+.nav-item{
+    color:#fff;
+    margin: 10px 25px;
+}
+
+.nav-logo{
+opacity: 1;
+height: 45px;
+margin-left: 40px;
+}
+a:hover, a:visited, a:link, a:active{
+   text-decoration: none;
+    color: inherit;
+}
+
+.search-bar{
+border-radius:35px;
+width:180px!important;
+height: 30px;
+margin-right: 20px;
+margin-left: 20px;
+}
+
+.navbar{
+}
+
+.logo{
+   height:30px;
+   width: auto;
 }
