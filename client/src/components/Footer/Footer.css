@@ -12,6 +12,7 @@ address{
     background: url("./img/footer-back.jpg");
     margin:0px auto;
     padding: 20px 0px 20px 0px;
+    color:#ddd
 }
 #footer-hr { 
     display: block;
