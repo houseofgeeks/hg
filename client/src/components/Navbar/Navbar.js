@@ -14,7 +14,8 @@ function Navbar() {
     }    
     
     if(currenttab.length === 0 ){                                           //When visiting home section
-        currenttab = "home";}
+        currenttab = "home";
+    }
     const [active, setActive] = useState(currenttab);
     return (
         <div className="navbar-component">
