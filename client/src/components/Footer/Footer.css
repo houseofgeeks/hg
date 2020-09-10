@@ -9,7 +9,9 @@
     height:140px;
     width:200px;
 }
-
+.links hr {
+    width:60%;
+}
 #footer-hr { 
     display: block;
     width:100%;
