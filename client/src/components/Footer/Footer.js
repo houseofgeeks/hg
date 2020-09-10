@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
 import Hog from './img/hog.png';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -13,12 +14,12 @@ function Footer() {
              <hr></hr>
              <h3> Contact Us</h3>
              <div className="mt-5 mb-3">
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://"><i  className="iconer fab fa-linkedin fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://github.com/houseofgeeks"><i  className=" iconer fab fa-github fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="mailto:iiitranchi@contact.info"><i  className="iconer fas fa-envelope fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://www.facebook.com/search/top?q=house%20of%20geeks%20-%20technical%20society%20of%20iiit%20ranchi"><i  className="iconer fab fa-facebook fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://www.instagram.com/hg.iiitranchi/"><i  className="iconer fab fa-instagram fa-3x"></i></a>
-                  <a className=" btn text-white" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCvbh6phGLwpOnoM8g_GwlmQ"><i  className="iconer fab fa-youtube fa-3x"></i></a>
+                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://"><i  className="iconer fab fa-linkedin fa-3x"></i></a>
+                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/houseofgeeks"><i  className=" iconer fab fa-github fa-3x"></i></a>
+                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="mailto:iiitranchi@contact.info"><i  className="iconer fas fa-envelope fa-3x"></i></a>
+                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/search/top?q=house%20of%20geeks%20-%20technical%20society%20of%20iiit%20ranchi"><i  className="iconer fab fa-facebook fa-3x"></i></a>
+                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hg.iiitranchi/"><i  className="iconer fab fa-instagram fa-3x"></i></a>
+                  <a className=" btn text-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCvbh6phGLwpOnoM8g_GwlmQ"><i  className="iconer fab fa-youtube fa-3x"></i></a>
              </div>
            </div>
          </div>
@@ -31,11 +32,11 @@ function Footer() {
             <div className="row justify-content-center">
                 <div className="col-12 col-md-3 offset-md-1 links">
                         <h5 className="font-weight-bold">Links</h5>
-                        <a className="  text-white"  href="https://">Home</a><br></br>
-                        <a className="  text-white"  href="https://">About</a><br></br>
-                        <a className="  text-white"  href="https://">Socities</a><br></br>
-                        <a className="  text-white"  href="https://">Projects</a><br></br>
-                        <a className="  text-white"  href="http://iiitranchi.ac.in/">IIITRanchi</a>
+                        <Link className="text-white" to="/">Home</Link><br></br>
+                        <Link className="text-white" to="/event">Events</Link><br></br>
+                        <Link className="text-white" to="/community">Community</Link><br></br>
+                        <Link className="text-white" to="/members">Members</Link><br></br>
+                        <a className="text-white"  target="_blank"  rel="noopener noreferrer" href="http://iiitranchi.ac.in/">IIITRanchi</a>
                 </div>
                 <div className="col-12 col-md-4 links">
                     <hr className="d-md-none"></hr>
