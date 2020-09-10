@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import logo from './HGlogo.jpeg';
 
 function Navbar() {
     const currentloc = String(window.location);                             //Gets current URL
@@ -20,7 +21,7 @@ function Navbar() {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
                 <Link to ="/" id="navLink">
-                    <div className="navbar-brand">House of Geeks</div>
+                    <div className="navbar-brand"><img src={logo} className="logo" alt = "HouseOfGeeks logo"/></div>
                 </Link>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" 

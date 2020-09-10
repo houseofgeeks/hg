@@ -1,23 +1,29 @@
 
-.navbar-component .active {
-    font-weight: 900;
-    color: white;
-
-}
-.navbar{
-    opacity:90%;
-}
-.nav-item{
-    color:#D3D3D3;
-}
-
  a:hover, a:visited, a:link, a:active{
     text-decoration: none;
      color: inherit;
  }
 
-
 .mr-sm-2{
     border-radius:35px;
     width:auto;
 }
+
+.navbar{
+    opacity:90%;
+}
+
+.logo{
+    height:30px;
+    width: auto;
+}
+.navbar-component .active {
+    font-weight: 900;
+    color: white;
+}
+
+.nav-item{
+    color:#D3D3D3;
+}
+
+
