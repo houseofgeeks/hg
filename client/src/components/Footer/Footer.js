@@ -72,7 +72,7 @@ function Footer() {
                    <hr id="footer-hr"></hr>
                    <p className="text-white ">House Of Geeks © Copyright 2020 </p>
                 </div>
-                <div className="col-2 col-sm-1"><a id="up" className=" btn text-white " rel="noopener noreferrer" href="https://" onClick={window.scrollTo({top:0,behavior:'smooth'})}><Up className="icon-small"></Up><br></br><small className="d-block d-sm-none">Top</small><small className="d-none d-sm-block">Back to Top</small></a></div>
+                <div className="col-2 col-sm-1"><a id="up" className=" btn text-white " rel="noopener noreferrer" href="#top" onClick={window.scrollTo({top:0,behavior:'smooth'})}><Up className="icon-small"></Up><br></br><small className="d-block d-sm-none">Top</small><small className="d-none d-sm-block">Back to Top</small></a></div>
             </div>
         </div>
         
