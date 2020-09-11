@@ -6,7 +6,18 @@ import { ReactComponent as Search } from './search-logo.svg';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    const [active, setActive] = useState('Home');
+    const currentloc = String(window.location);                             //Gets current URL
+    let currenttab = currentloc.substring(currentloc.lastIndexOf("/")+1);   //Gets current element from navbar
+    
+    if(currenttab[currenttab.length-1] === '?')                        //When search bar is used, preventing bug of nothing being active in navbar
+    {
+        currenttab = currenttab.substring(0,currenttab.length-1);           //Removing ? sign when search bar used
+    }    
+    
+    if(currenttab.length === 0 ){                                           //When visiting home section
+        currenttab = "home";
+    }
+    const [active, setActive] = useState(currenttab);
     return (
         <div className="navbar-component">
             <nav className="navbar navbar-expand-lg navbar-light fixed-top   bg-nav">
@@ -26,8 +37,9 @@ function Navbar() {
 
                         <Link to ="/" id="navLink">
                             <hr className="d-md-none" />
-                            <li className={(active==='Home')?"nav-item active":"nav-item "}
-                            onClick={() => setActive('Home')}>
+
+                            <li className={(active==='home')?"nav-item active":"nav-item"} 
+                            onClick={() => setActive('home')}>
                                 Home
                             </li>
                         </Link>
@@ -37,29 +49,37 @@ function Navbar() {
                             <li className={(active==='Event')?"nav-item  active":"nav-item "}
                              onClick={() => setActive('Event')}>
                                 Events
+                            <hr className="d-md-none" /> 
+                            <li className={(active==='event')?"nav-item active":"nav-item"}
+                             onClick={() => setActive('event')}>
+                                Event
                             </li>
                         </Link>
 
                         <Link to ="/community" id="navLink">
-                            <hr className="d-md-none" />
-                            <li className={(active==='Community')?"nav-item  active":"nav-item "}
-                            onClick={() => setActive('Community')}>
-                                Community
+               
+                            <hr className="d-md-none" /> 
+                            <li className={(active==='community')?"nav-item active":"nav-item"} 
+                            onClick={() => setActive('community')}>
+                              Community
                             </li>
                         </Link>
 
                         <Link to ="/members" id="navLink">
-                            <hr className="d-md-none" />
-                            <li className={(active==='Members')?"nav-item active":"nav-item "}
-                            onClick={() => setActive('Members')}>
+
+                            <hr className="d-md-none" /> 
+                            <li className={(active==='members')?"nav-item active":"nav-item"} 
+                            onClick={() => setActive('members')}>
                                 Members
                             </li>
                         </Link>
 
                         <Link to ="/sponsors" id="navLink">
-                            <hr className="d-md-none" />
-                            <li className={(active==='Sponsors')?"nav-item active":"nav-item"}
-                            onClick={() => setActive('Sponsors')}>
+                          
+                            <hr className="d-md-none" /> 
+                            <li className={(active==='sponsors')?"nav-item active":"nav-item"} 
+                            onClick={() => setActive('sponsors')}>
+
                                 Sponsors
                             </li>
                         </Link>
@@ -75,5 +95,5 @@ function Navbar() {
         </div>
     )
 }
-
+   
 export default Navbar;
