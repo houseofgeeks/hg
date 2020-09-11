@@ -4,6 +4,11 @@
      color: inherit;
  }
 
+.mr-sm-2{
+    border-radius:35px;
+    width:auto;
+}
+
 .logo{
     height:30px;
     width: auto;
