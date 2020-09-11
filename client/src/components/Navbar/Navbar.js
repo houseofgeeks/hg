@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import logo from './HGlogo.jpeg';
+import logo from './hog.png';
 
 function Navbar() {
     const currentloc = String(window.location);                             //Gets current URL
@@ -75,7 +75,8 @@ function Navbar() {
                         </Link>
 
                     </ul>
-                    <form className="form-inline mx-3 px-3 ">
+                    
+                    <form className="form-inline mx-3 px-3 " id = "searchbar">
                         <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
                     </form>
                 </div>
@@ -83,5 +84,7 @@ function Navbar() {
         </div>
     )
 }
+   
 
 export default Navbar;
+

@@ -4,18 +4,13 @@
      color: inherit;
  }
 
-.mr-sm-2{
-    border-radius:35px;
-    width:auto;
-}
-
-.navbar{
-    opacity:90%;
-}
-
 .logo{
     height:30px;
     width: auto;
+}
+.mr-sm-2{
+    border-radius:35px;
+    width:auto;
 }
 .navbar-component .active {
     font-weight: 900;
@@ -26,4 +21,14 @@
     color:#D3D3D3;
 }
 
+@media screen and (max-width: 960px){
+    #searchbar{
+        display:none;
+    }
+}
 
+@media screen and (min-width: 960px){
+    #searchbar{
+        display:block;
+    }
+}
