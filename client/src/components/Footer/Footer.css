@@ -1,0 +1,68 @@
+address{
+    font-size:small;
+     margin:0px;
+     color: #ddd;
+}
+
+#dev,#up {
+    position: absolute;bottom: 0px; left: 0px;
+}
+
+.footer{
+    background: url("./img/footer-back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+    color:#ddd;
+}
+#footer-hr { 
+    display: block;
+    width:100%;
+    overflow: hidden;
+    border-width: 1px;
+}
+
+.footer-a{
+color:#fff;
+}
+
+/* SVG icons styling */
+.icons{
+    height:70px;
+    width: 70px;
+    padding:10px;
+    margin-left:20px;
+    transition: ease 0.5s;
+}
+
+.icon-small {
+    height:35px;
+    width: 35px;
+    transition: ease 0.5s;
+}
+
+.icons:hover,.icon-small:hover {
+    color: #1eabd6;
+    transform: translate(0, -1px);
+}
+
+/* House of Geeks logo */
+.logo {
+    height:140px;
+    width:200px;
+}
+
+.links hr {
+    width:60%;
+}
+
+
+
+@media (max-width:767px){
+    .links{
+        padding-left:30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+}
