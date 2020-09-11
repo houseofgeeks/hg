@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 import hogLogo from './HOG_LOGO.png';
-import {ReactComponent as searchlogo} from './search-logo.svg';
+import { ReactComponent as Search } from './search-logo.svg';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -65,10 +65,9 @@ function Navbar() {
                         </Link>
 
                     </ul>
-                        <form className="form-inline  ">
-
+                        <form className="form-inline ">
                               <input className="form-control  search-bar" type="search" placeholder="Search" aria-label="Search"/>
-
+                              <i><Search className="search-icon"/></i>
                         </form>
 
                 </div>
