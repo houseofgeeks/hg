@@ -10,6 +10,8 @@ address{
 
 .footer{
     background: url("./img/footer-back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
     color:#ddd;
