@@ -45,10 +45,7 @@ function Navbar() {
                         </Link>
 
                         <Link to="/event" id="navLink">
-                            <hr className="d-md-none" />
-                            <li className={(active==='Event')?"nav-item  active":"nav-item "}
-                             onClick={() => setActive('Event')}>
-                                Events
+       
                             <hr className="d-md-none" /> 
                             <li className={(active==='event')?"nav-item active":"nav-item"}
                              onClick={() => setActive('event')}>
