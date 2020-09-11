@@ -1,4 +1,39 @@
+
+ a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+     color: inherit;
+ }
+
+.mr-sm-2{
+    border-radius:35px;
+    width:auto;
+}
+
+.logo{
+    height:30px;
+    width: auto;
+}
+.mr-sm-2{
+    border-radius:35px;
+    width:auto;
+}
 .navbar-component .active {
     font-weight: 900;
-    color: black;
+    color: white;
+}
+
+.nav-item{
+    color:#D3D3D3;
+}
+
+@media screen and (max-width: 960px){
+    #searchbar{
+        display:none;
+    }
+}
+
+@media screen and (min-width: 960px){
+    #searchbar{
+        display:block;
+    }
 }
