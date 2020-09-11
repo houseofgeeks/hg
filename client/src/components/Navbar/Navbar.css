@@ -7,10 +7,6 @@ a:hover, a:visited, a:link, a:active{
       opacity: 0.8;
 }
 
-/* .logo{
-      height:30px;
-      width: auto;
-} */
 .navbar-component .active {
       font-size: 1.2rem;
       font-weight: 900;
