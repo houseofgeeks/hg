@@ -8,6 +8,7 @@ function Sponsors() {
     <>
      <div className="container-fluid col-10 mx-auto">
     <div className="my-5">
+    <br/><br/> <br/> <br/> <br/>
      <h1 className="text-center">Our Partners</h1>
     </div>
     <div className="row">
