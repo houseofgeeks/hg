@@ -1,29 +1,161 @@
-.firstdiv{
-    background-image: url(./Images/11.png);
-    background-position: center;
-    border-radius: 5vw;
+@-moz-keyframes move-astronaut {
+  100% {
+    -moz-transform: translate(-160px, -160px);
+  }
+}
+@-webkit-keyframes move-astronaut {
+  100% {
+    -webkit-transform: translate(-160px, -160px);
+  }
+}
+@keyframes move-astronaut {
+  100% {
+    -webkit-transform: translate(-160px, -160px);
+    transform: translate(-160px, -160px);
+  }
+}
+@-moz-keyframes rotate-astronaut {
+  100% {
+    -moz-transform: rotate(-720deg);
+  }
+}
+@-webkit-keyframes rotate-astronaut {
+  100% {
+    -webkit-transform: rotate(-720deg);
+  }
+}
+@keyframes rotate-astronaut {
+  100% {
+    -webkit-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
 }
 
-.seconddiv{
-    width: 100%;
-    height: auto;
-    background-image: url(./Images/lock2.jpg);
-    border-radius: 5vw;
-
+.error-component {
+  display: flexbox;
+  height: 100vh;
+  width: 96vw;
+  overflow: hidden;
+  background: linear-gradient(168.18deg, #000018 20.02%, #420C33 114.21%, #881851 137.38%);
 }
 
-.whitecolor{
-    color: rgb(255, 254, 254);
-    font-size: larger;
-    font-weight: bolder;
-    border-radius: 5%;
+.error-component .btn-go-home {
+  pointer-events: all;
+  text-decoration: none;
+  color: #1EABD6;
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 3.2vh;
+  margin-left: 2vw;
+  transition: color 0.5s;
 }
 
-.error-component{
-    padding-top: 15vh;
+.error-component .btn-go-home:hover {
+  color: #EE2A7B;
 }
+.error-component .container {
+  position: relative;
+  /* width:100%; */
+  height: 90vh;
+  background-image: linear-gradient(black, rgb(58, 1, 32));
+}
+.error-component .error {
+  position: absolute;
+  pointer-events: none;
+  top: 15vh;
+  left: 26vw;
+  width: 13vw;
+}
+.error-component .object_astronaut {
+  width: 15vw;
+  pointer-events: none;
+  animation: rotate-astronaut 200s infinite linear both alternate;
+}
+.error-component .box_astronaut {
+  position: absolute;
+  pointer-events: none;
+  top: 15%;
+  left: 60%;
+  text-align: center;
+  will-change: transform;
+  animation: move-astronaut 50s infinite linear both alternate;
+}
+.error-component .error_message {
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  pointer-events: none;
+  text-align: center;
+}
+.error-component .page_not_found {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  pointer-events: none;
+  text-align: center;
+}
+.error-component .not_found {
+  width: 30vw;
+}
+.error-component .planet {
+  height: 40%;
+  pointer-events: none;
+}
+.error-component .object_planet {
+  width: 96vw;
+  height: auto;
+  position: absolute;
+  bottom:0;
+  z-index: -500;
+}
+.error-component .image-404 {
+  margin-top: 4%;
+  width: 20vw;
+}
+.error-component .image-4 {
+  margin-top: 4%;
+  width: 20vw;
+}
+.error-component .image-0 {
+  margin-top: -1%;
+  width: 20vw;
+}
+.error-component {
+  background: url(./Images/overlay_stars.svg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: left top;
+  pointer-events: none;
+}
+@media only screen and (max-width: 426px) {
+  .error-component .box_astronaut {
+    top: 10%;
+  }
 
-.pad-topbot{
-    padding-top: 13vh;
-    padding-bottom: 13vh;
+  .error-component .object_astronaut {
+    transform: scale(3);
+  }
+
+  .error-component .not_found {
+    transform: scale(3);
+  }
+
+  .error-component .error {
+    transform: scale(2);
+  }
+
+  .error-component .error, .error-component .error_message {
+    margin-top: 10vh;
+  }
+  .error-component .central-body {
+    padding-top: 25%;
+  }
+  .error-component .planet {
+    max-width: 96vw;
+    overflow: hidden;
+  }
+  .error-component .object_planet {
+    bottom: -5vh;
+    overflow: hidden;
+  }
 }
