@@ -1,0 +1,26 @@
+.landing-page-section {
+      background-image: url("planet.svg"), url("stars.svg");
+      background-attachment: fixed;
+      background-size: 30vw, cover;
+      background-position: right top, center;
+      background-repeat: no-repeat, no-repeat;
+      height: 100vh;
+}
+
+.landing-page-section .writeup {
+      height: auto; 
+      width: 75%;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 10vh;
+}
+
+.landing-page-section .writeup-img {
+      height: 30vh;
+      margin: auto;
+}
+
+.landing-page-section .asteroids {
+      height: 40vh;
+      margin: auto;
+}
