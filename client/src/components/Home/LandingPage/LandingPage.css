@@ -1,0 +1,72 @@
+.landing-page-section {
+      background-image: url("hglogo.svg"), url("planet.svg"), url("stars.svg");
+      background-attachment: fixed, fixed;
+      background-size: 10vw, 30vw, cover;
+      background-position: left top, right top, center;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      height: 100vh;
+}
+
+.landing-page-section .writeup {
+      height: auto; 
+      width: 75%;
+      text-align: center;
+      /* margin-bottom: 10vh; */
+}
+
+.landing-page-section .writeup-img {
+      height: auto;
+      width: 75vw;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      position: absolute;
+      bottom: 20vh;
+      left: 13vw;
+      animation-name: writeup-animation;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+}
+
+.landing-page-section .asteroids {
+      height: 0;
+}
+
+.landing-page-section .surface-img {
+      height: auto;
+      width: 99.6vw;
+      margin: 0px;
+      padding: 0px;
+}
+
+.landing-page-section .surface {
+      position: absolute;
+      bottom: 0px;
+}
+
+.landing-page-section .astronaut {
+      height: 0px;
+}
+
+.landing-page-section .astronaut-img {
+      height: auto;
+      width: 10vw;
+      position: absolute;
+      bottom: 7vh;
+      left: 40vw;
+}
+
+/* -------------------------------ANIMATIONS------------------------------- */
+
+@keyframes writeup-animation {
+      0% {
+            bottom: 40vh;
+            opacity: 0;
+      }
+      50% {
+            bottom: 40vh;
+            opacity: 1;
+      }
+      100% {
+            bottom: 20vh;
+      }
+}
