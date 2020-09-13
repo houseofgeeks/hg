@@ -6,25 +6,15 @@ import SponserCard from './SponsorsCard';
 function Sponsors() {
   return (
     <div>
-      <div className="container-fluid col-10 mx-auto">
-        <div className="my-5">
-          <br /><br /> <br /> <br /> <br />
-          <h1 className="text-center">Our Partners</h1>
-        </div>
-        <div className="row">
-          <SponserCard
-            title="Partner"
-          />
-          <SponserCard
-            title="Partner"
-          />
-          <SponserCard
-            title="Partner"
-          />
-          <SponserCard
-            title="Partner"
-          />
-        </div>
+      <div className="my-5">
+        <br /><br /> <br /> <br /> <br />
+        <h1 className="text-center">Our Partners</h1>
+      </div>
+      <div className="row justify-content-center mx-auto ">
+        <SponserCard title="Partner" />
+        <SponserCard title="Partner" />
+        <SponserCard title="Partner" />
+        <SponserCard title="Partner" />
       </div>
     </div>
   );
