@@ -8,7 +8,7 @@ import Event from './components/Event/Event';
 import Community from './components/Community/Community';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NotFound from './components/NotFound/NotFound';
+import Error from './components/Error/Error';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/event" exact component={Event} />
           <Route path="/community" exact component={Community} />
           <Route path="/" exact component={Home} />
-          <Route path="/" component={NotFound} />
+          <Route component={Error} />
         </Switch>
         <Footer />
       </Router>
