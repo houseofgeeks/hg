@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5315a2f9-078d-4456-8156-63498f96b882/deploy-status)](https://app.netlify.com/sites/houseofgeeks/deploys)
 # House of Geeks - Official Technical Communtiy of IIITR
 
 This repo consists of the source code for website of House of Geeks,
