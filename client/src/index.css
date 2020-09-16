@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  color: var(--clrText);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: var(--fw-r);
+}
