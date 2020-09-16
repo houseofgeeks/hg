@@ -1,0 +1,38 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    ;
+    background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to right, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gallery-cell {
+    width: 40%;
+    height: 400px;
+    background: rgb(236, 236, 236);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(222, 219, 222, 1);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(222, 219, 222, 1);
+    box-shadow: 10px 10px 29px 0px rgba(222, 219, 222, 1);
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: rgb(4, 82, 14);
+}
