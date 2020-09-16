@@ -23,6 +23,8 @@ a {
   background: #e76127;
   cursor: pointer;
   outline: none;
+  position: relative;
+  left: 25%;
 }
 
 .btn:focus,

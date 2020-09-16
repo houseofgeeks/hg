@@ -7,7 +7,7 @@ const Modal=() =>{
         function readyFn(){
             document.body.classList.add("modal-is-open");
         }
-        $( window ).on("load", readyFn );
+        $( document ).ready(readyFn() );
 
 const modalBtn = document.querySelector(".js-btn");
 const modalClose = document.querySelectorAll(".jsModalClose");
@@ -34,7 +34,7 @@ modal.addEventListener("click", e => {
         <>
             <main className="main">
    <div className="container">
-      <button className="btn js-btn">Click to Share</button>
+      <button className="btn js-btn">Notice</button>
    </div>
 </main>
 <div className="modal-overlay js-modal">
