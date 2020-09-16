@@ -1,0 +1,104 @@
+.heading{
+    text-align: center;
+}
+
+.paragraph{
+    font-size: 22px;
+    padding-left: 13%;
+    padding-right: 3%;
+}
+
+
+.image1{
+    position: absolute;
+    object-fit: cover;
+    height: 13vw;
+    width: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    top:3%;
+    left:20%;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05) !important;
+    cursor: pointer;
+    z-index: 40;
+}
+
+.image2{
+    position: absolute;
+    object-fit: cover;
+    height: 13vw;
+    width: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    top: 22%;
+    left:3%;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05) !important;
+    cursor: pointer;
+    z-index:50 ;
+}
+
+.image3{
+    position: absolute;
+    object-fit: cover;
+    height: 13vw;
+    width: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    top: 27%;
+    left: 35%;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05) !important;
+    cursor: pointer;
+    z-index: 30;
+    
+}
+.image4{
+    position: absolute;
+    object-fit: cover;
+    height: 13vw;
+    width: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    top:47% ;
+    left: 20%;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05) !important;
+    cursor: pointer;
+    z-index: 20;
+  
+}
+
+.image1:hover,.image2:hover,.image3:hover,.image4:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease;
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253) !important;
+    z-index: 999;
+}
+
+
+@media (max-width:1500px){
+    .image1,.image2,.image3,.image4{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width:50%;
+        height:12vw;
+        margin-top: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width:700px){
+    .image1,.image2,.image3,.image4{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width:70%;
+        height:32vw;
+        margin-top: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
