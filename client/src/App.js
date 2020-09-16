@@ -20,7 +20,7 @@ function App() {
           <Route path="/event" exact component={Event} />
           <Route path="/community" exact component={Community} />
           <Route path="/" exact component={Home} />
-          <Route component={Error} />
+          <Route path="/" component={Error} />
         </Switch>
         <Footer />
       </Router>
