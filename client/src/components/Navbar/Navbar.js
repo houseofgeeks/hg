@@ -45,7 +45,6 @@ function Navbar() {
                         </Link>
 
                         <Link to="/event" id="navLink">
-       
                             <hr className="d-md-none" /> 
                             <li className={(active==='event')?"nav-item active":"nav-item"}
                              onClick={() => setActive('event')}>
@@ -92,5 +91,5 @@ function Navbar() {
         </div>
     )
 }
-   
+
 export default Navbar;

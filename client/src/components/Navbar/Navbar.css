@@ -1,4 +1,4 @@
-a:hover, a:visited, a:link, a:active{
+/* a:hover, a:visited, a:link, a:active{
    text-decoration: none;
    color: inherit;
 }
@@ -134,4 +134,97 @@ a:hover, a:visited, a:link, a:active{
             height:25px;
       }
 }
- 
+  */
+
+.navbar-component nav {
+      height: 10vh;
+      background:#0000189d;
+}
+
+.navbar-component .nav-links {
+      display: flex;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: auto;
+}
+
+.navbar-component .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+}
+
+.navbar-component .landing {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.navbar-component .landing h1 {
+      margin: 100px;
+      font-size: 50px;
+      color:  #000018;
+}
+
+@media screen and (max-width: 768px) {
+      .navbar-component .line {
+            width: 30px;
+            height: 3px;
+            background: white;
+            margin: 5px;
+      }
+      .navbar-component nav {
+            position: relative;
+      }
+    
+      .navbar-component .hamburger {
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            z-index: 2;
+      }
+    
+      .navbar-component .nav-links {
+            position: fixed;
+            background:  #000018;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(100px at 90% -10%);
+            -webkit-clip-path: circle(100px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+      }
+      .navbar-component .nav-links.open {
+            clip-path: circle(1000px at 90% -10%);
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            pointer-events: all;
+      }
+      .navbar-component .landing {
+            flex-direction: column;
+      }
+      .navbar-component .nav-links li {
+            opacity: 0;
+      }
+      .navbar-component .nav-links li a {
+            font-size: 25px;
+      }
+      .navbar-component .nav-links li:nth-child(1) {
+            transition: all 0.5s ease 0.2s;
+      }
+      .navbar-component .nav-links li:nth-child(2) {
+            transition: all 0.5s ease 0.4s;
+      }
+      .navbar-component .nav-links li:nth-child(3) {
+            transition: all 0.5s ease 0.6s;
+      }
+      .navbar-component li.fade {
+            opacity: 1;
+      }
+}
