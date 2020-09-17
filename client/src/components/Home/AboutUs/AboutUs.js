@@ -15,11 +15,7 @@ function AboutUs() {
                 For the all round development of the students, the institute provides a host of various students activities. 
                 These activities range from sports, personal-hobbies to technical interests. The students are encouraged to become the 
                 member of these bodies to help broaden their skills and horizons. These student bodies not only help the students explore 
-                their hidden talent but also help in areas such as personality development and inculcating in the students the spirit of 
-                organization by providing them with a platform for hosting their talents. All technical clubs are headed by their respective
-                Chairpersons and Vice-Chairpersons, who lead the students in organising and participating in various activities. The Chief Technical 
-                Secretary and the Joint Chief Technical Secretary oversee the working of all club efforts, as well as host
-                and help in organizing the multi club events, ranging from the Orientation, Engineers Day, Republic Day to Annual Honors Ceremony.
+                their hidden talent but also help in areas such as personality development and inculcating in the students.
               </p>
           </div>
           <div className="col-sm-6">
