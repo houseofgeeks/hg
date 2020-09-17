@@ -5,6 +5,7 @@ import asteroids from './asteroids.svg';
 import writeup from './writeup.svg';
 import surface from './surface.svg';
 import astronaut from './astronaut.svg';
+import astronaut_shadow from './astronaut-shadow.svg';
 
 function LandingPage() {
   return (
@@ -20,6 +21,7 @@ function LandingPage() {
       </div>
       <div className="astronaut">
         <img className="astronaut-img" src={astronaut} alt="astronaut"/>
+        <img className="astronaut-shadow-img" src={astronaut_shadow} alt="astronaut shadow" />
       </div>
     </div>
   );

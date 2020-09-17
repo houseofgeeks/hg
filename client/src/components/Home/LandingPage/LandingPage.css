@@ -1,7 +1,7 @@
 .landing-page-section {
       background-image: url("hglogo.svg"), url("planet.svg"), url("stars.svg");
-      background-attachment: fixed, fixed;
-      background-size: 10vw, 30vw, cover;
+      background-attachment: fixed, fixed, fixed;
+      background-size: 10vw, 23vw, cover;
       background-position: left top, right top, center;
       background-repeat: no-repeat, no-repeat, no-repeat;
       height: 100vh;
@@ -29,6 +29,10 @@
 
 .landing-page-section .asteroids {
       height: 0;
+      width: 96vw;
+      align-items: center;
+      align-content: center;
+      text-align: center;
 }
 
 .landing-page-section .surface-img {
@@ -36,6 +40,7 @@
       width: 99.6vw;
       margin: 0px;
       padding: 0px;
+      z-index: 0;
 }
 
 .landing-page-section .surface {
@@ -58,9 +63,24 @@
       position: absolute;
       left: 40vw;
       bottom: 110vh;
+      z-index: 200;
       animation-name: astronaut-animation;
       animation-delay: 3s;
       animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+}
+.landing-page-section .astronaut-shadow-img {
+      height: auto;
+      width: auto;
+      position: absolute;
+      left: 40vw;
+      bottom: 6vh;
+      opacity: 0;
+      z-index: 100;
+      animation-name: astronaut-shadow-animation;
+      animation-delay: 4s;
+      animation-duration: 1.5s;
       animation-fill-mode: forwards;
       animation-timing-function: ease-out;
 }
@@ -99,6 +119,15 @@
 
       100% {
             bottom: 7vh;
+      }
+}
+
+@keyframes astronaut-shadow-animation {
+      0% {
+            opacity: 0;
+      }
+      100% {
+            opacity: 1;
       }
 }
 
