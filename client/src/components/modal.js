@@ -4,10 +4,8 @@ import $ from 'jquery';
 const Modal=() =>{
 
     useEffect(() => {
-        function readyFn(){
-            document.body.classList.add("modal-is-open");
-        }
-        $( document ).ready(readyFn() );
+           
+      $( document ).ready(() =>{ document.body.classList.add("modal-is-open");});
 
 const modalBtn = document.querySelector(".js-btn");
 const modalClose = document.querySelectorAll(".jsModalClose");
