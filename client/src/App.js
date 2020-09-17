@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-
+import CardComponent from "./cardComponent/cardComponent"
 function App() {
   return (
-    <div className="App">
-      <center>Hi!</center>
+    <div>
+      <CardComponent/>
     </div>
   );
 }
