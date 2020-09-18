@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
@@ -18,6 +19,11 @@
       "sizes": "512x512"
     }
   ],
+=======
+  "short_name": "hG Website",
+  "name": "House of Geeks Website",
+  "icons": [],
+>>>>>>> 7c22d63f09028e4e279f8e403de4c7b5e0570a06
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

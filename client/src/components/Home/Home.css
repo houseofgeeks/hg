@@ -1,0 +1,17 @@
+.lander-img{
+      width:auto;
+      height: auto;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image:
+    radial-gradient(
+      ellipse at top left,
+      #102734,
+      #54D59A 100%
+    );
+}
+hr {
+    border-width: 1.5px;
+    border-color:white;
+}
