@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var noticeRouter = require('./routes/notice');
 var adminRouter = require('./routes/admin');
+var eventRouter = require('./routes/event');
 
 mongoose.connect(process.env.MONGO_DB_URL, {useUnifiedTopology: true, useNewUrlParser: true});
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/notice', noticeRouter);
 app.use('/admin', adminRouter);
+app.use('/event', eventRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
