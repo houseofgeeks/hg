@@ -7,10 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.2",
-<<<<<<< HEAD
     "jquery": "^3.5.1",
-=======
->>>>>>> 7c22d63f09028e4e279f8e403de4c7b5e0570a06
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
