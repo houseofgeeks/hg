@@ -4,7 +4,9 @@
       background-size: 10vw, 23vw, cover;
       background-position: left top, right top, center;
       background-repeat: no-repeat, no-repeat, no-repeat;
-      height: 100vh;
+      height: 95vh;
+      overflow: hidden;
+      margin-bottom: 40px;
 }
 
 .landing-page-section .writeup {
@@ -84,6 +86,7 @@
       animation-fill-mode: forwards;
       animation-timing-function: ease-out;
 }
+
 
 /* -------------------------------ANIMATIONS------------------------------- */
 
@@ -166,6 +169,9 @@
             background-size: 25vw, 50vw, cover;
             background-position: left top, right top, center;
             background-repeat: no-repeat, no-repeat, no-repeat;
-            height: 100vh;
+            height: 93vh;
+      }
+      .landing-page-section .astronaut-shadow-img {
+            width: 27px;
       }
 }
