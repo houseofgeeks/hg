@@ -1,10 +1,7 @@
 .community-component
 {
      margin-top:100px;
-   
 }
-
-
 .Society-cards .heading
 {
   text-align: center;
@@ -18,9 +15,7 @@
 }
 .Society-cards .card
 {
- 
   margin:40px auto;
   border-radius: 5px;
   min-height: 20rem;;
-
 }
