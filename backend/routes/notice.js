@@ -1,9 +1,10 @@
 var express = require("express");
 var router = express.Router();
 
-const Notice = require("../models/Notice.model");
+const auth = require("../util/auth");
+const Notice = require("../models/notice.model");
 
-router.post("/", function (req, res, next) {
+router.post("/", auth, function (req, res, next) {
   const notice = new Notice({
     title: req.body.title,
     description: req.body.description,
@@ -16,11 +17,14 @@ router.post("/", function (req, res, next) {
     .then((result) => {
       res.status(201).json({
         result: result,
+        message: "OK",
       });
       console.log(result);
     })
     .catch((err) => {
-      res.status(500);
+      res.status(500).json({
+				message: 'Something went wrong'
+      });
       console.log(err);
     });
 });
@@ -28,7 +32,7 @@ router.post("/", function (req, res, next) {
 // Returns all the Notices (sorted : latest first)
 router.get("/", (req, res, next) => {
   Notice.find({})
-  .sort({createdAt: -1})
+    .sort({ createdAt: -1 })
     .then((result) => {
       res.status(200).json({
         result: result,
@@ -36,7 +40,9 @@ router.get("/", (req, res, next) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500)
+      res.status(500).json({
+        message: "Something went wrong",
+      });
     });
 });
 
