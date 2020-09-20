@@ -14,7 +14,7 @@ const PartnersSection = () => {
                               {
                                     partners.map((partner, idx) => {
                                           return(
-                                                <div className="partners-col-1 col-lg-6 col-md-12">
+                                                <div key={`${idx}`} className="partners-col-1 col-lg-6 col-md-12">
                                                       <img className="partners-logo" src={`${partner.img}`} alt="partners"/>
                                                       <h2 className="logo-name">
                                                             {partner.name}

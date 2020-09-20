@@ -1,21 +1,232 @@
-.community-component
-{
-     margin-top:100px;
+.community-component {
+  color: white;
+  font-family: 'Raleway';
+  margin: 0;
 }
-.Society-cards .heading
-{
-  text-align: center;
-  color: #ffffff;
-  font-style: italic;
-  font-weight: 200;
+
+.community-component .union {
+  height: 0;
+  pointer-events: none;
 }
-.Society-cards .carousel-indicators
-{
-  display: none;;
+
+.community-component .union-img {
+  height: 250vh;
+  width: auto;
+  position: relative;
+  left: 48vw;
+  bottom: 62vh;
 }
-.Society-cards .card
-{
-  margin:40px auto;
-  border-radius: 5px;
-  min-height: 20rem;;
+
+.community-component .main {
+  margin-top: 30vh;
+}
+
+.community-component .side-banner {
+  color: #1EABD6;
+  height: 0;
+  width: 30vw;
+  position: absolute;
+  left: 82vw;
+  font-size: 1.5vw;
+  transform: rotate(-90deg);
+  top: 280vh;
+}
+
+.community-component .title {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  margin:0;
+  padding: 0;
+}
+
+.community-component .community-card {
+  border: 1px solid #EE2A7B;
+  box-sizing: border-box;
+  border-radius: 23px;
+  height: 45vh;
+  margin-left: 1vw;
+  margin-bottom: 8vh;
+  position: relative;
+  background-position: center;
+  transition: background-size 1s;
+}
+
+.community-component .link {
+  text-decoration: none;
+  font-family: 'Raleway';
+  color: #1EABD6;
+}
+
+.community-component .community-card .name {
+  font-size: 3.8vh;
+  color: #EE2A7B;
+}
+
+.community-component .community-card .small-name {
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.community-component .community-card .large-name {
+  margin-top: 3.5vh;
+  margin-bottom: 3vh;
+  font-weight: normal;
+}
+
+.community-component .community-card .description {
+  font-family: 'Raleway';
+  color: white;
+  height: 20vh;
+  overflow: hidden;
+  font-size: 1.2vw;
+}
+
+.community-component .community-card .know-more {
+  font-family: 'Raleway';
+  color: #1EABD6;
+  font-size: 2vh;
+  position: absolute;
+  pointer-events: fill;
+  bottom: 1vh;
+  right: 1vw;
+}
+
+.community-component .community-card .know-more .loader {
+  margin-left: 1vw;
+  pointer-events: none;
+}
+
+.community-component .community-card:hover .know-more .loader {
+  animation: Spin 1s ease-in-out infinite;
+  animation-fill-mode: both;
+  animation-direction: normal;
+}
+
+@media screen and (max-width: 575px) {
+  .community-component .main {
+    margin-top: 5vh;
+  }
+
+  .community-component .union-img {
+      opacity: 0;
+      pointer-events: none;
+      height: 0;
+      width: 0;
+  }
+
+  .community-component .side-banner {
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+  }
+
+  .community-component .title {
+    font-family: 'Raleway';
+    color: #EE2A7B;
+    font-size: 5vh;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+  }
+
+  .community-component .community-card {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    width: 98vw;
+  }
+
+  .community-component .community-card .large-name {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    width: 0;
+    pointer-events: none;
+  }
+
+  .community-component .community-card .small-name {
+    opacity: 1;
+    font-weight: normal;
+    font-size: 5vw;
+    color: #1EABD6;
+    height: auto;
+    width: auto;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translate(0%, 350%);
+    pointer-events: all;
+  }
+
+  .community-component .community-card .description {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .community-component .community-card .know-more {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .community-component .competitive-coding {
+    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
+    url(./competitive-coding.jpg);
+    background-size: cover;
+  }
+  
+  .community-component .electronics-iot {
+    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
+    url(./electronics-iot.jpg);
+    background-size: cover;
+  }
+  
+  .community-component .robotics {
+    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
+    url(./robotics.jpg);
+    background-size: cover;
+  }
+  
+  .community-component .webd-appd {
+    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
+    url(./webd-appd.jpg);
+    background-size: cover;
+  }
+  
+  .community-component .machine-learning {
+    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
+    url(./machine-learning.jpg);
+    background-size: cover;
+  }
+  
+  .community-component .design {
+    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
+    url(./design.jpg);
+    background-size: cover;
+  }
+  
+  .community-component .community-card:hover {
+    background-size: 150%;
+  }
+}
+
+/* ---------------------Animations--------------------- */
+@keyframes Spin { 
+  0% {
+    transform:rotate(0deg);
+  }
+  100% 
+  {
+    transform:rotate(360deg);
+  }
 }

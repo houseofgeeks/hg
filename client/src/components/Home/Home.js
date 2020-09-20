@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 import LandingPage from './LandingPage/LandingPage';
-import CommunitySection from './CommunitySection/CommunitySection';
+import CommunitySection from '../Community/Community';
 import AboutUs from './AboutUs/AboutUs';
 import PartnersSection from './PartnersSection/PartnersSection';
 

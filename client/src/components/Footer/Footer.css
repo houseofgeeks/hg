@@ -5,6 +5,7 @@
 
 .footer-component .footer-surface-img {
   width: 100%;
+  pointer-events: none;
 }
 .icons {
   height: 30px;
