@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import circle from "./semi-circle.png";
+// import circle from "./semi-circle.png";
 
 function Navbar() {
   const currentloc = String(window.location); //Gets current URL
@@ -18,26 +18,23 @@ function Navbar() {
     currenttab = "home";
   }
   const [active, setActive] = useState(currenttab);
-  function openNav() {
-    document.getElementById("sidenav").style.width = "100%";
-  }
+  const [navOpen, toggleNav] = useState(0);
 
-  function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-  }
   return (
     <div>
-      <div id="sidenav">
-        <span className="closebtn" type="button" onClick={closeNav}>
-          &times;
-        </span>
+      <div className="hamburger" type="button" onClick = {() => toggleNav(!navOpen)}>
+        <span style={{width: '52.35px', transformOrigin: '50% 150% 0px', transform: navOpen ? 'rotate(-45deg)' : 'rotate(0deg)'}}></span>
+        <span style={{width: '32.36px', transformOrigin: '70% 10% 0px', transform: navOpen ? 'rotate(45deg)' : 'rotate(0deg)'}}></span>
+        <span style={{width: '20px', marginLeft: navOpen ? '4px' : '0px'}}></span>
+      </div>
+      <div id="sidenav" style={{width: navOpen ? '100%' : '0px'}}>
         <ul className="navbar-nav">
           <Link to="/" className="navLink">
             <li
               className={active === "home" ? "nav-item active" : "nav-item"}
               onClick={() => {
                 setActive("home");
-                closeNav();
+                toggleNav(!navOpen);
               }}
             >
               Home
@@ -49,7 +46,7 @@ function Navbar() {
               className={active === "event" ? "nav-item active " : "nav-item "}
               onClick={() => {
                 setActive("event");
-                closeNav();
+                toggleNav(!navOpen);
               }}
             >
               Event
@@ -63,7 +60,7 @@ function Navbar() {
               }
               onClick={() => {
                 setActive("community");
-                closeNav();
+                toggleNav(!navOpen);
               }}
             >
               Community
@@ -77,7 +74,7 @@ function Navbar() {
               }
               onClick={() => {
                 setActive("members");
-                closeNav();
+                toggleNav(!navOpen);
               }}
             >
               Members
@@ -91,7 +88,7 @@ function Navbar() {
               }
               onClick={() => {
                 setActive("sponsors");
-                closeNav();
+                toggleNav(!navOpen);
               }}
             >
               Sponsors
@@ -99,11 +96,6 @@ function Navbar() {
           </Link>
         </ul>
       </div>
-
-      <span type="button" onClick={openNav} className="hamburger">
-        &#9776;
-      </span>
-      <img src={circle} alt="circle" id="semi-circle"></img>
     </div>
   );
 }
