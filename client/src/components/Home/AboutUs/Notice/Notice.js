@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import planet from './planet.svg';
-import ellipse1 from './Ellipse 1.svg';
-import ellipse2 from './Ellipse 2.svg';
-import line from './Rectangle 1.svg';
+// import ellipse1 from './Ellipse 1.svg';
+// import ellipse2 from './Ellipse 2.svg';
+// import line from './Rectangle 1.svg';
 import './Notice.css';
 
 function Notice() {
