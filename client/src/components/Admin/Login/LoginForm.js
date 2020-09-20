@@ -49,8 +49,7 @@ import './loginform.css';
     const handleSubmit = e => {
         e.preventDefault();
         const err = validate();
-        err = err || {};
-        setErrors({...errors,...err});
+        setErrors({...errors,...err||{}});
         if(errors) return;
 
         //axios post request
