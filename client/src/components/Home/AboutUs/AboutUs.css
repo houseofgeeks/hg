@@ -1,4 +1,4 @@
-.about-us-section .heading{
+/* .about-us-section .heading{
     text-align: center;
 }
 
@@ -92,7 +92,7 @@
 } */
 
 
-@media (max-width:992px){
+/* @media (max-width:992px){
 
     .about-us-section .paragraph{
         text-align: center;
@@ -130,4 +130,28 @@
     }
         
     
+} */
+
+.about-us-section {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border: 1px solid #EE2A7B;
+    /* box-sizing: border-box; */
+    border-radius: 23px;
+}
+
+.about-us-section .title {
+    color: #EE2A7B;
+    font-size: 6vh;
+    margin-left: 8vw;
+    margin-bottom: 5vh;
+    margin-top: 8vh;
+}
+
+.about-us-section .content {
+    color: white;
+    font-size: 3.8vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 5vh;
 }

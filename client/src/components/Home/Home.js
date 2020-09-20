@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 import LandingPage from './LandingPage/LandingPage';
-import Notice from './Notice/Notice';
 import CommunitySection from './CommunitySection/CommunitySection';
 import AboutUs from './AboutUs/AboutUs';
 import PartnersSection from './PartnersSection/PartnersSection';
@@ -12,7 +11,6 @@ function Home() {
     <div className="home-component">
       <LandingPage />
       <AboutUs />
-      <Notice />
       <CommunitySection />
       <PartnersSection />
     </div>
