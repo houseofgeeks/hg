@@ -138,6 +138,7 @@
     border: 1px solid #EE2A7B;
     /* box-sizing: border-box; */
     border-radius: 23px;
+    width: 85vw;
 }
 
 .about-us-section .title {
@@ -163,4 +164,27 @@
     bottom: 20vh;
     transform: rotate(-90deg);
     height:0;
+}
+
+@media screen and (max-width: 426px) {
+    .about-us-section {
+        border: none;
+    }
+
+    .about-us-section .title {
+        margin-left: 0;
+    }
+
+    .about-us-section .content {
+        color: white;
+        font-size: 2.5vh;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5vh;
+    }
+
+    .about-us-section #about-us {
+        height: 0;
+        opacity: 0;
+    }
 }

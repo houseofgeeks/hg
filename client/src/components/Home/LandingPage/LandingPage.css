@@ -5,6 +5,7 @@
       background-position: left top, right top, center;
       background-repeat: no-repeat, no-repeat, no-repeat;
       height: 95vh;
+      pointer-events: none;
       overflow: hidden;
       margin-bottom: 40px;
 }
@@ -13,6 +14,7 @@
       height: auto;
       width: 75%;
       text-align: center;
+      pointer-events: none;
       /* margin-bottom: 10vh; */
 }
 
@@ -33,6 +35,7 @@
       height: 0;
       width: 96vw;
       align-items: center;
+      pointer-events: none;
       align-content: center;
       text-align: center;
 }
@@ -40,6 +43,7 @@
 .landing-page-section .surface-img {
       height: auto;
       width: 99.6vw;
+      pointer-events: none;
       margin: 0px;
       padding: 0px;
       z-index: 0;
@@ -48,6 +52,7 @@
 .landing-page-section .surface {
       position: absolute;
       bottom: -40vh;
+      pointer-events: none;
       animation-name: surface-animation;
       animation-delay: 1.5s;
       animation-duration: 2s;
@@ -57,12 +62,14 @@
 
 .landing-page-section .astronaut {
       height: 0px;
+      pointer-events: none;
 }
 
 .landing-page-section .astronaut-img {
       height: 25vh;
       width: auto;
       position: absolute;
+      pointer-events: none;
       left: 40vw;
       bottom: 110vh;
       z-index: 200;
@@ -76,6 +83,7 @@
       height: auto;
       width: auto;
       position: absolute;
+      pointer-events: none;
       left: 40vw;
       bottom: 6vh;
       opacity: 0;
@@ -147,6 +155,7 @@
             height: auto;
             width: 100%;
             text-align: center;
+            pointer-events: none;
             /* margin-bottom: 10vh; */
       }
       
@@ -167,11 +176,13 @@
             background-image: url("hglogo.svg"), url("planet.svg"), url("stars.svg");
             background-attachment: fixed, fixed;
             background-size: 25vw, 50vw, cover;
+            pointer-events: none;
             background-position: left top, right top, center;
             background-repeat: no-repeat, no-repeat, no-repeat;
             height: 93vh;
       }
       .landing-page-section .astronaut-shadow-img {
             width: 27px;
+            pointer-events: none;
       }
 }

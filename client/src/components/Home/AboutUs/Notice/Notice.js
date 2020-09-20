@@ -2,9 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import planet from './planet.svg';
 import union from './union.svg';
-// import ellipse1 from './Ellipse 1.svg';
-// import ellipse2 from './Ellipse 2.svg';
-// import line from './Rectangle 1.svg';
+import mobilePlanet from './mobile-planet.svg';
 import './Notice.css';
 
 function Notice() {
@@ -15,8 +13,8 @@ function Notice() {
         </div>
         <div className="notice-content">
           <div className="title">
-            Recieving signals... <span className="decrypting">Decrypting...</span> 
-            <span className="latest-news">Latest News...</span>
+            Recieving signals... <span className="decrypting"> Decrypting...</span> 
+            <span className="latest-news"> Latest News...</span>
           </div>
           <div className="notice-list">
             <ul>
@@ -31,6 +29,9 @@ function Notice() {
         </div>
         <div className="planet">
           <img src={planet} className="planet-img" alt="planet" />
+        </div>
+        <div className="mobile-planet">
+          <img src={mobilePlanet} className="mobile-planet-img" alt="mobile planet" />
         </div>
         <div className="union">
           <img src={union} className="union-img" alt="union"/>
