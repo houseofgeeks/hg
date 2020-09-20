@@ -50,7 +50,7 @@ import './loginform.css';
         e.preventDefault();
         const err = validate();
         setErrors({...errors,...err||{}});
-        if(errors) return;
+        if(errors==={}) return;
 
         //axios post request
         console.log("Submitted");
