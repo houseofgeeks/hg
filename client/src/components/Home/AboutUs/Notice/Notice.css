@@ -29,4 +29,22 @@
     left: 3vw;
     bottom: 68vh;
     z-index: 100;
+    animation: myOrbit 4s linear infinite;
+}
+
+.notice-section .union {
+    height: 0;
+}
+
+.notice-section .union-img {
+    height: 200vh;
+    width: auto;
+    position: relative;
+    left: 37vw;
+    bottom: 55vh;
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(3.5px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(3.5px) rotate(-360deg); }
 }

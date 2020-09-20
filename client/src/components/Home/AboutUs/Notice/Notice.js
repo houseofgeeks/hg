@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import planet from './planet.svg';
+import union from './union.svg';
 // import ellipse1 from './Ellipse 1.svg';
 // import ellipse2 from './Ellipse 2.svg';
 // import line from './Rectangle 1.svg';
@@ -28,13 +29,11 @@ function Notice() {
             </ul>
           </div>
         </div>
-        {/* <div className="union">
-          <img className="ellipse-1" src={ellipse1} alt="ellipse-1" />
-          <img className="ellipse-2" src={ellipse2} alt="ellipse-2" />
-          <img className="line" src={line} alt="line" />
-        </div> */}
         <div className="planet">
           <img src={planet} className="planet-img" alt="planet" />
+        </div>
+        <div className="union">
+          <img src={union} className="union-img" alt="union"/>
         </div>
       </div>
   );

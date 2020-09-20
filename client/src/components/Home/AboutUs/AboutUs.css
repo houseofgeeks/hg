@@ -155,3 +155,12 @@
     margin-right: 8vw;
     margin-bottom: 5vh;
 }
+.about-us-section #about-us {
+    color: #1EABD6;
+    font-size: 1.5vw;
+    position: relative;
+    left:47vw;
+    bottom: 20vh;
+    transform: rotate(-90deg);
+    height:0;
+}
