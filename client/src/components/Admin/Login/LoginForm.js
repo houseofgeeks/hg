@@ -7,7 +7,7 @@ import './loginform.css';
     //object     
     const [account, setAccount] = useState({
         username:'hg-official@iiitranchi',
-        password: ''
+        password:''
     });
     const [errors,setErrors] = useState({
         username:'',
@@ -17,9 +17,9 @@ import './loginform.css';
 
     const validate = () => {
         const err={};
-        if(account.username==='')
+        if(account.username.trim()==='')
             err.username='Username is Required';
-        if(account.password==='')
+        if(account.password.trim()==='')
             err.password='Password is Required';
         return Object.keys(err).length===0?null:err;
     };
@@ -42,14 +42,15 @@ import './loginform.css';
 
         const acc = {...account};
         acc[input.name] = input.value;
-        setAccount({account:acc});
-        setErrors({errors:err});
+        setAccount({...account,...acc});
+        setErrors({...errors,...err});
     };
 
     const handleSubmit = e => {
         e.preventDefault();
         const err = validate();
-        setErrors({errors: err || {}});
+        err = err || {};
+        setErrors({...errors,...err});
         if(errors) return;
 
         //axios post request
