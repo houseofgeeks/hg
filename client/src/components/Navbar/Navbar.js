@@ -96,11 +96,6 @@ function Navbar() {
           </Link>
         </ul>
       </div>
-
-      {/* <span type="button" onClick={openNav} className="hamburger">
-        &#9776;
-      </span>
-      <img src={circle} alt="circle" id="semi-circle"></img> */}
     </div>
   );
 }

@@ -54,16 +54,6 @@
   text-align: center;
 }
 
-/* #semi-circle {
-  position: fixed;
-  top: 25%;
-  left: -20px;
-  color: white;
-  z-index: 1001;
-  width: 130px;
-  height: 150px;
-} */
-
 @media screen and (max-height: 450px) {
   #sidenav {
     padding-top: 5px;
