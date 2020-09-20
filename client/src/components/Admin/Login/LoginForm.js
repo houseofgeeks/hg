@@ -10,8 +10,7 @@ import './loginform.css';
         password:''
     });
     const [errors,setErrors] = useState({
-        username:'',
-        password:''
+   
     });
     
 
@@ -31,6 +30,7 @@ import './loginform.css';
         if(input.name === 'password'){
             if(input.value.trim() === '') return "Password can't be empty.";
         }
+    
 
     }
 
@@ -38,7 +38,7 @@ import './loginform.css';
         const err = {...errors};
         const errorMessage = validateProperty(input); 
         if(errorMessage) err[input.name] = errorMessage;
-        else delete err[input.name];
+        else err[input.name]='';
 
         const acc = {...account};
         acc[input.name] = input.value;
@@ -49,8 +49,10 @@ import './loginform.css';
     const handleSubmit = e => {
         e.preventDefault();
         const err = validate();
-        setErrors({...errors,...err||{}});
-        if(errors==={}) return;
+        setErrors({...errors,...err});
+        
+        // console.log(errors);
+        if(errors.password!=="") return;
 
         //axios post request
         console.log("Submitted");
