@@ -1,0 +1,21 @@
+.community-component
+{
+     margin-top:100px;
+}
+.Society-cards .heading
+{
+  text-align: center;
+  color: #ffffff;
+  font-style: italic;
+  font-weight: 200;
+}
+.Society-cards .carousel-indicators
+{
+  display: none;;
+}
+.Society-cards .card
+{
+  margin:40px auto;
+  border-radius: 5px;
+  min-height: 20rem;;
+}
