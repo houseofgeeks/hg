@@ -3,21 +3,25 @@ import Input from './input';
 import './loginform.css';
 
  function LoginForm() {
-  
+
+    //object     
     const [account, setAccount] = useState({
         username:'hg-official@iiitranchi',
         password: ''
     });
-    const [errors,setErrors] = useState({});
+    const [errors,setErrors] = useState({
+        username:'',
+        password:''
+    });
     
 
     const validate = () => {
-        const errors={};
-        if(account.username.trim()==='')
-            errors.username='Username is Required';
-        if(account.password.trim()==='')
-            errors.password='Password is Required';
-        return Object.keys(errors).length===0?null:errors;
+        const err={};
+        if(account.username==='')
+            err.username='Username is Required';
+        if(account.password==='')
+            err.password='Password is Required';
+        return Object.keys(err).length===0?null:err;
     };
 
     const validateProperty = input =>{
@@ -31,20 +35,21 @@ import './loginform.css';
     }
 
     const handleChange = ({currentTarget:input}) => {
-        const errors = {...errors};
+        const err = {...errors};
         const errorMessage = validateProperty(input); 
-        if(errorMessage) errors[input.name] = errorMessage;
-        else delete errors[input.name];
-        const account = {...account};
-        account[input.name] = input.value;
-        setAccount({account});
-        setErrors({errors});
+        if(errorMessage) err[input.name] = errorMessage;
+        else delete err[input.name];
+
+        const acc = {...account};
+        acc[input.name] = input.value;
+        setAccount({account:acc});
+        setErrors({errors:err});
     };
 
     const handleSubmit = e => {
         e.preventDefault();
-        const errors = validate();
-        setErrors({errors: errors || {}});
+        const err = validate();
+        setErrors({errors: err || {}});
         if(errors) return;
 
         //axios post request
@@ -52,19 +57,19 @@ import './loginform.css';
     };
 
     
-         return ( 
-             <div className="text-white pt-5 admin-login">
-                 <h1 className="text-center">Admin Login</h1>
-                 <br></br>
-                 <div className="container adm-form pt-4 pd-4">
-                 <form onSubmit={handleSubmit}>
-                        <Input errors={errors.username} name="username" label="Username" value={account.username} onChange={handleChange} type="text" readOnly={true}/>
-                        <Input errors={errors.password} name="password" label="Password" value={account.password} onChange={handleChange} type="password"readOnly={false}/> 
-                        <button disabled={validate()} className="btn btn-success submit-button"><b>Login</b></button>
-                 </form>
-                 </div>
-             </div>
-          );
+    return ( 
+        <div className="text-white pt-5 admin-login">
+            <h1 className="text-center">Admin Login</h1>
+            <br></br>
+            <div className="container adm-form pt-4 pd-4">
+            <form onSubmit={handleSubmit}>
+                <Input errors={errors.username} name="username" label="Username" value={account.username} onChange={handleChange} type="text" readOnly={true}/>
+                <Input errors={errors.password} name="password" label="Password" value={account.password} onChange={handleChange} type="password"readOnly={false}/> 
+                <button disabled={validate()} className="btn btn-success submit-button"><b>Login</b></button>
+            </form>
+            </div>
+        </div>
+    );
     
  }
   
