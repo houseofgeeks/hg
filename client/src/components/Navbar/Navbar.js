@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-// import circle from "./semi-circle.png";
 
 function Navbar() {
   const currentloc = String(window.location); //Gets current URL

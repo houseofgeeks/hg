@@ -145,7 +145,7 @@
 @media screen and (max-width: 426px) {
 
       .landing-page-section .surface-img {
-            height: 20vh;
+            height: auto;
             width: 99.6vw;
             margin: 0px;
             padding: 0px;
