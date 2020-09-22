@@ -10,7 +10,7 @@ function Notice() {
 
   const [notices, setNotice] = useState([{title: 'fetching notices', description:' . . .'}]);
   useEffect(() => {
-    axios.get('/api/notice')
+    axios.get('/notice')
     .then(res => {
       const {result} = res.data;
       setNotice([...result]);
@@ -38,6 +38,7 @@ function Notice() {
                 return <li key={idx}>
                   <h3>{notice.title}</h3>
                   {notice.description && <p>{notice.description}</p>}
+                  {notice.eventLink && <a href={`${notice.eventLink}`} target='_blank'>Link</a>}
                 </li>
               })}
             </ul>
