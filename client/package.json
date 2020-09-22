@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "aos": "^2.3.4",
+    "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
@@ -34,5 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://hgserver.herokuapp.com/"
 }
