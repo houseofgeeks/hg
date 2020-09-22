@@ -1,137 +1,64 @@
-a:hover, a:visited, a:link, a:active{
-   text-decoration: none;
-   color: inherit;
+.hamburger {
+  position: fixed;
+  top: 32%;
+  left: 0px;
+  z-index: 1004;
+  padding: 5px;
+  background: transparent;
 }
 
-.bg-nav{
-      opacity: 0.8;
+.nav-item {
+  color: rgb(202, 196, 196);
+  margin: 2% 25px;
 }
 
-.navbar-component .active {
-      font-size: 1.2rem;
-      font-weight: 900;
-      color: white;
-}
-.navbar{
-      background-color: #080808;
-      padding: 3px 15px 3px 10px;
+#sidenav .navLink .active,
+.nav-item:hover {
+  font-weight: 900;
+  color: white;
 }
 
-#navLink{
-      font-weight: 400;
-      font-style: italic;
-      color: #fff;
-}
-.nav-item{
-     color:#fff;
-     margin: 10px 25px;
-}
+.hamburger > span{
+  height: 7px;
+  display: block;
+  background: #ee2a7b;
+  margin-bottom: 7px;
+  border-radius: 10px;
 
-.nav-logo{
-      opacity: 1;
-      height: 45px;
-      margin-left: 40px;
+  transition: all .3s;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
 }
 
-.navbar-toggler{
-      background-color: #7e8a97;
+#sidenav .navLink {
+  font-weight: 400;
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
 }
 
-.search-bar{
-      border-radius:35px;
-      width:180px!important;
-      height: 30px;
-      margin-right: 25px;
-      margin-left: 20px;
-      padding-left: 35px;
+#sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1003;
+  top: 0;
+  left: 0;
+  background-color: #000018;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  text-align: center;
 }
 
-.search-icon{
-      position:absolute;
-      opacity: 0.6;
-      right: 190px;
-      bottom: 19px;
-      height: 19px;
+@media screen and (max-height: 450px) {
+  #sidenav {
+    padding-top: 5px;
+  }
+  #sidenav .navLink {
+    font-size: 18px;
+  }
 }
-
-@media  (max-width:600px){
-
-      .nav-logo{
-             margin-left: 10px;
-      }
-}
-
-@media only screen and (max-width:1024px){
-   
-      .search-bar{
-            display:none!important;
-      }
-   
-      .search-icon{
-            display: none;
-      }
-}
-
-@media only screen and (min-width: 1500px){
-      .navbar{
-            height: 80px;
-      }
-   
-      .navbar-component{
-            font-weight: 900;
-            font-size: 1.4rem;
-            color: white;
-      }
-   
-      .navbar-component .active {
-            font-size: 1.7rem;
-            font-weight: 900;
-            color: white;
-      }
-   
-      .search-bar{
-            font-size: 1.2rem;
-            width: 300px!important;
-      }
-   
-      .search-icon{
-            position:absolute;
-            opacity: 0.6;
-            right: 310px;
-            bottom: 30px;
-            height: 20px;
-      }
-
-}
-
-@media only screen and (min-width: 2000px){
-      .navbar{
-            height: 120px;
-      }
-   
-      .navbar-component{
-            font-weight: 900;
-            font-size: 2rem;
-            color: white;
-      }
-   
-      .navbar-component .active {
-            font-size: 2.4rem;
-            font-weight: 900;
-            color: white;
-      }
-   
-      .search-bar{
-            width: 400px!important;
-            padding-left: 45px;
-            height: 45px;
-            font-size: 1.8rem;
-      }
-   
-      .search-icon{
-            right: 400px;
-            bottom: 45px;
-            height:25px;
-      }
-}
- 

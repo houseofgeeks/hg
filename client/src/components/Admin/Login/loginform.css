@@ -1,0 +1,51 @@
+.admin-login .adm-form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top:50px;
+    position: relative;
+    height: 288px;
+    width: 460px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    bottom:2vw;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05) !important;
+    cursor: pointer;
+    z-index: 40;
+}
+
+.admin-login .submit-button{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.admin-login .input-label{
+    margin-left: 30px;
+}
+
+.admin-login .error-message{
+    position: absolute;
+    margin-left: 30px;
+}
+
+.admin-login .input-space{
+    margin-right: auto;
+    margin-left:auto;
+    width:367px;
+}
+
+.admin-login .adm-form:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253) !important;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 500px) {
+    .admin-login .adm-form{
+        width:390px;
+    }
+    .admin-login .input-space{
+        width:300px;
+    }
+  }

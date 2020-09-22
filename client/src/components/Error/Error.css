@@ -1,0 +1,29 @@
+.firstdiv{
+    background-image: url(./Images/11.png);
+    background-position: center;
+    border-radius: 5vw;
+}
+
+.seconddiv{
+    width: 100%;
+    height: auto;
+    background-image: url(./Images/lock2.jpg);
+    border-radius: 5vw;
+
+}
+
+.whitecolor{
+    color: rgb(255, 254, 254);
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 5%;
+}
+
+.error-component{
+    padding-top: 15vh;
+}
+
+.pad-topbot{
+    padding-top: 13vh;
+    padding-bottom: 13vh;
+}
