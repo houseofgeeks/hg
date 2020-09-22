@@ -30,6 +30,12 @@
       text-align: center;
       margin-bottom: 40px;
 }
+@media(max-width:500px){
+.partners-section{
+border:none;
+}
+
+}
 
 @media(max-width:650px) {
       .partners-title {
