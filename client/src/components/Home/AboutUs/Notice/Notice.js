@@ -18,8 +18,7 @@ function Notice() {
     .catch((err) => {
       const result = [];
       result.push({title: 'Something went wrong!', description: 'Try reloading. . .'});
-      setNotice([...result]);
-      console.log(err, ...result);
+      setNotice(result);
     })
   }, []);
 
