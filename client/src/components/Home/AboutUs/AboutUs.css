@@ -49,7 +49,7 @@
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05) !important;
     cursor: pointer;
     z-index: 30;
-    
+
 }
 .about-us-section .image4{
     position: absolute;
@@ -63,7 +63,7 @@
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05) !important;
     cursor: pointer;
     z-index: 20;
-  
+
 }
 
 .about-us-section .image1:hover,.about-us-section .image2:hover,.about-us-section .image3:hover,.about-us-section .image4:hover{
@@ -90,8 +90,6 @@
         margin-right: auto;
     }
 } */
-
-
 /* @media (max-width:992px){
 
     .about-us-section .paragraph{
@@ -107,7 +105,7 @@
         margin-top: 3%;
         margin-left: 3px;
         margin-right: 3px;
-        
+
     }
     .image-row{
         overflow: scroll;
@@ -117,7 +115,7 @@
         font-size: 15px;
         padding-left: 20px;
         padding-right: 20px;
-        
+
     }
 }
 @media (max-width:768px){
@@ -126,65 +124,71 @@
     .about-us-section .image1,.about-us-section .image2,.about-us-section .image3,.about-us-section .image4{
         width:45vw;
         height:35vw;
-        
-    }
-        
-    
-} */
 
+    }
+
+
+} */
 .about-us-section {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    border: 1px solid #EE2A7B;
-    /* box-sizing: border-box; */
-    border-radius: 23px;
-    width: 85vw;
+      font-family: 'Raleway', sans-serif;
+      color: white;
+      border: 1px solid #EE2A7B;
+      /* box-sizing: border-box; */
+      border-radius: 23px;
+      width: 85vw;
 }
 
 .about-us-section .title {
-    color: #EE2A7B;
-    font-size: 6vh;
-    margin-left: 8vw;
-    margin-bottom: 5vh;
-    margin-top: 8vh;
+      color: #EE2A7B;
+      font-size: 6vh;
+      margin-left: 8vw;
+      margin-bottom: 5vh;
+      margin-top: 8vh;
 }
 
 .about-us-section .content {
-    color: white;
-    font-size: 3.8vh;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-bottom: 5vh;
+      color: white;
+      font-size: 3.8vh;
+      margin-left: 8vw;
+      margin-right: 8vw;
+      margin-bottom: 5vh;
 }
+
 .about-us-section #about-us {
-    color: #1EABD6;
-    font-size: 1.5vw;
-    position: relative;
-    left:47vw;
-    bottom: 20vh;
-    transform: rotate(-90deg);
-    height:0;
+      color: #1EABD6;
+      font-size: 1.5vw;
+      position: relative;
+      left: 47vw;
+      bottom: 20vh;
+      transform: rotate(-90deg);
+      height: 0;
 }
 
 @media screen and (max-width: 426px) {
-    .about-us-section {
-        border: none;
-    }
+      .about-us-section {
+            border: none;
+      }
 
-    .about-us-section .title {
-        margin-left: 0;
-    }
+      .about-us-section .title {
+            margin-left: 0;
+      }
 
-    .about-us-section .content {
-        color: white;
-        font-size: 2.5vh;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 5vh;
-    }
+      .about-us-section .content {
+            color: white;
+            font-size: 2.5vh;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 5vh;
+      }
 
-    .about-us-section #about-us {
-        height: 0;
-        opacity: 0;
-    }
+      .about-us-section #about-us {
+            height: 0;
+            opacity: 0;
+      }
+}
+
+@media(min-width:2500px) {
+      .container.about-us-section {
+            max-width: 70vw;
+      }
 }
