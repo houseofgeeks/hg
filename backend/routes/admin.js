@@ -10,24 +10,11 @@ router.post("/login", function (req, res, next) {
       admin.checkPassword(req.body.pass)
         .then((result) => {
           const accessToken = jwt.sign({ username: "admin" }, process.env.JWT_SECRET);
-          admin
-            .updateOne({
+          res.status(200)
+            .json({
+              message: "OK",
               accessToken: accessToken,
             })
-            .then((result) => {
-              res
-                .status(200)
-                .json({
-                  message: "OK",
-                  accessToken: accessToken,
-                })
-                .catch((err) => {
-                  console.log(err);
-                  res.status(500).json({
-                    message: "Wrong credentials",
-                  });
-                });
-            });
         })
         .catch((err) => {
           console.log(err);
