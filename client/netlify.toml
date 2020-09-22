@@ -2,3 +2,9 @@
 from = "/*"
 to = "/index.html"
 status = 200
+
+[[redirects]]
+    from = "/api/*"
+    to = "https://hgserver.herokuapp.com/:splat"
+    status = 200
+    force = true
