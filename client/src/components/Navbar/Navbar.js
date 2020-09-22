@@ -29,16 +29,16 @@ function Navbar() {
       >
         <span
           style={{
-            width: "7vh",
-            height: "1.2vh",
+            width: "6vh",
+            height: "1vh",
             transformOrigin: "70% 75% 0px",
             transform: navOpen ? "rotate(-45deg)" : "rotate(0deg)",
           }}
         ></span>
         <span
           style={{
-            width: navOpen ? "7vh" : "5vh",
-            height: "1.2vh",
+            width: navOpen ? "6vh" : "4.5vh",
+            height: "1vh",
             transformOrigin: "80% 10% 0px",
             transform: navOpen ? "rotate(45deg)" : "rotate(0deg)",
           }}
@@ -46,7 +46,7 @@ function Navbar() {
         <span
           style={{
             width: navOpen ? "0vh" : "3vh",
-            height: "1.2vh",
+            height: "1vh",
             marginLeft: navOpen ? "4px" : "0px",
           }}
         ></span>

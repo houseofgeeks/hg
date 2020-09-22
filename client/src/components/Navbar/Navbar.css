@@ -5,6 +5,7 @@
   z-index: 1004;
   padding: 5px;
   transform: scaleX(-1);
+  background-color: transparent;
 }
 .semi {
   position: fixed;
