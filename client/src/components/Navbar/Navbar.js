@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import circle from "./side-bar.svg";
+import blackWave from "./side-bar.svg";
 
 function Navbar() {
   const currentloc = String(window.location); //Gets current URL
@@ -51,7 +51,7 @@ function Navbar() {
           }}
         ></span>
       </div>
-      <img src={circle} className="semi" alt="circle"></img>
+      <img src={blackWave} className="blackWave" alt="sidebar"></img>
       <div id="sidenav" style={{ width: navOpen ? "100%" : "0px" }}>
         <ul className="navbar-nav">
           <Link to="/" className="navLink">
