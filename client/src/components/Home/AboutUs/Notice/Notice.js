@@ -38,7 +38,7 @@ function Notice() {
                 return <li key={idx}>
                   <h3>{notice.title}</h3>
                   {notice.description && <p>{notice.description}</p>}
-                  {notice.eventLink && <a href={`${notice.eventLink}`} target='_blank'>Link</a>}
+                  {notice.eventLink && <a rel="noopener noreferrer" href={`${notice.eventLink}`} target='_blank'>Link</a>}
                 </li>
               })}
             </ul>
