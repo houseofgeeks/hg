@@ -45,7 +45,7 @@
 }
 
 .notice-section .union-img {
-    height: 200vh;
+    height: 50vh;
     width: auto;
     position: relative;
     left: 37vw;
@@ -80,7 +80,7 @@
         bottom: 77vh;
         right: 13vw;
     }
-    
+
     .notice-section .notice-title {
         color: #1EABD6;
         font-size: 4vh;

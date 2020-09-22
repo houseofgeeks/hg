@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Community.css';
-import { Carousel, Card } from "react-bootstrap"
+import { Carousel, Card } from "react-bootstrap";
 
 function Community() {
   return (

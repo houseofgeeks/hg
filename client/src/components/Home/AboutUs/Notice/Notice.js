@@ -9,11 +9,11 @@ function Notice() {
   return (
     <div className="notice-section">
       <div className="notice-title">
-          From the Geeks' Satellite..
+          From the Geeks Satellite
         </div>
         <div className="notice-content">
           <div className="title">
-            Recieving signals... <span className="decrypting"> Decrypting...</span> 
+            Recieving signals... <span className="decrypting"> Decrypting...</span>
             <span className="latest-news"> Latest News...</span>
           </div>
           <div className="notice-list">
