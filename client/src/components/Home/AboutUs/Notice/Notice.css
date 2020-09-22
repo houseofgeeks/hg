@@ -1,0 +1,106 @@
+.notice-section .notice-title {
+    color: #1EABD6;
+    font-size: 4vh;
+    margin-left: 45vw;
+}
+
+.notice-section .notice-content .title {
+    color: white;
+    font-size: 3vh;
+    margin-left: 45vw;
+    margin-top: 3vh;
+}
+
+.notice-section .notice-content .notice-list {
+    color: white;
+    font-size: 3vh;
+    margin-left: 45vw;
+    margin-bottom: 15vh;
+}
+
+.notice-section .planet {
+    height: 0;
+}
+
+.notice-section .planet-img {
+    width: 55vw;
+    height: auto;
+    position: relative;
+    left: 0;
+    pointer-events: none;
+    bottom: 68vh;
+    z-index: 100;
+    animation: myOrbit 4s linear infinite;
+}
+
+.notice-section .mobile-planet {
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.notice-section .union {
+    height: 0;
+    pointer-events: none;
+}
+
+.notice-section .union-img {
+    height: 200vh;
+    width: auto;
+    position: relative;
+    left: 37vw;
+    bottom: 55vh;
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(3.5px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(3.5px) rotate(-360deg); }
+}
+
+@media screen and (max-width: 426px) {
+
+    .notice-section .union-img {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .notice-section .planet {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .notice-section .mobile-planet {
+        height: 0;
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    .notice-section .mobile-planet-img {
+        position: relative;
+        bottom: 77vh;
+        right: 13vw;
+    }
+    
+    .notice-section .notice-title {
+        color: #1EABD6;
+        font-size: 4vh;
+        margin-left: 2vw;
+        width: 80vw;
+    }
+
+    .notice-section .notice-content .title {
+        color: white;
+        width: 50vw;
+        font-size: 2.9vh;
+        margin-left: 25vw;
+        margin-top: 3vh;
+    }
+
+    .notice-section .notice-content .notice-list {
+        color: white;
+        font-size: 2.5vh;
+        margin-left: 25vw;
+        margin-bottom: 15vh;
+    }
+
+}
