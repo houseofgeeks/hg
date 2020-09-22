@@ -9,7 +9,7 @@ const noticeSchema = new mongoose.Schema({
     createdAt: {
         required: true,
         type: Date,
-        default: Date.now()
+        default: Date.now
     },
     description: {
         required: true,
