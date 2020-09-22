@@ -10,7 +10,7 @@ function Notice() {
 
   const [notices, setNotice] = useState([{title: 'fetching notices', description:' . . .'}]);
   useEffect(() => {
-    axios.get('/notice')
+    axios.get('/api/notice')
     .then(res => {
       const {result} = res.data;
       setNotice([...result]);
