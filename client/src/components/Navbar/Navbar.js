@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import blackWave from "./side-bar.svg";
 
 function Navbar() {
   const currentloc = String(window.location); //Gets current URL
@@ -21,12 +22,37 @@ function Navbar() {
 
   return (
     <div>
-      <div className="hamburger" type="button" onClick = {() => toggleNav(!navOpen)}>
-        <span style={{width: '52.35px', transformOrigin: '50% 150% 0px', transform: navOpen ? 'rotate(-45deg)' : 'rotate(0deg)'}}></span>
-        <span style={{width: '32.36px', transformOrigin: '70% 10% 0px', transform: navOpen ? 'rotate(45deg)' : 'rotate(0deg)'}}></span>
-        <span style={{width: '20px', marginLeft: navOpen ? '4px' : '0px'}}></span>
+      <div
+        className="hamburger"
+        type="button"
+        onClick={() => toggleNav(!navOpen)}
+      >
+        <span
+          style={{
+            width: "6vh",
+            height: "1vh",
+            transformOrigin: "70% 75% 0px",
+            transform: navOpen ? "rotate(-45deg)" : "rotate(0deg)",
+          }}
+        ></span>
+        <span
+          style={{
+            width: navOpen ? "6vh" : "4.5vh",
+            height: "1vh",
+            transformOrigin: "80% 10% 0px",
+            transform: navOpen ? "rotate(45deg)" : "rotate(0deg)",
+          }}
+        ></span>
+        <span
+          style={{
+            width: navOpen ? "0vh" : "3vh",
+            height: "1vh",
+            marginLeft: navOpen ? "4px" : "0px",
+          }}
+        ></span>
       </div>
-      <div id="sidenav" style={{width: navOpen ? '100%' : '0px'}}>
+      <img src={blackWave} className="blackWave" alt="sidebar"></img>
+      <div id="sidenav" style={{ width: navOpen ? "100%" : "0px" }}>
         <ul className="navbar-nav">
           <Link to="/" className="navLink">
             <li
