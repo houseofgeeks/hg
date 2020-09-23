@@ -21,7 +21,7 @@ const PartnersSection = () => {
                                                       </h2>
                                                 </div>
                                           )     
-                                    });
+                                    })
                               }
                         </div>
                   </div>
