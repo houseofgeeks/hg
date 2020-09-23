@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './PartnersSection.css';
 import {PartnersList as partners} from './PartnersList.js';
