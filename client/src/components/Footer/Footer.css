@@ -1,67 +1,52 @@
-address{
-    font-size:small;
-     margin:0px;
-     color: #ddd;
+.footer-component {
+  position: relative;
 }
 
-#dev,#up {
-    position: absolute;bottom: 0px; left: 0px;
+.footer-component .footer-surface-img {
+  width: 100%;
+}
+.icons {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  transition: ease 0.5s;
 }
 
-.footer{
-    background: url("./img/footer-back.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
-    color:#ddd;
+.icons:hover {
+  color: #1eabd6;
+  transform: translate(0, -1px);
 }
-#footer-hr { 
-    display: block;
-    width:100%;
-    overflow: hidden;
-    border-width: 1px;
+.last {
+  padding-top: 15px;
 }
-
-.footer-a{
-color:#fff;
+.last p {
+  font-size: 1.2vw;
 }
-
-/* SVG icons styling */
-.icons{
-    height:70px;
-    width: 70px;
-    padding:10px;
-    margin-left:20px;
-    transition: ease 0.5s;
+.star-background {
+  background-image: url("./img/star.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
 }
-
-.icon-small {
-    height:35px;
-    width: 35px;
-    transition: ease 0.5s;
+@media (max-width: 767px) {
+  .footer-surface-img {
+    margin-top: 50px;
+  }
+  .last {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0px;
+    width: 100%;
+  }
+  .last p {
+    font-size: 2vw;
+  }
 }
-
-.icons:hover,.icon-small:hover {
-    color: #1eabd6;
-    transform: translate(0, -1px);
-}
-
-/* House of Geeks logo */
-.logo {
-    height:140px;
-    width:200px;
-}
-
-.links hr {
-    width:60%;
-}
-
-
-@media (max-width:767px){
-    .links{
-        padding-left:30px;
-        padding-right: 30px;
-        text-align: center;
-    }
+@media (max-width: 576px) {
+  .last p {
+    font-size: 4vw;
+  }
 }
