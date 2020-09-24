@@ -71,14 +71,3 @@
     font-size: 18px;
   }
 }
-@media screen and (max-width: 450px) {
-  .blackWave {
-    width: 8.2vh;
-    height: 50vh;
-  }
-  .hamburger {
-    position: fixed;
-    top: 4.5%;
-    right: -1%;
-  }
-}
