@@ -7,6 +7,10 @@
   transform: scaleX(-1);
   background-color: transparent;
 }
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: none;
+}
+
 .blackWave {
   position: fixed;
   width: 10vh;
