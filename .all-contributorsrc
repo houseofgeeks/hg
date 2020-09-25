@@ -1,0 +1,96 @@
+{
+  "projectName": "hg",
+  "projectOwner": "House of Geeks",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "ankiiitraj",
+      "name": "Ankit Raj",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/48787278?v=4",
+      "profile": "https://github.com/ankiiitraj",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "tusharjain0022",
+      "name": "Tushar Jain",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/59157988?v=4",
+      "profile": "https://github.com/tusharjain0022",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "EmperorYP7",
+      "name": "Yash Pandey (YP)",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/62606998?v=4",
+      "profile": "https://github.com/EmperorYP7",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "hariom1625",
+      "name": "Hari Om Yadav",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/66957239?v=4",
+      "profile": "https://github.com/hariom1625",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sanskarseth",
+      "name": "Sanskar Seth",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/55178412?v=4",
+      "profile": "https://github.com/sanskarseth",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "vandana1499",
+      "name": "unbeat",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/29394600?v=4",
+      "profile": "https://github.com/vandana1499",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "RishavMz",
+      "name": "Rishav Mazumdar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58086511?v=4",
+      "profile": "https://github.com/RishavMz",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Abhayraj1707",
+      "name": "Abhay Raj",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/62218504?v=4",
+      "profile": "https://github.com/Abhayraj1707",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sandesh-08",
+      "name": "sandesh-08",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67503294?v=4",
+      "profile": "https://github.com/sandesh-08",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
