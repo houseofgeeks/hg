@@ -100,6 +100,15 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "thecodediver",
+      "name": "James Lundin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46363396?v=4",
+      "profile": "https://www.thecodediver.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
