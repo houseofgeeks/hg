@@ -55,7 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/Abhayraj1707"><img src="https://avatars1.githubusercontent.com/u/62218504?v=4" width="100px;" alt=""/><br /><sub><b>Abhay Raj</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=Abhayraj1707" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/sandesh-08"><img src="https://avatars1.githubusercontent.com/u/67503294?v=4" width="100px;" alt=""/><br /><sub><b>sandesh-08</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=sandesh-08" title="Code">💻</a></td>
-    <td align="center"><a href="http://deepti23-web.github.io"><img src="https://avatars1.githubusercontent.com/u/64003317?v=4" width="100px;" alt=""/><br /><sub><b>Deepti</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=deepti23-web" title="Code">💻</a></td>
+    <td align="center"><a href="http://deepti23-web.github.io"><img src="https://avatars1.githubusercontent.com/u/64003317?v=4" width="100px;" alt=""/><br /><sub><b>Deepti</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=deepti23-web" title="Code">💻</a> <a href="https://github.com/houseofgeeks/hg/pulls?q=is%3Apr+reviewed-by%3Adeepti23-web" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
