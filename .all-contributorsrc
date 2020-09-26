@@ -1,6 +1,6 @@
 {
   "projectName": "hg",
-  "projectOwner": "House of Geeks",
+  "projectOwner": "houseofgeeks",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -90,7 +90,18 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "deepti23-web",
+      "name": "Deepti",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/64003317?v=4",
+      "profile": "http://deepti23-web.github.io",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
