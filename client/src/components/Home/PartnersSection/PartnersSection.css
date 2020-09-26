@@ -74,9 +74,10 @@
       margin-bottom: 40px;
 }
 
-@media(max-width:500px) {
-      .partners-section {
-            border: none;
+@media(max-width:750px) {
+      .logo-name {
+            width: 25vw;
+            font-size: 1.3rem;
       }
 }
 
@@ -94,7 +95,18 @@
 
       .logo-name {
             width: 60vw;
-            font-size: 2.5rem;
+            font-size: 2rem;
+      }
+}
+
+@media(max-width:500px) {
+      .partners-section {
+            border: none;
+      }
+
+      .logo-name {
+            width: 70vw;
+            font-size: 1.6rem;
       }
 }
 
