@@ -1,52 +1,50 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Community.css';
-import { Carousel, Card } from "react-bootstrap"
+import union from './union.svg';
+import list from './CommunityList';
+import loader from './loader.svg';
 
 function Community() {
   return (
     <div className="community-component">
-      <div className="Society-cards">
-        <h1 className="heading">Societies under Geeks</h1>
-        <Carousel>
-          <Carousel.Item>
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                 </Card.Text>
-              </Card.Body>
-            </Card>
-
-          </Carousel.Item>
-          <Carousel.Item>
-            <Card style={{ width: '18rem' }}>
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                 </Card.Text>
-              </Card.Body>
-            </Card>
-          </Carousel.Item>
-        </Carousel>
+      <div className="union">
+          <img src={union} className="union-img" alt="union"/>
+      </div>
+      <div className="side-banner">
+            Wings of House of Geeks
+      </div>
+      <div className="container-fluid main">
+        <div className="row justify-content-around">
+          <div className="title">
+            Communities of House of Geeks
+          </div>
+          <div className="col-12" />
+          {list.map((item) => {
+            return(
+                <div key={`${item.id}`} className={`${item.linkName} community-card col-sm-4 col-xs-12`}>
+                  <Link to={`/${item.linkName}`} className="link">
+                    <div>
+                      <div className="large-name name">
+                        Community of {`${item.name}`}
+                      </div>
+                      <div className="small-name name">
+                        {`${item.name}`}
+                      </div>
+                      <div className="description">
+                        {`${item.description}`}
+                      </div>
+                      <div className="know-more">
+                        Know More..
+                        <img className="loader" src={loader} alt="loader" />
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -39,17 +39,21 @@
     pointer-events: none;
 }
 
-.notice-section .union {
-    height: 0;
-    pointer-events: none;
+.notice-section .notice-item .item-title {
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: #1EABD6;
+    font-weight: bold;
+    font-size: 3vh;
+    transition: color 0.5s;
 }
 
-.notice-section .union-img {
-    height: 200vh;
-    width: auto;
-    position: relative;
-    left: 37vw;
-    bottom: 55vh;
+.notice-section .notice-item .item-title:hover {
+    color: #EE2A7B;
+}
+
+.notice-section .notice-item .item-description {
+    font-size: 2.3vh;
 }
 
 @keyframes myOrbit {

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import planet from "./planet.svg";
-import union from "./union.svg";
 import mobilePlanet from "./mobile-planet.svg";
 import "./Notice.css";
 
@@ -41,17 +40,23 @@ function Notice() {
             {notices.map((notice, idx) => {
               return (
                 <li key={idx}>
-                  <h3>{notice.title}</h3>
-                  {notice.description && <p>{notice.description}</p>}
-                  {notice.eventLink && (
+                  <div className="notice-item">
                     <a
-                      rel="noopener noreferrer"
-                      href={`${notice.eventLink}`}
-                      target="_blank"
+                        rel="noopener noreferrer"
+                        href={`${notice.eventLink}`}
+                        target="_blank"
+                        className="item-title"
                     >
-                      Link
+                      <div>
+                        {notice.title}
+                      </div>
                     </a>
-                  )}
+                    <div className="item-description">
+                      {notice.description && <p>{notice.description}</p>}
+                    </div>
+                    <div className="item-link">
+                    </div>
+                  </div>
                 </li>
               );
             })}
@@ -67,9 +72,6 @@ function Notice() {
           className="mobile-planet-img"
           alt="mobile planet"
         />
-      </div>
-      <div className="union">
-        <img src={union} className="union-img" alt="union" />
       </div>
     </div>
   );

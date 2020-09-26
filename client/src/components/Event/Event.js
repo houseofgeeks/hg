@@ -1,11 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Event.css';
+import Notice from '../Home/AboutUs/Notice/Notice';
 
 function Event() {
   return (
     <div className="event-component">
-      <h1>This is the Event page.</h1>
+      <div className="title">
+        Events
+      </div>
+      <Notice />
     </div>
   );
 }
