@@ -16,20 +16,57 @@
       margin-top: 10vh;
 }
 
+.logo-container {
+      left: 0;
+      right: 0;
+      position: relative;
+      width: 100%;
+}
+
 .partners-logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 1;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
       width: 30vw;
       border-radius: 20px;
+}
+
+.logo-container:hover .partners-logo {
+      opacity: 0.3;
+}
+
+.logo-container:hover .logo-hover {
+      opacity: 1;
+}
+
+.logo-hover {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
 }
 
 .logo-name {
       margin-left: auto;
       margin-right: auto;
+      color: #fff;
+      font-weight: 200;
+      font-size: 1.9rem;
       text-align: center;
-      width: 30vw;
+      width: 25vw;
       border: 1px solid #EE2A7B;
       border-radius: 20px;
       border-width: 1.6px;
-      margin-top: 20px;
+      margin-bottom: 0;
 }
 
 .partners-col-1 {
@@ -37,9 +74,10 @@
       margin-bottom: 40px;
 }
 
-@media(max-width:500px) {
-      .partners-section {
-            border: none;
+@media(max-width:750px) {
+      .logo-name {
+            width: 25vw;
+            font-size: 1.3rem;
       }
 }
 
@@ -50,9 +88,25 @@
             margin-left: 0;
       }
 
-      .partners-logo, .logo-name {
-            width: 70vw;
+      .partners-logo {
+            width: 80vw;
             border-radius: 20px;
+      }
+
+      .logo-name {
+            width: 60vw;
+            font-size: 2rem;
+      }
+}
+
+@media(max-width:500px) {
+      .partners-section {
+            border: none;
+      }
+
+      .logo-name {
+            width: 70vw;
+            font-size: 1.6rem;
       }
 }
 
@@ -63,7 +117,7 @@
       }
 
       .logo-name {
-            margin-top: 30px;
+            width: 16vw;
       }
 }
 
@@ -83,6 +137,7 @@
       }
 
       .logo-name {
+            width: 20vw;
             font-size: 4vh;
       }
 
