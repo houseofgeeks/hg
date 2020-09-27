@@ -2,7 +2,7 @@
       background-image: url("hglogo.svg"), url("planet.svg"), url("stars.svg");
       background-attachment: fixed, fixed, fixed;
       background-size: 10vw, 23vw, cover;
-      background-position: left top, right top, center;
+      background-position: left 10px top 10px, right top, center;
       background-repeat: no-repeat, no-repeat, no-repeat;
       height: 95vh;
       pointer-events: none;
