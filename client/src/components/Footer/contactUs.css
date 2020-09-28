@@ -1,5 +1,9 @@
-.contactUs-section > h2 {
+.contactUs-section .contactUs-heading {
   color: #ee2a7b;
+  text-align: center;
+  font-size: 7vh;
+  font-weight: normal;
+  margin: 40px 30px;
 }
 .input-box {
   background-color: transparent;

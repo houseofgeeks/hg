@@ -5,7 +5,7 @@ import "./contactUs.css";
 function contactUs() {
   return (
     <div className="contactUs-section container">
-      <h2>Contact Us</h2>
+      <div className="contactUs-heading">Contact Us</div>
       <div className="row text-white">
         {/* <form
           id="contact-form"
