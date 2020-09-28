@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const eventSchema = new mongoose.Schema({
-    community:{
+    community: {
         required: true,
         type: String,
         trim: true
@@ -11,21 +11,27 @@ const eventSchema = new mongoose.Schema({
         type: String,
         trim: true
     },
+    createdAt: {
+        required: true,
+        type: Date,
+        default: Date.now
+    },
     description: {
         required: true,
         type: String,
         trim: true
     },
+    pdfPath: {
+        type: String,
+        trim: true,
+    },
+    eventLink: {
+        type: String,
+    },
     banner: {
-        required: true,
         type: String,
         trim: true
-    },
-    createdAt: {
-        required: true,
-        type: Date,
-        default: Date.now()
     }
 });
 
-module.exports = mongoose.model('Event', eventSchema);
+module.exports = new mongoose.model('Event', eventSchema);
