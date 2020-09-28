@@ -147,6 +147,15 @@
   .error-component .error, .error-component .error_message {
     margin-top: 10vh;
   }
+  
+  .error-component .error_message{
+    left:0;
+    right:0;
+  }
+  .error-component .page_not_found{
+    left:0;
+    right:0;
+  }
   .error-component .central-body {
     padding-top: 25%;
   }
@@ -157,5 +166,6 @@
   .error-component .object_planet {
     bottom: -5vh;
     overflow: hidden;
+    left:0;
   }
 }
