@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Event.css';
-import Notice from '../Home/AboutUs/Notice/Notice';
+import Events from '../Home/AboutUs/Event/Event';
 
 function Event() {
   return (
@@ -9,7 +9,7 @@ function Event() {
       <div className="title">
         Events
       </div>
-      <Notice />
+      <Events />
     </div>
   );
 }
