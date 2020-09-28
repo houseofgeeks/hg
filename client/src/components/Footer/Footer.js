@@ -6,14 +6,10 @@ import { ReactComponent as Insta } from "./img/instagram-brands.svg";
 import { ReactComponent as Facebook } from "./img/facebook-brands.svg";
 import { ReactComponent as Youtube } from "./img/youtube-brands.svg";
 import footerSurface from "./img/footer-surface.svg";
-import Contact from "./contactUs";
 
 function Footer() {
   return (
     <div className="footer-component star-background">
-      <div className="container-fluid">
-        <Contact />
-      </div>
       <div className="footer-surface">
         <img
           className="img-fluid footer-surface-img"

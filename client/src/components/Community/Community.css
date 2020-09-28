@@ -1,6 +1,6 @@
 .community-component {
   color: white;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   margin: 0;
 }
 
@@ -22,14 +22,14 @@
 }
 
 .community-component .side-banner {
-  color: #1EABD6;
+  color: #1eabd6;
   height: 0;
   width: 30vw;
   position: absolute;
   left: 82vw;
   font-size: 1.5vw;
   transform: rotate(-90deg);
-  top: 280vh;
+  margin-top: 400px;
 }
 
 .community-component .title {
@@ -37,12 +37,12 @@
   width: 0;
   height: 0;
   pointer-events: none;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
 .community-component .community-card {
-  border: 1px solid #EE2A7B;
+  border: 1px solid #ee2a7b;
   box-sizing: border-box;
   border-radius: 23px;
   height: 45vh;
@@ -55,13 +55,13 @@
 
 .community-component .link {
   text-decoration: none;
-  font-family: 'Raleway';
-  color: #1EABD6;
+  font-family: "Raleway";
+  color: #1eabd6;
 }
 
 .community-component .community-card .name {
   font-size: 3.8vh;
-  color: #EE2A7B;
+  color: #ee2a7b;
 }
 
 .community-component .community-card .small-name {
@@ -78,7 +78,7 @@
 }
 
 .community-component .community-card .description {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   color: white;
   height: 20vh;
   overflow: hidden;
@@ -86,8 +86,8 @@
 }
 
 .community-component .community-card .know-more {
-  font-family: 'Raleway';
-  color: #1EABD6;
+  font-family: "Raleway";
+  color: #1eabd6;
   font-size: 2vh;
   position: absolute;
   pointer-events: fill;
@@ -112,10 +112,10 @@
   }
 
   .community-component .union-img {
-      opacity: 0;
-      pointer-events: none;
-      height: 0;
-      width: 0;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    width: 0;
   }
 
   .community-component .side-banner {
@@ -126,8 +126,8 @@
   }
 
   .community-component .title {
-    font-family: 'Raleway';
-    color: #EE2A7B;
+    font-family: "Raleway";
+    color: #ee2a7b;
     font-size: 5vh;
     width: auto;
     height: auto;
@@ -156,7 +156,7 @@
     opacity: 1;
     font-weight: normal;
     font-size: 5vw;
-    color: #1EABD6;
+    color: #1eabd6;
     height: auto;
     width: auto;
     align-self: center;
@@ -180,53 +180,76 @@
   }
 
   .community-component .competitive-coding {
-    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
-    url(./competitive-coding.jpg);
+    background: linear-gradient(
+        108.96deg,
+        rgba(238, 42, 123, 0.45) 0%,
+        rgba(0, 0, 24, 0.675) 43.75%
+      ),
+      url(./competitive-coding.jpg);
     background-size: cover;
   }
-  
+
   .community-component .electronics-iot {
-    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
-    url(./electronics-iot.jpg);
+    background: linear-gradient(
+        108.96deg,
+        rgba(238, 42, 123, 0.45) 0%,
+        rgba(0, 0, 24, 0.675) 43.75%
+      ),
+      url(./electronics-iot.jpg);
     background-size: cover;
   }
-  
+
   .community-component .robotics {
-    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
-    url(./robotics.jpg);
+    background: linear-gradient(
+        108.96deg,
+        rgba(238, 42, 123, 0.45) 0%,
+        rgba(0, 0, 24, 0.675) 43.75%
+      ),
+      url(./robotics.jpg);
     background-size: cover;
   }
-  
+
   .community-component .webd-appd {
-    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
-    url(./webd-appd.jpg);
+    background: linear-gradient(
+        108.96deg,
+        rgba(238, 42, 123, 0.45) 0%,
+        rgba(0, 0, 24, 0.675) 43.75%
+      ),
+      url(./webd-appd.jpg);
     background-size: cover;
   }
-  
+
   .community-component .machine-learning {
-    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
-    url(./machine-learning.jpg);
+    background: linear-gradient(
+        108.96deg,
+        rgba(238, 42, 123, 0.45) 0%,
+        rgba(0, 0, 24, 0.675) 43.75%
+      ),
+      url(./machine-learning.jpg);
     background-size: cover;
   }
-  
+
   .community-component .design {
-    background: linear-gradient(108.96deg, rgba(238, 42, 123, 0.45) 0%, rgba(0, 0, 24, 0.675) 43.75%), 
-    url(./design.jpg);
+    background: linear-gradient(
+        108.96deg,
+        rgba(238, 42, 123, 0.45) 0%,
+        rgba(0, 0, 24, 0.675) 43.75%
+      ),
+      url(./design.jpg);
     background-size: cover;
   }
-  
+
   .community-component .community-card:hover {
     background-size: 150%;
   }
 }
 
 /* ---------------------Animations--------------------- */
-@keyframes Spin { 
+@keyframes Spin {
   0% {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
-  100% 
-  {
-    transform:rotate(360deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
