@@ -1,28 +1,28 @@
-.notice-section .notice-title {
+.event-section .event-title {
     color: #1EABD6;
     font-size: 4vh;
     margin-left: 45vw;
 }
 
-.notice-section .notice-content .title {
+.event-section .event-content .title {
     color: white;
     font-size: 3vh;
     margin-left: 45vw;
     margin-top: 3vh;
 }
 
-.notice-section .notice-content .notice-list {
+.event-section .event-content .event-list {
     color: white;
     font-size: 3vh;
     margin-left: 45vw;
     margin-bottom: 15vh;
 }
 
-.notice-section .planet {
+.event-section .planet {
     height: 0;
 }
 
-.notice-section .planet-img {
+.event-section .planet-img {
     width: 55vw;
     height: auto;
     position: relative;
@@ -33,13 +33,13 @@
     animation: myOrbit 4s linear infinite;
 }
 
-.notice-section .mobile-planet {
+.event-section .mobile-planet {
     height: 0;
     opacity: 0;
     pointer-events: none;
 }
 
-.notice-section .notice-item .item-title {
+.event-section .event-item .item-title {
     text-decoration: none;
     font-family: 'Raleway';
     color: #1EABD6;
@@ -48,11 +48,11 @@
     transition: color 0.5s;
 }
 
-.notice-section .notice-item .item-title:hover {
+.event-section .event-item .item-title:hover {
     color: #EE2A7B;
 }
 
-.notice-section .notice-item .item-description {
+.event-section .event-item .item-description {
     font-size: 2.3vh;
 }
 
@@ -63,36 +63,36 @@
 
 @media screen and (max-width: 426px) {
 
-    .notice-section .union-img {
+    .event-section .union-img {
         opacity: 0;
         pointer-events: none;
     }
 
-    .notice-section .planet {
+    .event-section .planet {
         opacity: 0;
         pointer-events: none;
     }
 
-    .notice-section .mobile-planet {
+    .event-section .mobile-planet {
         height: 0;
         opacity: 1;
         pointer-events: none;
     }
 
-    .notice-section .mobile-planet-img {
+    .event-section .mobile-planet-img {
         position: relative;
         bottom: 77vh;
         right: 13vw;
     }
     
-    .notice-section .notice-title {
+    .event-section .event-title {
         color: #1EABD6;
         font-size: 4vh;
         margin-left: 2vw;
         width: 80vw;
     }
 
-    .notice-section .notice-content .title {
+    .event-section .event-content .title {
         color: white;
         width: 50vw;
         font-size: 2.9vh;
@@ -100,7 +100,7 @@
         margin-top: 3vh;
     }
 
-    .notice-section .notice-content .notice-list {
+    .event-section .event-content .event-list {
         color: white;
         font-size: 2.5vh;
         margin-left: 25vw;

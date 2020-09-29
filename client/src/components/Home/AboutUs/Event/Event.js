@@ -3,18 +3,18 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import planet from "./planet.svg";
 import mobilePlanet from "./mobile-planet.svg";
-import "./Notice.css";
+import "./Event.css";
 
-function Notice() {
-  const [notices, setNotice] = useState([
-    { title: "fetching notices", description: " . . ." },
+function Event() {
+  const [events, setEvent] = useState([
+    { title: "fetching events", description: ". . ." },
   ]);
   useEffect(() => {
     axios
-      .get("/api/notice")
+      .get("/api/event")
       .then((res) => {
         const { result } = res.data;
-        setNotice([...result]);
+        setEvent([...result]);
       })
       .catch((err) => {
         const result = [];
@@ -22,37 +22,37 @@ function Notice() {
           title: "Something went wrong!",
           description: "Try reloading. . .",
         });
-        setNotice(result);
+        setEvent(result);
       });
   }, []);
 
   return (
-    <div className="notice-section">
-      <div className="notice-title">From the Geeks' Satellite..</div>
-      <div className="notice-content">
+    <div className="event-section">
+      <div className="event-title">From the Geeks' Satellite..</div>
+      <div className="event-content">
         <div className="title">
           Recieving signals...{" "}
           <span className="decrypting"> Decrypting...</span>
-          <span className="latest-news"> Latest News...</span>
+          <span className="latest-news"> Latest Events...</span>
         </div>
-        <div className="notice-list">
+        <div className="event-list">
           <ul>
-            {notices.map((notice, idx) => {
+            {events.map((event, idx) => {
               return (
                 <li key={idx}>
-                  <div className="notice-item">
+                  <div className="event-item">
                     <a
                         rel="noopener noreferrer"
-                        href={`${notice.eventLink}`}
+                        href={`${event.eventLink}`}
                         target="_blank"
                         className="item-title"
                     >
                       <div>
-                        {notice.title}
+                        {event.title}
                       </div>
                     </a>
                     <div className="item-description">
-                      {notice.description && <p>{notice.description}</p>}
+                      {event.description && <p>{event.description}</p>}
                     </div>
                     <div className="item-link">
                     </div>
@@ -77,4 +77,4 @@ function Notice() {
   );
 }
 
-export default Notice;
+export default Event;
