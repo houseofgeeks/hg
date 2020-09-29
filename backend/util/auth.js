@@ -8,14 +8,14 @@ module.exports = function authenticateJWT (req, res, next) {
 
     jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
       if (err) {
-        return res.sendStatus(403).json({
-          message: "Token tampred"
+        return res.status(403).json({
+          message: "Token expired or tampred, Login again"
         });
       }
       next();
     });
   } else {
-    res.sendStatus(401).json({
+    res.status(401).json({
       message: "Token not found",
     });
   }
