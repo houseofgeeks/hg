@@ -6,7 +6,6 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
-var noticeRouter = require('./routes/notice');
 var adminRouter = require('./routes/admin');
 var eventRouter = require('./routes/event');
 
@@ -25,7 +24,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/notice', noticeRouter);
 app.use('/admin', adminRouter);
 app.use('/event', eventRouter);
 
