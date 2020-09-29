@@ -9,7 +9,7 @@ router.post("/login", function (req, res, next) {
     .then((admin) => {
       admin.checkPassword(req.body.pass)
         .then((result) => {
-          const accessToken = jwt.sign({ username: "admin" }, process.env.JWT_SECRET);
+          const accessToken = jwt.sign({ username: "admin" }, process.env.JWT_SECRET, {expiresIn: "12h"});
           res.status(200)
             .json({
               message: "OK",
