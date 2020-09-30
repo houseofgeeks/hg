@@ -5,6 +5,7 @@ import { ReactComponent as Github } from "./img/github-brands.svg";
 import { ReactComponent as Insta } from "./img/instagram-brands.svg";
 import { ReactComponent as Facebook } from "./img/facebook-brands.svg";
 import { ReactComponent as Youtube } from "./img/youtube-brands.svg";
+import { ReactComponent as LinkedIn } from "./img/linkedin-brands.svg";
 import footerSurface from "./img/footer-surface.svg";
 
 function Footer() {
@@ -54,6 +55,14 @@ function Footer() {
               href="https://www.youtube.com/channel/UCvbh6phGLwpOnoM8g_GwlmQ"
             >
               <Youtube className="icons"></Youtube>
+            </a>
+            <a
+              className="text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/hgiiitranchi/"
+            >
+              <LinkedIn className="icons"></LinkedIn>
             </a>
             <p>Made with <span role="img" aria-label="heart">❤️</span> and open-sourced</p>
           </div>
