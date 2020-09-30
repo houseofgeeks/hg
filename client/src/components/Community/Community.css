@@ -7,14 +7,16 @@
 .community-component .union {
   height: 0;
   pointer-events: none;
+
 }
 
 .community-component .union-img {
-  height: 250vh;
+      margin-top: 20px;
+  height: 230vh;
   width: auto;
   position: relative;
   left: 48vw;
-  bottom: 62vh;
+  bottom: 49vh;
 }
 
 .community-component .main {
@@ -104,6 +106,16 @@
   animation: Spin 1s ease-in-out infinite;
   animation-fill-mode: both;
   animation-direction: normal;
+}
+
+@media (max-width:750px) {
+      .community-component .union-img {
+            height: 150vh;
+            width: auto;
+            position: relative;
+            left: 48vw;
+            top: 27vh;
+      }
 }
 
 @media screen and (max-width: 575px) {
