@@ -9,13 +9,14 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Error from "./components/Error/Error";
 import Navbar from "./components/Navbar/Navbar";
-import LoginForm from './components/Admin/Login/LoginForm';
 import CompetitiveCoding from './components/Community/Communities/CompetitiveCoding.community';
 import Design from './components/Community/Communities/Design.community';
 import Electronics from './components/Community/Communities/Electronics.community';
 import MachineLearning from './components/Community/Communities/MachineLearning.community';
 import Robotics from './components/Community/Communities/Robotics.community';
 import WebDAppD from './components/Community/Communities/WebDAppD.community';
+import Admin from './components/Admin/Admin';
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute"
 
 function App() {
   return (
@@ -23,18 +24,18 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/admin" exact component={LoginForm}/>
-          <Route path="/members" exact component={Members} />
-          <Route path="/sponsors" exact component={Sponsors} />
-          <Route path="/event" exact component={Event} />
-          <Route path="/community" exact component={Community} />
-          <Route path="/competitive-coding" exact component={ CompetitiveCoding } />
-          <Route path="/design" exact component={ Design } />
-          <Route path="/electronics-iot" exact component = { Electronics } />
-          <Route path="/machine-learning" exact component = { MachineLearning } />
-          <Route path="/robotics" exact component={ Robotics } />
-          <Route path="/webd-appd" exact component= { WebDAppD } />
-          <Route path="/" exact component={Home} />
+          <Route exact path="/members" component={Members} />
+          <Route exact path="/sponsors" component={Sponsors} />
+          <Route exact path="/event" component={Event} />
+          <Route exact path="/community" component={Community} />
+          <Route exact path="/competitive-coding" component={ CompetitiveCoding } />
+          <Route exact path="/design" component={ Design } />
+          <Route exact path="/electronics-iot" component = { Electronics } />
+          <Route exact path="/machine-learning" component = { MachineLearning } />
+          <Route exact path="/robotics" component={ Robotics } />
+          <Route exact path="/webd-appd" component= { WebDAppD } />
+          <Route exact path="/" component={Home} />
+          <ProtectedRoute exact path="/admin" component={Admin}/>
           <Route path="/" component={Error} />
         </Switch>
         <Footer />
