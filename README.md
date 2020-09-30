@@ -1,6 +1,6 @@
 # House of Geeks - Official Technical Communtiy of IIITR
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo consists of the source code for website of House of Geeks,
@@ -57,6 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/sandesh-08"><img src="https://avatars1.githubusercontent.com/u/67503294?v=4" width="100px;" alt=""/><br /><sub><b>sandesh-08</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=sandesh-08" title="Code">💻</a></td>
     <td align="center"><a href="http://deepti23-web.github.io"><img src="https://avatars1.githubusercontent.com/u/64003317?v=4" width="100px;" alt=""/><br /><sub><b>Deepti</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=deepti23-web" title="Code">💻</a> <a href="https://github.com/houseofgeeks/hg/pulls?q=is%3Apr+reviewed-by%3Adeepti23-web" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://www.thecodediver.com/"><img src="https://avatars3.githubusercontent.com/u/46363396?v=4" width="100px;" alt=""/><br /><sub><b>James Lundin</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=thecodediver" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Yashs911"><img src="https://avatars0.githubusercontent.com/u/64412143?v=4" width="100px;" alt=""/><br /><sub><b>Yash Saravgi</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=Yashs911" title="Code">💻</a></td>
   </tr>
 </table>
 
