@@ -55,7 +55,7 @@ function Footer() {
             >
               <Youtube className="icons"></Youtube>
             </a>
-            <p role="img" aria-label="heart">Made with ❤️ and open-sourced</p>
+            <p>Made with <span role="img" aria-label="heart">🤍</span> and open-sourced</p>
           </div>
           <div className="col-12 col-md-4 text-center text-white">
             <p>©HouseOfGeeks,IIIT Ranchi</p>
