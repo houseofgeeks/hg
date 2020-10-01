@@ -1,0 +1,34 @@
+.admin{
+    z-index: 1010;
+    color: white;
+    padding: 1em;
+}
+.admin-details{
+    border: solid #1e354d 3px;
+    max-width: 90vw;
+}
+
+.admin-details label, b{
+    font-size: 1.3rem;
+}
+
+.admin-tables{
+    min-height: 100vh;
+}
+
+.logout-button{
+    display: block;
+    background: rgb(122, 47, 4);
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    float: right;
+    transition-duration: .2s;
+}
+
+.logout-button:hover{
+    background: rgb(238, 85, 85);
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: .2s;
+}
