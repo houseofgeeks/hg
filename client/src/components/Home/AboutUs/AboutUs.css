@@ -56,8 +56,14 @@
       }
 }
 
+@media(min-width:1600px) {
+      .container.about-us-section {
+            max-width: 85vw;
+      }
+}
+
 @media(min-width:2500px) {
       .container.about-us-section {
-            max-width: 70vw;
+            max-width: 85vw;
       }
 }

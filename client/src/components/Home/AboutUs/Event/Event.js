@@ -67,12 +67,12 @@ function Event() {
         <img src={planet} className="planet-img" alt="planet" />
       </div>
       <div className="mobile-planet">
-        <img
-          src={mobilePlanet}
-          className="mobile-planet-img"
-          alt="mobile planet"
-        />
-      </div>
+      <img
+         src={mobilePlanet}
+         className="mobile-planet-img"
+         alt="mobile planet"
+      />
+     </div>
     </div>
   );
 }
