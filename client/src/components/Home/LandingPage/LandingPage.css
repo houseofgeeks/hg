@@ -4,7 +4,7 @@
       background-size: 10vw, 23vw, cover;
       background-position: left 10px top 10px, right top, center;
       background-repeat: no-repeat, no-repeat, no-repeat;
-      height: 95vh;
+      height: 100vh;
       pointer-events: none;
       overflow: hidden;
       margin-bottom: 50px;
