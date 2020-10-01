@@ -20,6 +20,11 @@ function Navbar() {
   const [active, setActive] = useState(currenttab);
   const [navOpen, toggleNav] = useState(0);
 
+  // Handling the case for back button press.
+  window.onpopstate=function()
+  {
+    window.location.reload();    
+  }
   return (
     <div>
       <div
