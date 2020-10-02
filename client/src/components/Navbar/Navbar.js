@@ -6,6 +6,14 @@ import blackWave from "./side-bar.svg";
 
 function Navbar() {
   
+  React.useEffect(() => {
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        toggleNav(false)
+      }
+    })
+  }, [])
+
   const currentloc = String(window.location); //Gets current URL
   let currenttab = currentloc.substring(currentloc.lastIndexOf("/") + 1); //Gets current element from navbar
 
