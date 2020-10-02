@@ -6,10 +6,19 @@
     font-family: 'Raleway';
     color: #EE2A7B;
     font-size: 8vh;
-    width: auto;
-    height: auto;
     opacity: 1;
     margin-bottom: 5vh;
     margin-top: 5vh;
-    margin-left: 40vw;
+    margin-right: 10px;
+    text-align: right;
+    padding-right: 60px;
 }
+
+
+@media screen and (min-width: 768px) {
+    /* For mobile phones: */
+    .event-component .title {
+        text-align: center;   
+        padding-right: 0px;
+    }
+  }
