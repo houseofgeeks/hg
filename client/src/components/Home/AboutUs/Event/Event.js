@@ -20,30 +20,10 @@ function Event() {
       .catch((err) => {
         setIsLoading(false);
         setEvent([
-          // {
-          //   eventLink: "/",
-          //   title: "Something went wrong!",
-          //   description: "Try reloading. . .",
-          // },
           {
-            eventLink: "/",
-            title: "Hacktoberfest",
-            description: "OctoCon - Webinars and Workshops on different Techs!",
-          },
-          {
-            eventLink: "/",
-            title: "ACM-ICPC",
-            description: "What, Why and How? ICPC Webinar!",
-          },
-          {
-            eventLink: "/",
-            title: "ACM-ICPC",
-            description: "Intro to Git/Github",
-          },
-          {
-            eventLink: "/",
-            title: "Sept Long Discussion",
-            description: "Discussion on qustion from sept long Challenge!",
+            eventLink: "/event",
+            title: "Something went wrong!",
+            description: "Try reloading. . .",
           },
         ]);
       });
