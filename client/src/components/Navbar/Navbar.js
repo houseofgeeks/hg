@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import blackWave from "./side-bar.svg";
 
 function Navbar() {
-  
+
   const currentloc = String(window.location); //Gets current URL
   let currenttab = currentloc.substring(currentloc.lastIndexOf("/") + 1); //Gets current element from navbar
 
@@ -18,28 +18,37 @@ function Navbar() {
     //When visiting home section
     currenttab = "home";
   }
-  
+
   const [active, setActive] = useState(currenttab);
   const [navOpen, toggleNav] = useState(0);
 
   // Handling the case for back button press.
-  window.onpopstate=function()
-  {
-      const currentloc = String(window.location); //Gets current URL
-      let currenttab = currentloc.substring(currentloc.lastIndexOf("/") + 1); //Gets current element from navbar
+  window.onpopstate = function () {
+    const currentloc = String(window.location); //Gets current URL
+    let currenttab = currentloc.substring(currentloc.lastIndexOf("/") + 1); //Gets current element from navbar
 
-      if (currenttab[currenttab.length - 1] === "?") {
-        //When search bar is used, preventing bug of nothing being active in navbar
-        currenttab = currenttab.substring(0, currenttab.length - 1); //Removing ? sign when search bar used
-      }
+    if (currenttab[currenttab.length - 1] === "?") {
+      //When search bar is used, preventing bug of nothing being active in navbar
+      currenttab = currenttab.substring(0, currenttab.length - 1); //Removing ? sign when search bar used
+    }
 
-      if (currenttab.length === 0) {
-        //When visiting home section
-        currenttab = "home";
-      }
-      setActive(currenttab);
+    if (currenttab.length === 0) {
+      //When visiting home section
+      currenttab = "home";
+    }
+    setActive(currenttab);
   }
-    
+
+  useEffect(() => {
+    const close = (e) => {
+      if (e.keyCode === 27) {
+        toggleNav(false);
+      }
+    };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, []);
+
   return (
     <div>
       <div
