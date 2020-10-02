@@ -1,144 +1,124 @@
 .event-section .event-title {
-    color: #1EABD6;
-    font-size: 4vh;
-    margin-left: 45vw;
+  color: #1eabd6;
+  font-size: 4vh;
+  margin-left: 45vw;
 }
 
 .event-section .event-content .title {
-    color: white;
-    font-size: 3vh;
-    margin-left: 45vw;
-    margin-top: 3vh;
+  color: white;
+  font-size: 3vh;
+  margin-left: 45vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.event-section .event-content .event-loading {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .event-section .event-content .event-list {
-    color: white;
-    font-size: 3vh;
-    margin-left: 45vw;
-    margin-bottom: 15vh;
+  color: white;
+  font-size: 3vh;
+  margin-left: 45vw;
+  margin-bottom: 15vh;
 }
-
-.event-section .planet {
-    height: 0;
-}
-
-.event-section .planet-img {
-    width: 55vw;
-    height: auto;
-    position: relative;
-    left: 0;
-    pointer-events: none;
-    bottom: 70vh;
-    z-index: 100;
-    animation: myOrbit 4s linear infinite;
-}
-
-.event-section .mobile-planet {
-    height: 0;
-    opacity: 0;
-    pointer-events: none;
+.planet-img {
+  width: 45vw;
+  max-width: 640px;
+  float: left;
+  margin-top: -25vh;
+  animation: myOrbit 4s linear infinite;
+  pointer-events: none;
 }
 
 .event-section .event-item .item-title {
-    text-decoration: none;
-    font-family: 'Raleway';
-    color: #1EABD6;
-    font-weight: bold;
-    font-size: 3vh;
-    transition: color 0.5s;
+  text-decoration: none;
+  font-family: "Raleway";
+  color: #1eabd6;
+  font-weight: bold;
+  font-size: 3vh;
+  transition: color 0.5s;
 }
 
 .event-section .event-item .item-title:hover {
-    color: #EE2A7B;
+  color: #ee2a7b;
 }
 
 .event-section .event-item .item-description {
-    font-size: 2.3vh;
+  font-size: 2.3vh;
 }
 
 @keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(3.5px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(3.5px) rotate(-360deg); }
+  from {
+    transform: rotate(0deg) translateX(3.5px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(3.5px) rotate(-360deg);
+  }
 }
 
-@media (max-width:750px){
-      .event-section .event-title {
-         margin-top: 10vh;
-          margin-left: 10vh;
-      }
+@media (max-width: 1024px) {
+  .planet-img {
+    margin-top: -10vh;
+  }
+}
+@media (max-width: 750px) {
+  .event-section .event-title {
+    margin: 10vh 16vw 0 16vw;
+  }
 
-      .event-section .event-content .title {
+  .event-section .event-content .title {
+    margin: 2vh 16vw 0 16vw;
+  }
 
-          margin-left: 16vw;
-          margin-top: 3vh;
-      }
+  .event-section .event-content .event-list {
+    margin-left: 28vw;
+    margin-bottom: 15vh;
+  }
 
-      .event-section .event-content .event-list {
-
-          margin-left: 28vw;
-          margin-bottom: 15vh;
-      }
-
-      .event-section .planet-img {
-          width: 55vw;
-          left:-40vh;
-          bottom: 75vh;
-
-      }
+  .planet-img {
+    margin-left: -15vw;
+    margin-top: 5vh;
+  }
 }
 
-@media(max-width:620px){
-      .event-section .planet-img {
-          width: 55vw;
-          left:-20vh;
-          bottom: 66vh;
-
-      }
+@media (max-width: 620px) {
+  .planet-img {
+    margin-left: -15vw;
+    margin-top: -55vh;
+  }
 }
 @media screen and (max-width: 426px) {
+  .event-section .union-img {
+    opacity: 0;
+    pointer-events: none;
+  }
 
-    .event-section .union-img {
-        opacity: 0;
-        pointer-events: none;
-    }
+  .planet-img {
+    margin-left: -20vw;
+    margin-top: -55vh;
+  }
 
-    .event-section .planet {
-        opacity: 0;
-        pointer-events: none;
-    }
+  .event-section .event-title {
+    color: #1eabd6;
+    font-size: 4vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+  }
 
-    .event-section .mobile-planet {
-            height: 0;
-            opacity: 1;
-            pointer-events: none;
-    }
+  .event-section .event-content .title {
+    color: white;
+    width: 80vw;
+    font-size: 2.9vh;
+    margin: 3vh 10vw;
+  }
 
-    .event-section .mobile-planet-img {
-            position: relative;
-            bottom: 70vh;
-            right: 13vw;
-    }
-
-    .event-section .event-title {
-        color: #1EABD6;
-        font-size: 4vh;
-        margin-left: 2vw;
-        width: 80vw;
-    }
-
-    .event-section .event-content .title {
-        color: white;
-        width: 50vw;
-        font-size: 2.9vh;
-        margin-left: 25vw;
-        margin-top: 3vh;
-    }
-
-    .event-section .event-content .event-list {
-        color: white;
-        font-size: 2.5vh;
-        margin-left: 25vw;
-        margin-bottom: 15vh;
-    }
-
+  .event-section .event-content .event-list {
+    color: white;
+    font-size: 2.5vh;
+    margin-left: 10vw;
+    width: 80vw;
+  }
 }
