@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import blackWave from "./side-bar.svg";
 
 function Navbar() {
+  const [count, setCount] = useState(0);
+  
   const currentloc = String(window.location); //Gets current URL
   let currenttab = currentloc.substring(currentloc.lastIndexOf("/") + 1); //Gets current element from navbar
 
@@ -17,14 +19,17 @@ function Navbar() {
     //When visiting home section
     currenttab = "home";
   }
+  
   const [active, setActive] = useState(currenttab);
   const [navOpen, toggleNav] = useState(0);
 
   // Handling the case for back button press.
   window.onpopstate=function()
   {
-    window.location.reload();    
+    setCount(count + 1);
+    console.log(count);
   }
+    
   return (
     <div>
       <div
