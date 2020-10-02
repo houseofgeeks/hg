@@ -7,18 +7,6 @@
     color: #EE2A7B;
     font-size: 8vh;
     opacity: 1;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
-    margin-right: 10px;
-    text-align: right;
-    padding-right: 60px;
+    margin: 5vh 0;
+    text-align: center;   
 }
-
-
-@media screen and (min-width: 768px) {
-    /* For mobile phones: */
-    .event-component .title {
-        text-align: center;   
-        padding-right: 0px;
-    }
-  }
