@@ -30,7 +30,6 @@ function Event({ page }) {
       });
   }, []);
 
-  const { height, width } = useWindowDimensions();
   return (
     <div>
       <div className="planet">
