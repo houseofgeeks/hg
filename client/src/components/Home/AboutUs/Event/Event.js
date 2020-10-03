@@ -3,7 +3,6 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import planet from "./planet.svg";
 import "./Event.css";
-import useWindowDimensions from "../../../../utils/useWindowDimensions";
 
 function Event({ page }) {
   const [events, setEvent] = useState([
