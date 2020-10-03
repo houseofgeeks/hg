@@ -1,35 +1,136 @@
-.event-section .event-title {
-  color: #1eabd6;
-  font-size: 4vh;
-  margin-left: 45vw;
+.planet {
+  float: left;
+  width: 45%;
+  margin-top: -150px;
 }
 
-.event-section .event-content .title {
-  color: white;
-  font-size: 3vh;
-  margin-left: 45vw;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-}
-.event-section .event-content .event-loading {
-  display: flex;
+.planet .planet-img {
+  animation: myOrbit 4s linear infinite;
+  pointer-events: none;
+  max-width: 768px;
   width: 100%;
-  flex-direction: column;
+}
+
+.planet .planet-img-home {
+  margin-top: 50px;
+  max-width: 640px;
+  width: 40vw;
 }
 
 .event-section .event-content .event-list {
   color: white;
   font-size: 3vh;
-  margin-left: 45vw;
-  margin-bottom: 15vh;
+  margin-left: 15px;
 }
-.planet-img {
-  width: 45vw;
-  max-width: 640px;
-  float: left;
-  margin-top: -25vh;
-  animation: myOrbit 4s linear infinite;
-  pointer-events: none;
+.event-section {
+  width: 55%;
+  display: inline-block;
+  min-height: 384px;
+}
+
+@media (max-width: 1024px) {
+  .planet .planet-img {
+    max-width: 640px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .planet .planet-img {
+    max-width: 640px;
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .planet .planet-img {
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 620px) {
+  .planet {
+    margin-left: -100px;
+  }
+
+  .planet .planet-img {
+    margin-top: 250px;
+  }
+
+  .event-section {
+    width: calc(55vw + 80px);
+  }
+
+  .event-section-home {
+    margin-left: 80px;
+  }
+
+  .planet .planet-img-home {
+    margin-top: 300px;
+    margin-bottom: -300px;
+  }
+}
+
+@media (max-width: 580px) {
+  .event-section-home {
+    margin-left: 80px;
+    width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  .planet {
+    margin-left: -50px;
+  }
+
+  .planet .planet-img {
+    margin-top: -50px;
+  }
+  .event-section .event-title {
+    color: #1eabd6;
+    font-size: 4vh;
+  }
+
+  .event-section .event-content .title {
+    color: white;
+    font-size: 2.9vh;
+  }
+
+  .event-section .event-content .event-list {
+    color: white;
+    font-size: 2.5vh;
+    margin-left: 5px;
+  }
+
+  .event-section {
+    margin: 0 10vw;
+    width: 80vw;
+  }
+
+  .event-section-home {
+    margin: 0 0vw;
+    width: 80vw;
+  }
+  .planet .planet-img-home {
+    margin-top: 300px;
+    margin-bottom: -300px;
+    margin-left: -80px;
+  }
+}
+.event-section .event-title {
+  color: #1eabd6;
+  font-size: 4vh;
+}
+
+.event-section .event-content .title {
+  color: white;
+  font-size: 3vh;
+  margin: 15px 0;
+}
+
+.event-section .event-content .event-loading {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .event-section .event-item .item-title {
@@ -55,70 +156,5 @@
   }
   to {
     transform: rotate(360deg) translateX(3.5px) rotate(-360deg);
-  }
-}
-
-@media (max-width: 1024px) {
-  .planet-img {
-    margin-top: -10vh;
-  }
-}
-@media (max-width: 750px) {
-  .event-section .event-title {
-    margin: 10vh 16vw 0 16vw;
-  }
-
-  .event-section .event-content .title {
-    margin: 2vh 16vw 0 16vw;
-  }
-
-  .event-section .event-content .event-list {
-    margin-left: 28vw;
-    margin-bottom: 15vh;
-  }
-
-  .planet-img {
-    margin-left: -15vw;
-    margin-top: 5vh;
-  }
-}
-
-@media (max-width: 620px) {
-  .planet-img {
-    margin-left: -15vw;
-    margin-top: -55vh;
-  }
-}
-@media screen and (max-width: 426px) {
-  .event-section .union-img {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .planet-img {
-    margin-left: -20vw;
-    margin-top: -55vh;
-  }
-
-  .event-section .event-title {
-    color: #1eabd6;
-    font-size: 4vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    width: 80vw;
-  }
-
-  .event-section .event-content .title {
-    color: white;
-    width: 80vw;
-    font-size: 2.9vh;
-    margin: 3vh 10vw;
-  }
-
-  .event-section .event-content .event-list {
-    color: white;
-    font-size: 2.5vh;
-    margin-left: 10vw;
-    width: 80vw;
   }
 }
