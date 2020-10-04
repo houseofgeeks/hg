@@ -1,0 +1,135 @@
+.sponsors-section .logo-hover {
+      cursor: default;
+      pointer-events: none;
+}
+
+.sponsors-section .sponsors-logo-hover {
+      cursor: default;
+      display: block;
+}
+
+.logo-container:hover .sponsors-logo-hover {
+      opacity: 1;
+}
+
+.sponsors-logo-hover {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+}
+
+.sponsors-section .partners-section {
+      text-align: center;
+      width: 100vw;
+      border: none;
+      margin-bottom: 100px;
+}
+
+.sponsors-section .partners-title {
+      color: #EE2A7B;
+      font-size: 9vh;
+}
+
+.sponsors-section .partners-logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 1;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      width: 25vw;
+      border-radius: 20px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+}
+
+@media(max-width:855px) {
+      .sponsors-section .logo-name {
+            width: 30vw;
+            font-size: 1.3rem;
+            font-weight: 200;
+      }
+
+      .sponsors-section .partners-logo {
+            width: 40vw;
+            border-radius: 20px;
+      }
+}
+
+@media(max-width:650px) {
+      .sponsors-section .partners-title {
+            font-size: 6vh;
+            text-align: center;
+            margin-left: 0;
+      }
+
+      .sponsors-section .partners-logo {
+            width: 80vw;
+            border-radius: 20px;
+      }
+
+      .sponsors-section .logo-name {
+            width: 60vw;
+            font-size: 2rem;
+      }
+}
+
+@media(max-width:500px) {
+      .sponsors-section .partners-section {
+            border: none;
+      }
+
+      .sponsors-section .logo-name {
+            width: 70vw;
+            font-size: 1.6rem;
+      }
+}
+
+@media(min-width:1600px) {
+      .sponsors-section .container.partners-section {
+            max-width: 85vw;
+      }
+
+      .sponsors-section .partners-logo .logo-name {
+            width: 25vw;
+            border-radius: 35px;
+      }
+
+      .sponsors-section .logo-name {
+            width: 22vw;
+            font-size: 4vh;
+            border: 2.5px solid #EE2A7B;
+      }
+}
+
+@media(min-width:2500px) {
+      .sponsors-section .container.partners-section {
+            max-width: 85vw;
+      }
+
+      .sponsors-section .partners-title {
+            font-size: 8vh;
+            margin-top: 15vh;
+      }
+
+      .sponsors-section .partners-logo .logo-name {
+            width: 25vw;
+            border-radius: 35px;
+      }
+
+      .sponsors-section .logo-name {
+            font-size: 4vh;
+            border: 3.5px solid #EE2A7B;
+      }
+
+      .sponsors-section .partners-col-1 {
+            text-align: center;
+            margin-bottom: 80px;
+      }
+}
