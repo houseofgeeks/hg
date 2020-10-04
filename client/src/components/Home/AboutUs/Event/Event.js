@@ -25,6 +25,16 @@ function Event({ page }) {
             title: "Something went wrong!",
             description: "Try again....",
           },
+          {
+            eventLink: "/event",
+            title: "Something went wrong!",
+            description: "Try again....",
+          },
+          {
+            eventLink: "/event",
+            title: "Something went wrong!",
+            description: "Try again....",
+          },
         ]);
       });
   }, []);
