@@ -1,188 +1,189 @@
 .landing-page-section {
-      background-image: url("hglogo.svg"), url("planet.svg"), url("stars.svg");
-      background-attachment: fixed, fixed, fixed;
-      background-size: 10vw, 23vw, cover;
-      background-position: left 10px top 10px, right top, center;
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      height: 100vh;
-      pointer-events: none;
-      overflow: hidden;
-      margin-bottom: 50px;
+  background-image: url("hglogo.svg"), url("planet.svg"), url("stars.svg");
+  background-attachment: fixed, fixed, fixed;
+  background-size: 10vw, 23vw, cover;
+  background-position: left 10px top 10px, right top, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .landing-page-section .writeup {
-      height: auto;
-      width: 75%;
-      text-align: center;
-      pointer-events: none;
-      /* margin-bottom: 10vh; */
+  height: auto;
+  width: 75%;
+  text-align: center;
+  pointer-events: none;
+  /* margin-bottom: 10vh; */
 }
 
 .landing-page-section .writeup-img {
-      height: auto;
-      width: 75vw;
-      margin-bottom: 0px;
-      padding-bottom: 0px;
-      position: absolute;
-      bottom: 20vh;
-      left: 13vw;
-      animation-name: writeup-animation;
-      animation-duration: 4s;
-      animation-fill-mode: forwards;
+  height: auto;
+  width: 75vw;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: absolute;
+  bottom: 20vh;
+  left: 13vw;
+  animation-name: writeup-animation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .landing-page-section .asteroids {
-      height: 0;
-      width: 96vw;
-      align-items: center;
-      pointer-events: none;
-      align-content: center;
-      text-align: center;
+  height: 0;
+  width: 96vw;
+  align-items: center;
+  pointer-events: none;
+  align-content: center;
+  text-align: center;
 }
 
 .landing-page-section .surface-img {
-      height: auto;
-      width: 99.6vw;
-      pointer-events: none;
-      margin: 0px;
-      padding: 0px;
-      z-index: 0;
+  height: auto;
+  width: 99.6vw;
+  pointer-events: none;
+  margin: 0px;
+  padding: 0px;
+  z-index: 0;
 }
 
 .landing-page-section .surface {
-      position: absolute;
-      bottom: -40vh;
-      pointer-events: none;
-      animation-name: surface-animation;
-      animation-delay: 1.5s;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-out;
+  position: absolute;
+  bottom: -40vh;
+  pointer-events: none;
+  animation-name: surface-animation;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 .landing-page-section .astronaut {
-      height: 0px;
-      pointer-events: none;
+  height: 0px;
+  pointer-events: none;
 }
 
 .landing-page-section .astronaut-img {
-      height: 25vh;
-      width: auto;
-      position: absolute;
-      pointer-events: none;
-      left: 40vw;
-      bottom: 110vh;
-      z-index: 200;
-      animation-name: astronaut-animation;
-      animation-delay: 3s;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-out;
+  height: 25vh;
+  width: auto;
+  position: absolute;
+  pointer-events: none;
+  left: 40vw;
+  bottom: 110vh;
+  z-index: 200;
+  animation-name: astronaut-animation;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 .landing-page-section .astronaut-shadow-img {
-      height: auto;
-      width: auto;
-      position: absolute;
-      pointer-events: none;
-      left: 40vw;
-      bottom: 6vh;
-      opacity: 0;
-      z-index: 100;
-      animation-name: astronaut-shadow-animation;
-      animation-delay: 4s;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-out;
+  height: auto;
+  width: auto;
+  position: absolute;
+  pointer-events: none;
+  left: 40vw;
+  bottom: 6vh;
+  opacity: 0;
+  z-index: 100;
+  animation-name: astronaut-shadow-animation;
+  animation-delay: 4s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
-
 
 /* -------------------------------ANIMATIONS------------------------------- */
 
 @keyframes writeup-animation {
-      0% {
-            bottom: 40vh;
-            opacity: 0;
-      }
-      50% {
-            bottom: 40vh;
-            opacity: 1;
-      }
-      100% {
-            bottom: 20vh;
-      }
+  0% {
+    bottom: 40vh;
+    opacity: 0;
+  }
+  50% {
+    bottom: 40vh;
+    opacity: 1;
+  }
+  100% {
+    bottom: 20vh;
+  }
 }
 
 @keyframes surface-animation {
-      0% {
-            bottom: -40vh;
-            opacity: 1;
-      }
-      100% {
-            bottom: 0vh;
-            opacity: 1;
-      }
+  0% {
+    bottom: -40vh;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0vh;
+    opacity: 1;
+  }
 }
 
 @keyframes astronaut-animation {
-      0% {
-            bottom: 110vh;
-      }
+  0% {
+    bottom: 110vh;
+  }
 
-      100% {
-            bottom: 7vh;
-      }
+  100% {
+    bottom: 7vh;
+  }
 }
 
 @keyframes astronaut-shadow-animation {
-      0% {
-            opacity: 0;
-      }
-      100% {
-            opacity: 1;
-      }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 426px) {
+  .landing-page-section .surface-img {
+    height: auto;
+    width: 99.6vw;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0;
+  }
+  .landing-page-section .writeup {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    /* margin-bottom: 10vh; */
+  }
 
-      .landing-page-section .surface-img {
-            height: auto;
-            width: 99.6vw;
-            margin: 0px;
-            padding: 0px;
-            bottom: 0;
-      }
-      .landing-page-section .writeup {
-            height: auto;
-            width: 100%;
-            text-align: center;
-            pointer-events: none;
-            /* margin-bottom: 10vh; */
-      }
-      
-      .landing-page-section .writeup-img {
-            height: auto;
-            width: 96vw;
-            margin-bottom: 0px;
-            padding-bottom: 0px;
-            position: absolute;
-            bottom: 10vh;
-            left: 2vw;
-            animation-name: writeup-animation;
-            animation-duration: 4s;
-            animation-fill-mode: forwards;
-      }
+  .landing-page-section .writeup-img {
+    height: auto;
+    width: 96vw;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    position: absolute;
+    bottom: 10vh;
+    left: 2vw;
+    animation-name: writeup-animation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
 
-      .landing-page-section {
-            background-image: url("hglogo.svg"), url("planet.svg"), url("stars.svg");
-            background-attachment: fixed, fixed;
-            background-size: 25vw, 50vw, cover;
-            pointer-events: none;
-            background-position: left top, right top, center;
-            background-repeat: no-repeat, no-repeat, no-repeat;
-            height: 93vh;
-      }
-      .landing-page-section .astronaut-shadow-img {
-            width: 27px;
-            pointer-events: none;
-      }
+  .landing-page-section {
+    background-image: url("hglogo.svg"), url("planet.svg"), url("stars.svg");
+    background-attachment: scroll, scroll, scroll;
+    background-size: 25vw, 50vw, cover;
+    pointer-events: none;
+    background-position: left top, right top, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    height: 93vh;
+  }
+  .landing-page-section .astronaut-shadow-img {
+    width: 27px;
+    pointer-events: none;
+  }
+  .landing-page-section .asteroids {
+    width: 200vw;
+  }
 }
