@@ -1,5 +1,5 @@
 .event-component {
-    margin-bottom: 30vh;
+margin: 0;
 }
 
 .event-component .event_title {
@@ -8,5 +8,5 @@
     font-size: 8vh;
     opacity: 1;
     margin: 5vh 0;
-    text-align: center;   
+    text-align: center;
 }

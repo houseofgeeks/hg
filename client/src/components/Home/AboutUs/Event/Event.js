@@ -3,7 +3,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import planet from "./planet.svg";
 import "./Event.css";
-
+import union from "./union.svg";
 function Event({ page }) {
   const [events, setEvent] = useState([
     { title: "fetching events", description: ". . ." },
@@ -48,6 +48,10 @@ function Event({ page }) {
           alt="planet"
         />
       </div>
+      <div className="union">
+        <img src={union} className="union-img" alt="union" />
+      </div>
+
       <div
         className={`event-section ${
           page === "Home" ? "event-section-home" : ""
