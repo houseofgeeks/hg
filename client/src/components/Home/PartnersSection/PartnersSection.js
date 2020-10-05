@@ -10,20 +10,28 @@ const PartnersSection = () => {
                   <div className="partners-title">
                         Partners and Sponsors
                   </div>
-                  <div className="partners-img row">
+                  <div className="partners-img row ">
                         {
                               partners.map((partner, idx) => {
-                                    return (<div key={`${idx}`} className="partners-col-1 col-lg-6 col-md-12">
-                                          <div className="logo-container">
-                                                <Link target="_blank" to="/sponsors">
-                                                      <img className="partners-logo" src={`${partner.img}`} alt="partners"/>
-                                                      <div className="logo-hover">
+                                    return (<div key={`${idx}`} className="partners-col-1 col-lg-4 col-md-12">
+                                          <div className="logo-container ">
+
+                                                <img className="partners-logo" src={`${partner.img}`} alt="partners"/>
+                                                <div className="logo-hover">
+                                                      <Link className="partners-link" target="_blank" to={`${partner.link}`}>
                                                             <h2 className="logo-name">
                                                                   {partner.name}
-                                                            </h2>
 
-                                                      </div>
-                                                </Link>
+                                                            </h2>
+                                                      </Link>
+                                                </div>
+                                                <div className="sponsors-logo-hover">
+                                                      <h2 className="logo-name">
+                                                            {partner.name}
+
+                                                      </h2>
+
+                                                </div>
 
                                           </div>
 
