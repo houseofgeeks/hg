@@ -16,7 +16,12 @@
       margin-top: 10vh;
 }
 
+.partners-img{
+      justify-content: center;
+}
+
 .logo-container {
+
       left: 0;
       right: 0;
       position: relative;
@@ -28,12 +33,13 @@
       margin-left: auto;
       margin-right: auto;
       opacity: 1;
-      width: 100%;
       height: auto;
       transition: .5s ease;
       backface-visibility: hidden;
-      width: 30vw;
+      width: 25vw;
       border-radius: 20px;
+      /* margin-top: 40px;
+      margin-bottom: 40px; */
 }
 
 .logo-container:hover .partners-logo {
@@ -54,33 +60,42 @@
       -ms-transform: translate(-50%, -50%);
       text-align: center;
 }
-
+.sponsors-logo-hover{
+display: none;
+}
 .logo-name {
       margin-left: auto;
       margin-right: auto;
       color: #fff;
-      font-weight: 200;
-      font-size: 1.9rem;
+      font-weight: 400;
+      font-size: 1.6rem;
       text-align: center;
-      width: 25vw;
+      width: 20vw;
       border: 1px solid #EE2A7B;
       border-radius: 20px;
       border-width: 1.6px;
       margin-bottom: 0;
 }
+.partners-link:hover{
 
+text-decoration: none;
+}
 .partners-col-1 {
       text-align: center;
       margin-bottom: 40px;
 }
 
-@media(max-width:750px) {
+@media(max-width:855px) {
       .logo-name {
-            width: 25vw;
+            width: 30vw;
             font-size: 1.3rem;
+            font-weight: 200;
+      }
+      .partners-logo {
+            width: 40vw;
+            border-radius: 20px;
       }
 }
-
 @media(max-width:650px) {
       .partners-title {
             font-size: 6vh;
@@ -114,15 +129,17 @@
       .container.partners-section {
             max-width: 85vw;
       }
+
       .partners-logo, .logo-name {
             width: 25vw;
             border-radius: 35px;
       }
+
       .logo-name {
             width: 20vw;
             font-size: 4vh;
+            border: 2.5px solid #EE2A7B;
       }
-
 }
 
 @media(min-width:2500px) {
@@ -141,8 +158,10 @@
       }
 
       .logo-name {
-            width: 20vw;
+            width: 22vw;
             font-size: 4vh;
+            border: 3.5px solid #EE2A7B;
+
       }
 
       .partners-col-1 {
