@@ -27,7 +27,7 @@ const list = [
         id: 4,
         linkName: "machine-learning",
         name: "Machine Learning",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis"
+        description: "We at the ML community ,believe in helping one another,So one can fit in the Data Science and Machine Learning environment as smooth as a Linear Regression Model fits. As Mr Andrew Ng Said 'A Machine Learning Model is Data Hungry,The more it gets the better it becomes', We aspire to train ourselves to be the best. So come and dwell into the world of Artificial Intelligence by joining the community. "
     },
     {
         id: 5,
