@@ -180,10 +180,21 @@
     height: 93vh;
   }
   .landing-page-section .astronaut-shadow-img {
-    width: 27px;
+    width: 100px;
+    bottom: 4vh;
     pointer-events: none;
   }
   .landing-page-section .asteroids {
     width: 200vw;
+  }
+  /* -------------------------------ANIMATIONS------------------------------- */
+  @keyframes astronaut-animation {
+    0% {
+      bottom: 110vh;
+    }
+
+    100% {
+      bottom: 4vh;
+    }
   }
 }
