@@ -125,7 +125,7 @@ text-decoration: none;
       }
 }
 
-@media(min-width:1600px) {
+@media(min-width:1400px) {
       .container.partners-section {
             max-width: 85vw;
       }
