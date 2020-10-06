@@ -25,16 +25,7 @@ function Event({ page }) {
             title: "Something went wrong!",
             description: "Try again....",
           },
-          {
-            eventLink: "/event",
-            title: "Something went wrong!",
-            description: "Try again....",
-          },
-          {
-            eventLink: "/event",
-            title: "Something went wrong!",
-            description: "Try again....",
-          },
+          
         ]);
       });
   }, []);
@@ -48,9 +39,10 @@ function Event({ page }) {
           alt="planet"
         />
       </div>
+      {page === "Home" && (
       <div className="union">
         <img src={union} className="union-img" alt="union" />
-      </div>
+      </div>)}
 
       <div
         className={`event-section ${
