@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-import planet from "./planet.svg";
+import planet from "./planet_2.svg";
 import "./Event.css";
 import union from "./union.svg";
 function Event({ page }) {
@@ -31,13 +31,11 @@ function Event({ page }) {
 
   return (
     <div>
-      <div className="planet">
-        <img
-          src={planet}
-          className={`planet-img ${page === "Home" ? "planet-img-home" : ""}`}
-          alt="planet"
-        />
-      </div>
+      <img
+        src={planet}
+        className={`planet-img ${page === "Home" ? "planet-img-home" : ""}`}
+        alt="planet"
+      />
       {page === "Home" && (
         <div className="union">
           <img src={union} className="union-img" alt="union" />

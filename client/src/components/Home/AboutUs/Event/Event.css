@@ -1,15 +1,9 @@
-.planet {
-  float: left;
-  width: 40%;
-  margin-top: -150px;
-}
-
 .union .union-img {
   position: absolute;
   height: 210vh;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 16px;
+  z-index: -10;
   pointer-events: none;
 }
 
@@ -43,11 +37,6 @@
   }
 }
 
-/* @media (max-width: 768px) {
-  .community-component .union-img {
-  }
-} */
-
 @media screen and (max-width: 575px) {
   .union .union-img {
     opacity: 0;
@@ -57,82 +46,41 @@
     display: none;
   }
 }
-.planet .planet-img {
+
+.planet-img {
   animation: myOrbit 4s linear infinite;
   pointer-events: none;
-  max-width: 768px;
-  width: 100%;
+  width: 30vw;
+  margin-top: 150px;
+  margin-left: 15vw;
+  margin-right: 64px;
+  float: left;
 }
 
-.planet .planet-img-home {
-  margin-top: 50px;
-  max-width: 640px;
-  width: 40vw;
+.planet-img-home {
+  width: 30vw;
+  margin-top: 150px;
+  margin-left: 15vw;
+  margin-right: 64px;
+  float: left;
 }
 
 .event-section {
-  width: 40%;
   display: inline-block;
   min-height: 384px;
+  width: calc(100% - 45vw - 64px);
+}
+
+.event-section-home {
+  margin-bottom: 64px;
+  width: calc(100% - 45vw - 64px);
 }
 .event-section .event-content .event-list {
   color: white;
   font-size: 3vh;
   margin-left: 15px;
 }
-.event-section-home {
-  margin-left: 20%;
-  width: 40%;
-}
 
-@media (max-width: 1024px) {
-  .planet .planet-img {
-    max-width: 640px;
-    margin-top: 100px;
-  }
-}
-
-@media (max-width: 900px) {
-  .planet .planet-img {
-    max-width: 640px;
-    margin-top: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-  .planet .planet-img {
-    margin-left: -50px;
-  }
-}
-
-@media (max-width: 620px) {
-  .planet {
-    margin-left: -100px;
-  }
-
-  .planet .planet-img {
-    margin-top: 250px;
-  }
-
-  .planet .planet-img-home {
-    margin-top: 300px;
-    margin-bottom: -300px;
-  }
-  .event-section {
-    width: calc(55vw + 80px);
-  }
-
-  .event-section-home {
-    margin-left: 80px;
-  }
-}
-
-@media (max-width: 580px) {
-  .event-section-home {
-    margin-left: 80px;
-    width: 80%;
-  }
-}
 @media (max-width: 425px) {
   .event-section .event-title {
     color: #1eabd6;
@@ -159,55 +107,39 @@
     margin: 0 0;
     width: 80vw;
   }
-  .planet {
-    margin-left: -40px;
+  .event-list {
+    margin-left: 64px !important;
   }
 
-  .planet .planet-img {
-    margin-top: -35px;
-  }
-
-  .planet .planet-img-home {
-    width: 192px;
-    margin-left: -96px;
-    margin-top: 50vh;
-    margin-bottom: -50vh;
+  .planet-img {
+    width: 64vw;
+    position: absolute;
+    margin-top: 32vh;
+    left: calc(-32vw - 64px);
   }
 }
 
 @media (max-width: 414px) {
-  .planet {
-    margin-left: 0px;
-  }
-  .planet .planet-img-home {
-    margin-left: -128px;
-  }
-
   .event-section {
     margin-bottom: 64px;
   }
 
   .event-section-home {
-    margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 320px) {
-  .planet .planet-img {
-    margin-top: 0px;
-  }
-  .planet .planet-img-home {
-    margin-left: -128px;
-    margin-top: 50vh;
+    margin-bottom: 32px;
+    min-height: 416px !important;
   }
 }
 
 @media (max-width: 240px) {
-  .planet .planet-img-home {
-    margin-left: -96px;
-    margin-top: 140vh;
-    margin-bottom: -140vh;
-    width: 96px;
+  .planet-img-home {
+    width: 64vw;
+    position: absolute;
+    margin-top: 32vh;
+    left: calc(-32vw - 48px);
+  }
+
+  .event-section-home .event-list {
+    margin-left: 32px !important;
   }
 
   .planet {
@@ -220,6 +152,7 @@
 
   .event-section {
     min-height: 256px;
+    margin-bottom: 16px;
   }
 }
 
