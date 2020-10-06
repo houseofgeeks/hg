@@ -25,7 +25,6 @@ function Event({ page }) {
             title: "Something went wrong!",
             description: "Try again....",
           },
-          
         ]);
       });
   }, []);
@@ -40,9 +39,10 @@ function Event({ page }) {
         />
       </div>
       {page === "Home" && (
-      <div className="union">
-        <img src={union} className="union-img" alt="union" />
-      </div>)}
+        <div className="union">
+          <img src={union} className="union-img" alt="union" />
+        </div>
+      )}
 
       <div
         className={`event-section ${

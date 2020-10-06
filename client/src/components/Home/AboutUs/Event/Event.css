@@ -21,7 +21,25 @@
 
 @media (max-width: 1024px) and (max-height: 768px) {
   .union .union-img {
+    height: 225vh !important;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .union .union-img {
     height: 230vh;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1024px) {
+  .union .union-img {
+    height: 230vh !important;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 1280px) {
+  .union .union-img {
+    height: 240vh;
   }
 }
 
@@ -36,6 +54,7 @@
     pointer-events: none;
     height: 0;
     width: 0;
+    display: none;
   }
 }
 .planet .planet-img {
@@ -137,7 +156,7 @@
   }
 
   .event-section-home {
-    margin: 0 0vw;
+    margin: 0 0;
     width: 80vw;
   }
   .planet {
@@ -155,6 +174,55 @@
     margin-bottom: -50vh;
   }
 }
+
+@media (max-width: 414px) {
+  .planet {
+    margin-left: 0px;
+  }
+  .planet .planet-img-home {
+    margin-left: -128px;
+  }
+
+  .event-section {
+    margin-bottom: 64px;
+  }
+
+  .event-section-home {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .planet .planet-img {
+    margin-top: 0px;
+  }
+  .planet .planet-img-home {
+    margin-left: -128px;
+    margin-top: 50vh;
+  }
+}
+
+@media (max-width: 240px) {
+  .planet .planet-img-home {
+    margin-left: -96px;
+    margin-top: 140vh;
+    margin-bottom: -140vh;
+    width: 96px;
+  }
+
+  .planet {
+    margin-left: 40px;
+  }
+
+  .planet .planet-img {
+    margin-top: 40px;
+  }
+
+  .event-section {
+    min-height: 256px;
+  }
+}
+
 .event-section .event-title {
   color: #1eabd6;
   font-size: 4vh;
