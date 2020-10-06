@@ -27,7 +27,7 @@ const list = [
         id: 4,
         linkName: "machine-learning",
         name: "Machine Learning",
-        description: "We at the ML community ,believe in helping one another,So one can fit in the Data Science and Machine Learning environment as smooth as a Linear Regression Model fits. As Mr Andrew Ng Said 'A Machine Learning Model is Data Hungry,The more it gets the better it becomes', We aspire to train ourselves to be the best. So come and dwell into the world of Artificial Intelligence by joining the community. "
+        description: "We at the ML community ,believe in helping one another,So one can fit in the Data Science and Artificial Intelligence environment as smooth as a Machine Learning Model fits. So, lets dwell into the world of Artificial Intelligence together. "
     },
     {
         id: 5,
