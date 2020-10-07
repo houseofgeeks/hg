@@ -7,11 +7,10 @@
 .community-component .union {
   height: 0;
   pointer-events: none;
-
 }
 
 .community-component .union-img {
-      margin-top: 20px;
+  margin-top: 20px;
   height: 230vh;
   width: auto;
   position: relative;
@@ -108,14 +107,14 @@
   animation-direction: normal;
 }
 
-@media (max-width:750px) {
-      .community-component .union-img {
-            height: 150vh;
-            width: auto;
-            position: relative;
-            left: 48vw;
-            top: 27vh;
-      }
+@media (max-width: 750px) {
+  .community-component .union-img {
+    height: 150vh;
+    width: auto;
+    position: relative;
+    left: 48vw;
+    top: 27vh;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -191,23 +190,23 @@
     pointer-events: none;
   }
 
-  .community-component .competitive-coding {
+  .community-component .competitive_coding {
     background: linear-gradient(
         108.96deg,
         rgba(238, 42, 123, 0.45) 0%,
         rgba(0, 0, 24, 0.675) 43.75%
       ),
-      url(./competitive-coding.jpg);
+      url(./competitive_coding.jpg);
     background-size: cover;
   }
 
-  .community-component .electronics-iot {
+  .community-component .electronics_iot {
     background: linear-gradient(
         108.96deg,
         rgba(238, 42, 123, 0.45) 0%,
         rgba(0, 0, 24, 0.675) 43.75%
       ),
-      url(./electronics-iot.jpg);
+      url(./electronics_iot.jpg);
     background-size: cover;
   }
 
@@ -221,23 +220,23 @@
     background-size: cover;
   }
 
-  .community-component .webd-appd {
+  .community-component .webd_appd {
     background: linear-gradient(
         108.96deg,
         rgba(238, 42, 123, 0.45) 0%,
         rgba(0, 0, 24, 0.675) 43.75%
       ),
-      url(./webd-appd.jpg);
+      url(./webd_appd.jpg);
     background-size: cover;
   }
 
-  .community-component .machine-learning {
+  .community-component .machine_learning {
     background: linear-gradient(
         108.96deg,
         rgba(238, 42, 123, 0.45) 0%,
         rgba(0, 0, 24, 0.675) 43.75%
       ),
-      url(./machine-learning.jpg);
+      url(./machine_learning.jpg);
     background-size: cover;
   }
 
