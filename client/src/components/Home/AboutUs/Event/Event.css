@@ -13,6 +13,29 @@
   }
 }
 
+@media (max-width: 1920px) and (max-height: 1080px) {
+  .union .union-img {
+    height: 225vh !important;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+  .union .union-img {
+    height: 230vh !important;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  .union .union-img {
+    height: 235vh !important;
+  }
+}
+@media (max-width: 1280px) and (max-height: 720px) {
+  .union .union-img {
+    height: 240vh !important;
+  }
+}
+
 @media (max-width: 1024px) and (max-height: 768px) {
   .union .union-img {
     height: 225vh !important;
@@ -21,19 +44,19 @@
 
 @media (max-width: 1024px) and (max-height: 1366px) {
   .union .union-img {
-    height: 230vh;
+    height: 235vh;
   }
 }
 
 @media (max-width: 768px) and (max-height: 1024px) {
   .union .union-img {
-    height: 230vh !important;
+    height: 240vh !important;
   }
 }
 
 @media (max-width: 800px) and (max-height: 1280px) {
   .union .union-img {
-    height: 240vh;
+    height: 245vh;
   }
 }
 
@@ -81,6 +104,25 @@
   margin-left: 15px;
 }
 
+@media (max-width: 768px) {
+  .event-section .event-content .event-list {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 450px) {
+  .planet-img {
+    margin-left: calc(0vw);
+    margin-right: 48px;
+  }
+  .event-section {
+    width: calc(100% - 30vw - 48px);
+  }
+
+  .event-section .event-content .event-list {
+    margin-left: 0px;
+  }
+}
+
 @media (max-width: 425px) {
   .event-section .event-title {
     color: #1eabd6;
@@ -115,6 +157,7 @@
     width: 64vw;
     position: absolute;
     margin-top: 32vh;
+    margin-left: calc(15vw);
     left: calc(-32vw - 64px);
   }
 }
@@ -179,6 +222,7 @@
   color: #1eabd6;
   font-weight: bold;
   font-size: 3vh;
+  word-wrap: break-word;
   transition: color 0.5s;
 }
 

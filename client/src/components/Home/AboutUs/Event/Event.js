@@ -22,7 +22,7 @@ function Event({ page }) {
         setEvent([
           {
             eventLink: "/event",
-            title: "Something went wrong!",
+            title: "Something went wrong",
             description: "Try again....",
           },
         ]);
