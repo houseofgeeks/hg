@@ -44,24 +44,24 @@
 
 @media (max-width: 1024px) and (max-height: 1366px) {
   .union .union-img {
-    height: 300vh;
+    height: 295vh;
   }
 }
 
 @media (max-width: 834px) and (max-height: 1112px) {
   .union .union-img {
-    height: 310vh !important;
+    height: 300vh !important;
   }
 }
 @media (max-width: 768px) and (max-height: 1024px) {
   .union .union-img {
-    height: 310vh !important;
+    height: 300vh !important;
   }
 }
 
 @media (max-width: 800px) and (max-height: 1280px) {
   .union .union-img {
-    height: 335vh;
+    height: 330vh;
   }
 }
 
