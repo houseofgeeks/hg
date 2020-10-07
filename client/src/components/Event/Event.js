@@ -6,7 +6,7 @@ import Events from '../Home/AboutUs/Event/Event';
 function Event() {
   return (
     <div className="event-component">
-      <div className="title">
+      <div className="event_title">
         Events
       </div>
       <Events />

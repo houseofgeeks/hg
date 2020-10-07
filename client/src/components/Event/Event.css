@@ -2,7 +2,7 @@
 margin: 0;
 }
 
-.event-component .title {
+.event-component .event_title {
     font-family: 'Raleway';
     color: #EE2A7B;
     font-size: 8vh;
