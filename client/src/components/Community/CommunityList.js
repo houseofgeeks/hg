@@ -27,7 +27,7 @@ const list = [
         id: 4,
         linkName: "machine-learning",
         name: "Machine Learning",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis"
+        description: "We at the ML community, believe in helping one another, So one can fit in the Data Science and Artificial Intelligence environment as smooth as a Machine Learning Model fits. Let's dwell into the world of Artificial Intelligence together. "
     },
     {
         id: 5,
