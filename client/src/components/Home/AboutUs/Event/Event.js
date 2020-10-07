@@ -22,8 +22,23 @@ function Event({ page }) {
         setEvent([
           {
             eventLink: "/event",
-            title: "Something went wrong",
-            description: "Try again....",
+            title: "Hacktoberfest'20",
+            description: "OctoCon - Webinars and Workshops on different Techs!",
+          },
+          {
+            eventLink: "/event",
+            title: "ACM_ICPC went wrong",
+            description: "What, Why and How? ICPC Webinar!",
+          },
+          {
+            eventLink: "/event",
+            title: "Pull-off",
+            description: "Intro to Git/Github",
+          },
+          {
+            eventLink: "/event",
+            title: "Sept Long DIscussion",
+            description: "Discussion on qustion from sept long Challenge!",
           },
         ]);
       });
