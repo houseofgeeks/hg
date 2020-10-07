@@ -125,18 +125,18 @@ text-decoration: none;
       }
 }
 
-@media(min-width:1600px) {
+@media(min-width:1400px) {
       .container.partners-section {
             max-width: 85vw;
       }
 
       .partners-logo, .logo-name {
             width: 25vw;
-            border-radius: 35px;
+            border-radius: 30px;
       }
 
       .logo-name {
-            width: 20vw;
+            width: 23vw;
             font-size: 4vh;
             border: 2.5px solid #EE2A7B;
       }
