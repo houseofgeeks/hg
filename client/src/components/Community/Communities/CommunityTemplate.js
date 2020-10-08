@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CommunityTemplate.css";
 import { CommunityDetails as community } from "./CommunityDetails";
-// import CompetitiveCodingMembers from "../../Members/Community/CompetitiveCoding.members";
 
 function CommunityTemplate() {
   const currentloc = String(window.location); //Gets current URL
