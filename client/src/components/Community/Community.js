@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Community.css";
-
 import list from "./CommunityList";
 import loader from "./loader.svg";
 

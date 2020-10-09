@@ -1,13 +1,13 @@
 const list = [
     {
         id: 0,
-        linkName: "competitive-coding",
+        linkName: "competitive_coding",
         name: "Competitive Coding",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis"
     },
     {
         id: 1,
-        linkName: "electronics-iot",
+        linkName: "electronics_iot",
         name: "Electronics and IoT",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis"
     },
@@ -19,13 +19,13 @@ const list = [
     },
     {
         id: 3,
-        linkName: "webd-appd",
+        linkName: "webd_appd",
         name: "Web and App Development",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis"
     },
     {
         id: 4,
-        linkName: "machine-learning",
+        linkName: "machine_learning",
         name: "Machine Learning",
         description: "We at the ML community, believe in helping one another, So one can fit in the Data Science and Artificial Intelligence environment as smooth as a Machine Learning Model fits. Let's dwell into the world of Artificial Intelligence together. "
     },
