@@ -43,4 +43,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.get('*', function(req, res){
+  res.status(500).json('bad request or 404 not found');
+});
+
 module.exports = app;
