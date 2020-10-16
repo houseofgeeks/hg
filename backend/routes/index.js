@@ -8,7 +8,4 @@ router.get('/', function(req, res, next) {
   })
 });
 
-router.get('*', function(req, res){
-  res.status(500).json('bad request or 404 not found');
-});
 module.exports = router;
