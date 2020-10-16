@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Admin from "./components/Admin/Admin";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import CommunityTemplate from "./components/Community/Communities/CommunityTemplate";
+import ScrollToTop from "./components/HOC/withScrollToTop";
 
 function App() {
   return (
@@ -19,19 +20,19 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/members" component={Members} />
-          <Route exact path="/sponsors" component={Sponsors} />
-          <Route exact path="/event" component={Event} />
-          <Route exact path="/community" component={Community} />
-          <Route exact path="/competitive_coding" component={CommunityTemplate}/>
-          <Route exact path="/design" component={CommunityTemplate} />
-          <Route exact path="/electronics_iot" component={CommunityTemplate} />
-          <Route exact path="/machine_learning" component={CommunityTemplate} />
-          <Route exact path="/robotics" component={CommunityTemplate} />
-          <Route exact path="/webd_appd" component={CommunityTemplate} />
-          <Route exact path="/" component={Home} />
-          <ProtectedRoute exact path="/admin" component={Admin} />
-          <Route path="/" component={Error} />
+          <Route exact path="/members" component={ScrollToTop(Members)} />
+          <Route exact path="/sponsors" component={ScrollToTop(Sponsors)} />
+          <Route exact path="/event" component={ScrollToTop(Event)} />
+          <Route exact path="/community" component={ScrollToTop(Community)} />
+          <Route exact path="/competitive_coding" component={ScrollToTop(CommunityTemplate)} />
+          <Route exact path="/design" component={ScrollToTop(CommunityTemplate)} />
+          <Route exact path="/electronics_iot" component={ScrollToTop(CommunityTemplate)} />
+          <Route exact path="/machine_learning" component={ScrollToTop(CommunityTemplate)} />
+          <Route exact path="/robotics" component={ScrollToTop(CommunityTemplate)} />
+          <Route exact path="/webd_appd" component={ScrollToTop(CommunityTemplate)} />
+          <Route exact path="/" component={ScrollToTop(Home)} />
+          <ProtectedRoute exact path="/admin" component={ScrollToTop(Admin)} />
+          <Route path="/" component={ScrollToTop(Error)} />
         </Switch>
         <Footer />
       </Router>
