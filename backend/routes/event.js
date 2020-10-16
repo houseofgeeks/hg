@@ -85,6 +85,9 @@ router.delete("/:id", auth, (req, res, next) => {
     });
 });
 
+router.get('*', function(req, res){
+  res.status(500).json('bad request or 404 not found');
+});
 // Should we allow updation to events, requires disussion
 
 module.exports = router;
