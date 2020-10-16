@@ -23,13 +23,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
 app.use('/admin', adminRouter);
 app.use('/event', eventRouter);
+app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  createError(404);
+  res.status(404).json("No resourse found!");
 });
 
 // error handler
@@ -41,10 +42,6 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
-});
-
-app.get('*', function(req, res){
-  res.status(500).json('bad request or 404 not found');
 });
 
 module.exports = app;
