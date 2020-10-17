@@ -1,5 +1,13 @@
 .event-component {
-margin: 0;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url("../Footer/img/star.svg"), url("../Home/AboutUs/Event/mobile-planet.svg");
+    background-size: cover, 25vw;
+    background-position: center, left top -55vh;
+    background-attachment: fixed, local;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
 }
 
 .event-component .event-title {
@@ -9,4 +17,25 @@ margin: 0;
     opacity: 1;
     margin: 5vh 0;
     text-align: center;
+}
+
+.event-component .subtitle {
+    text-align: center;
+    font-size: 3vh;
+    color: #1eabd6;
+}
+
+.event-component .subtitle .satellite-writeup {
+    font-size: 5.5vh;
+}
+
+.event-component .subtitle .signal-writeup {
+    color: white;
+    font-size: 3.5vh;
+}
+
+.event-component .main-table .table-1 {
+    margin-bottom: 2vh;
+    text-align: center;
+    justify-content: center;
 }
