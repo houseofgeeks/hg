@@ -16,6 +16,11 @@ const eventSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
+    eventDate: {
+        required: true,
+        type: Date,
+        default: Date.now
+    },
     description: {
         required: true,
         type: String,
@@ -27,6 +32,7 @@ const eventSchema = new mongoose.Schema({
     },
     eventLink: {
         type: String,
+        trim: true
     },
     banner: {
         type: String,
