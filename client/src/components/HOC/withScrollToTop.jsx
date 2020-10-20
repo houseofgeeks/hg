@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Footer from "../Footer/Footer";
 
 const ScrollToTop = (Component) => {
     const NewComponent = () => {
@@ -6,7 +7,10 @@ const ScrollToTop = (Component) => {
             window.scrollTo(0, 0);
         }, []);
         return(
+            <div>
             <Component />
+            <Footer/>
+            </div>
         );
     }
 

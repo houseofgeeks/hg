@@ -5,7 +5,6 @@ import Members from "./components/Members/Members";
 import Sponsors from "./components/Sponsors/Sponsors";
 import Event from "./components/Event/Event";
 import Community from "./components/Community/Community";
-import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Error from "./components/Error/Error";
 import Navbar from "./components/Navbar/Navbar";
@@ -32,9 +31,8 @@ function App() {
           <Route exact path="/webd_appd" component={ScrollToTop(CommunityTemplate)} />
           <Route exact path="/" component={ScrollToTop(Home)} />
           <ProtectedRoute exact path="/admin" component={ScrollToTop(Admin)} />
-          <Route path="/" component={ScrollToTop(Error)} />
-        </Switch>
-        <Footer />
+          <Route path="/" component={Error} />
+        </Switch>    
       </Router>
     </div>
   );

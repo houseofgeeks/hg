@@ -32,32 +32,39 @@
 }
 
 .error-component {
-  display: flexbox;
+  display: block;
   height: 100vh;
-  width: 96vw;
+  width: 100vw;
   overflow: hidden;
-  background: linear-gradient(168.18deg, #000018 20.02%, #420C33 114.21%, #881851 137.38%);
+  background: url(./Images/overlay_stars.svg), linear-gradient(168.18deg, #000018 20.02%, #420C33 114.21%, #881851 137.38%);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: left top;
+  pointer-events: none;
 }
 
 .error-component .btn-go-home {
   pointer-events: all;
+  color: white;
   text-decoration: none;
-  color: #1EABD6;
-  font-family: 'Raleway';
   font-weight: bold;
   font-size: 3.2vh;
   margin-left: 2vw;
   transition: color 0.5s;
+  background-color: #420C33;
+  border-radius:30px ;
+  width:100px;
+  text-align: center;
 }
 
 .error-component .btn-go-home:hover {
-  color: #EE2A7B;
+  color: #1eabd6;
 }
 .error-component .container {
   position: relative;
   /* width:100%; */
   height: 90vh;
-  background-image: linear-gradient(black, rgb(58, 1, 32));
+  background-image:  linear-gradient(168.18deg, #000018 20.02%, #420C33 114.21%, #881851 137.38%);
 }
 .error-component .error {
   position: absolute;
@@ -83,16 +90,18 @@
 .error-component .error_message {
   position: absolute;
   top: 15vh;
-  width: 100%;
+  width: 95%;
   pointer-events: none;
   text-align: center;
+  z-index: 2;
 }
 .error-component .page_not_found {
   position: absolute;
   top: 60%;
-  width: 100%;
+  width: 95%;
   pointer-events: none;
   text-align: center;
+  z-index: 2;
 }
 .error-component .not_found {
   width: 30vw;
@@ -100,33 +109,33 @@
 .error-component .planet {
   height: 40%;
   pointer-events: none;
+  width: 100vw;
+  overflow: hidden;
 }
 .error-component .object_planet {
-  width: 96vw;
+  width: 90vw;
   height: auto;
   position: absolute;
-  bottom:0;
-  z-index: -500;
+  bottom:-5vh;
+  left: 5vw;
+  z-index: 1;
+  
 }
 .error-component .image-404 {
   margin-top: 4%;
-  width: 20vw;
+  width: 25vw;
+  transform: rotate(10deg);
 }
 .error-component .image-4 {
   margin-top: 4%;
-  width: 20vw;
+  width: 25vw;
+  transform: rotate(-10deg);
 }
 .error-component .image-0 {
   margin-top: -1%;
-  width: 20vw;
+  width: 25vw;
 }
-.error-component {
-  background: url(./Images/overlay_stars.svg);
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: left top;
-  pointer-events: none;
-}
+
 @media only screen and (max-width: 426px) {
   .error-component .box_astronaut {
     top: 10%;
@@ -142,15 +151,25 @@
 
   .error-component .error {
     transform: scale(2);
-  }
-
-  .error-component .error, .error-component .error_message {
     margin-top: 10vh;
+  }
+  .error-component .image-404 {
+    margin-top: 4%;
+    width: 30vw;
+  }
+  .error-component .image-4 {
+    margin-top: 4%;
+    width: 30vw;
+  }
+  .error-component .image-0 {
+    margin-top: -1%;
+    width: 30vw;
   }
   
   .error-component .error_message{
     left:0;
     right:0;
+    margin-top: 10vh;
   }
   .error-component .page_not_found{
     left:0;
@@ -159,13 +178,52 @@
   .error-component .central-body {
     padding-top: 25%;
   }
-  .error-component .planet {
-    max-width: 96vw;
-    overflow: hidden;
-  }
   .error-component .object_planet {
-    bottom: -5vh;
-    overflow: hidden;
-    left:0;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom:0vh;
+    left: 0vw;
+    
   }
+  
+}
+/* Error Page Footer */
+.icon {
+  height: 30px;
+  width: 8vh;
+  margin: 10px;
+  transition: ease 0.5s;
+}
+
+.icon:hover {
+  color: #1eabd6;
+  transform: translate(0, -1px);
+}
+.footer {
+  background-color: #420C33;
+  position: absolute;
+  z-index: 5;
+}
+.footer p {
+  margin-top: 10px;
+}
+
+@media(max-width:850px){
+  .icon {
+        width:20vh;
+  }
+  .footer p{
+  font-size: 1.6vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon {
+        width: 5vh;
+        margin-left: 8px;
+  }
+  .footer p{
+    font-size: 4vw;
+    }
 }

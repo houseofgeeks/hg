@@ -8,12 +8,18 @@ import zero from './Images/0.svg';
 import error from './Images/error.svg'
 import not_found from './Images/page-not-found.svg'
 import planet from './Images/planet.svg'
+import {ReactComponent as Github} from "../Footer/img/github-brands.svg";
+import {ReactComponent as Insta} from "../Footer/img/instagram-brands.svg";
+import {ReactComponent as Facebook} from "../Footer/img/facebook-brands.svg";
+import {ReactComponent as Youtube} from "../Footer/img/youtube-brands.svg";
+import {ReactComponent as LinkedIn} from "../Footer/img/linkedin-brands.svg";
 
 const Error = () => {
     return (
+        <div>
         <div className="error-component">
             <div className="container-fluid mt-5 mx-auto">
-                <div className="stars">
+                <div className="stars row">
                     <NavLink className="btn-go-home" to="/" >HOME</NavLink>
                     <img className="error" src={error} alt="error" width="200px" />
                     <div className="error_message mx-auto">
@@ -32,7 +38,38 @@ const Error = () => {
                     </div>
                 </div>
             </div>
-        </div>
+            
+      </div>
+      <div className="container-fluid footer">
+                  <div className="row">
+                  <div className="col-12 col-lg-4  text-center text-white">
+                              <p>WebDev Team House Of Geeks</p>
+                  </div>
+                  <div className="col-12 col-lg-4  text-center text-white">
+                        <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hg.iiitranchi/">
+                                    <Insta className="icon"></Insta>
+                        </a>
+                        <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCvbh6phGLwpOnoM8g_GwlmQ">
+                                    <Youtube className="icon"></Youtube>
+                        </a>
+                        <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/houseofgeeks">
+                                    <Github className="icon"></Github>
+                        </a>
+                        <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/hG.iiitranchi">
+                                    <Facebook className="icon"></Facebook>
+                        </a>
+
+                        <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hgiiitranchi/">
+                                    <LinkedIn className="icon fa-7x"></LinkedIn>
+                        </a>
+                  </div>
+                  <div className="col-12 col-lg-4  text-center text-white">
+                              <p>© HouseOfGeeks,IIIT Ranchi</p>
+                  </div>
+
+                  </div>
+            </div>
+      </div>
     );
 }
 export default Error;
