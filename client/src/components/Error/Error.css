@@ -188,11 +188,17 @@
   }
   
 }
+@media (min-height:1000px){
+  .error-component .object_planet {
+    bottom:-0.7vh;
+    left: 0vw;
+  }
+}
 /* Error Page Footer */
 .icon {
   height: 30px;
-  width: 8vh;
-  margin: 10px;
+  width: 6vw;
+  margin: 10px 0px;
   transition: ease 0.5s;
 }
 
@@ -211,10 +217,10 @@
 
 @media(max-width:850px){
   .icon {
-        width:20vh;
+        width:10vh;
   }
   .footer p{
-  font-size: 1.6vw;
+  font-size: 2.2vw;
   }
 }
 
