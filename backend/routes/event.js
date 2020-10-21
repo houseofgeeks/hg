@@ -13,7 +13,7 @@ router.post("/", auth, function (req, res) {
     pdfPath: req.body.pdfPath || null,
     eventLink: req.body.eventLink || null,
     eventDate: req.body.eventDate,
-    banner: req.body.banner || null
+    banner: req.body.banner || null,
   });
 
   event
@@ -41,7 +41,7 @@ router.get("/", (req, res) => {
     .then((result) => {
       res.status(200).json({
         result: result,
-        message: 'OK'
+        message: "OK",
       });
     })
     .catch((err) => {
@@ -59,7 +59,7 @@ router.get("/all", (req, res) => {
     .then((result) => {
       res.status(200).json({
         result: result,
-        message: 'OK'
+        message: "OK",
       });
     })
     .catch((err) => {
@@ -75,7 +75,7 @@ router.delete("/:id", auth, (req, res, next) => {
   Event.findOneAndRemove({ _id: req.params.id })
     .then(() => {
       res.status(200).json({
-        message: 'OK'
+        message: "OK",
       });
     })
     .catch((err) => {
@@ -88,26 +88,37 @@ router.delete("/:id", auth, (req, res, next) => {
 
 // Should we allow updation to events, requires disussion
 
-router.put("/:id", auth, (req, res) => { 
-    const event = Event.findOne({ _id: req.params.id })
-                        .then(() => {
-                            event.title = req.body.title;
-                            event.community = req.body.community;
-                            event.description = req.body.description;
-                            event.pdfPath = req.body.pdfPath;
-                            event.eventLink = req.body.eventLink;
-                            event.eventDate = req.body.eventDate;
-                            event.banner = req.body.banner;
-                            res.status(200).json({
-                                message: "OK",
-                            });
-                        })
-                        .catch((err) => {
-                            console.log(err);
-                            res.status(500).json({
-                            message: "Something went wrong",
-                            });
-                        })
+router.put("/:id", auth, (req, res) => {
+  const event = Event.findOne({ _id: req.params.id })
+    .then(() => {
+      event.title = req.body.title;
+      event.community = req.body.community;
+      event.description = req.body.description;
+      event.pdfPath = req.body.pdfPath;
+      event.eventLink = req.body.eventLink;
+      event.eventDate = req.body.eventDate;
+      event.banner = req.body.banner;
+
+      event
+        .save()
+          .then(() => {
+            res.status(200).json({
+              message: "OK",
+            });
+          })
+          .catch((err) => {
+            console.log(err, "DB Err");
+            res.status(500).json({
+              message: "Something went wrong",
+            });
+          });
+    })
+    .catch((err) => {
+      console.log(err, "Can't find event on DB");
+      res.status(500).json({
+        message: "Something went wrong!",
+      });
+    });
 });
 
 module.exports = router;
