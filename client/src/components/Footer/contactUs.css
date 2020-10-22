@@ -21,3 +21,36 @@
   color: #1eabd6;
   border: 0.7px solid #1eabd6;
 }
+
+@media(max-width:860px) {
+      .err-msg {
+            font-size: 1rem;
+      }
+
+      .submit {
+            width: 40%;
+            font-size: 0.8rem;
+      }
+}
+
+@media(max-width:512px) {
+      .err-msg {
+            font-size: 1rem;
+      }
+
+      .submit {
+            width: 30%;
+            font-size: 0.8rem;
+      }
+}
+
+@media(max-width:440px) {
+      .err-msg {
+            font-size: 0.8rem;
+      }
+
+      .submit {
+            width: 25%;
+            font-size: 0.8rem;
+      }
+}
