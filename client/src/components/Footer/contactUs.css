@@ -11,7 +11,7 @@
 }
 .submit {
   width: 50%;
-  margin: 30px auto;
+  margin: 30px auto 30px 15px;
   color: #1eabd6;
   border: 0.7px solid white;
   z-index: 1;
