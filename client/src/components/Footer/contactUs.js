@@ -28,14 +28,15 @@ const Contact = () => {
   return (
     <div className="contactUs-section container">
       <div className="contactUs-heading">Contact Us</div>
-      <div className="row text-white">
-        <form
+     <form
           id="contact-form"
           onSubmit={(e) => {
             e.preventDefault();
             handleSubmit();
           }}
         >
+      <div className="row text-white">
+       
           <div className="form-group col-12 col-md-6">
             <label htmlFor="name">Name</label>
             <input
@@ -81,8 +82,8 @@ const Contact = () => {
             {sentStatus.status === 'sending' ? 'Sending...' : 'Submit'}
           </button>
           {sentStatus.status !== '' && <div style={{color: sentStatus.color, fontSize: 'x-large'}}>{sentStatus.message}</div>}
-        </form>
       </div>
+        </form>
     </div>
   );
 };
