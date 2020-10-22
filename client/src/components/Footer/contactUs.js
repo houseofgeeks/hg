@@ -81,7 +81,7 @@ const Contact = () => {
           <button disabled={sentStatus.status !== 'sending' ? false: true} tybuttone="submit" className="submit btn ">
             {sentStatus.status === 'sending' ? 'Sending...' : 'Submit'}
           </button>
-          {sentStatus.status !== '' && <div style={{color: sentStatus.color, fontSize: 'x-large'}}>{sentStatus.message}</div>}
+          {sentStatus.status !== '' && <div className="err-msg" style={{color: sentStatus.color}}>{sentStatus.message}</div>}
       </div>
         </form>
     </div>
