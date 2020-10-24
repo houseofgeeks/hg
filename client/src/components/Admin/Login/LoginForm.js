@@ -53,7 +53,7 @@ function LoginForm(props) {
       pass: `${account.password}`,
     };
     axios
-      .post("/admin/login", payload)
+      .post(`${process.env.REACT_APP_API || ''}/admin/login`, payload)
       .then((result) => {
 				window.localStorage.setItem("token", result.data.accessToken);
 				Notify("Login successful, Redirecting . . .", "success");

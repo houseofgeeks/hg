@@ -17,7 +17,7 @@ const EventManage = () => {
 
   useEffect(() => {
     axios
-      .get("/event/all")
+      .get(`${process.env.REACT_APP_API || ''}/event/all`)
       .then((res) => {
         fillEvents([...res.data.result]);
         updateLoadStatus({ message: "Loaded" });
@@ -34,7 +34,7 @@ const EventManage = () => {
   const updateEvent = (elem) => {
     const payload = elem;
     axios
-      .put(`/event/${events[viewModal]._id}`, payload, {
+      .put(`${process.env.REACT_APP_API || ''}/event/${events[viewModal]._id}`, payload, {
         headers: {
           authorization: `Bearer ${window.localStorage.getItem("token")}`,
         },
@@ -58,7 +58,7 @@ const EventManage = () => {
   };
 
   const handleDelete = (_id, idx) => {
-    axios.delete(`/event/${_id}`, {
+    axios.delete(`${process.env.REACT_APP_API || ''}/event/${_id}`, {
       headers: {
         authorization: `Bearer ${window.localStorage.getItem("token")}`
       }

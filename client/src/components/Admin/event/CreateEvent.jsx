@@ -23,7 +23,7 @@ const CreateEvent = (props) => {
     const payload = {
       ...elem
     }
-    axios.post("/event", payload, {
+    axios.post(`${process.env.REACT_APP_API || ''}/event`, payload, {
       headers: {
         authorization: `Bearer ${window.localStorage.getItem("token")}`,
       },
