@@ -135,7 +135,7 @@ const EventModal = (props) => {
             disabled={readOnly}
             onClick={() => {
               updateEvent(elem);
-              makeEditable(false);
+              makeEditable(true);
             }}
           >
             Save
