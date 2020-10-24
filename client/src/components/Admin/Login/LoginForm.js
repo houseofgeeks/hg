@@ -4,7 +4,6 @@ import Input from "./input";
 import "./loginform.css";
 import Notify from '../../Notify';
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 function LoginForm(props) {
   //object
@@ -54,7 +53,7 @@ function LoginForm(props) {
       pass: `${account.password}`,
     };
     axios
-      .post("/api/admin/login", payload)
+      .post("/admin/login", payload)
       .then((result) => {
 				window.localStorage.setItem("token", result.data.accessToken);
 				Notify("Login successful, Redirecting . . .", "success");

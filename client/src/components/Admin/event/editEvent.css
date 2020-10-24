@@ -1,0 +1,76 @@
+.event-modal{
+    min-width: 320px;
+    max-width: 800px;
+    width: calc(90vw - 320px);
+    padding: 1em;
+    border: solid 2px #ed1c40;
+    border-radius: .25rem;
+}
+.event-modal hr{
+    border: #ed1c40 1px solid;
+    width: 100%;
+    padding: 0px;
+}
+.event-modal .event-modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.event-modal .event-modal-body{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.event-modal .event-modal-input{
+    margin: 1em auto;
+    min-width: 280px;
+}
+.event-modal label{
+    margin-bottom: .2rem;
+}
+.event-modal input{
+    width: 100%;
+}
+.event-modal textarea{
+    width: 100%;
+    height: 85%;
+}
+.event-modal .event-modal-footer button{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: #ed1c40;
+    padding: 10px 20px;
+    border: 1px solid #20bf6b !important;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+}
+.event-modal .event-modal-footer button:active{
+    transform: translateY(2px);
+}
+.event-modal .event-modal-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.event-modal button:disabled{
+    background: #9b9797;
+}
+.event-modal input:read-only, .event-modal textarea:read-only{
+    background-color: #a1a1a1;
+}
+.react-datetime-picker input{
+    color: rgb(0, 0, 0) !important;
+}
+.react-datetime-picker{
+    background-color: rgb(255, 255, 255) !important;
+}
+
+@media only screen and (max-width: 600px){
+    .event-modal .event-modal-body{
+        display: block;
+    }   
+    .event-modal textarea{
+        height: 50% !important;
+    }
+}
