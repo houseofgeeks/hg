@@ -89,8 +89,8 @@ router.delete("/:id", auth, (req, res, next) => {
 // Should we allow updation to events, requires disussion
 
 router.put("/:id", auth, (req, res) => {
-  const event = Event.findOne({ _id: req.params.id })
-    .then(() => {
+  Event.findOne({ _id: req.params.id })
+    .then((event) => {
       event.title = req.body.title;
       event.community = req.body.community;
       event.description = req.body.description;
@@ -98,7 +98,7 @@ router.put("/:id", auth, (req, res) => {
       event.eventLink = req.body.eventLink;
       event.eventDate = req.body.eventDate;
       event.banner = req.body.banner;
-
+      
       event
         .save()
           .then(() => {
@@ -119,6 +119,7 @@ router.put("/:id", auth, (req, res) => {
         message: "Something went wrong!",
       });
     });
+
 });
 
 module.exports = router;
