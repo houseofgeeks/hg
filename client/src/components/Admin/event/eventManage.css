@@ -1,0 +1,61 @@
+.event-manage {
+    text-align: left;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 320px;
+    margin: auto;
+  }
+  
+.event-manage thead tr:first-child {
+    background: #ed1c40;
+    color: #fff;
+    border: none;
+  }
+  
+.event-manage th:first-child,
+.event-manage td:first-child {
+    padding: 0 15px 0 20px;
+  }
+  
+.event-manage th {
+    font-weight: 500;
+  }
+  
+.event-manage thead tr:last-child th {
+    border-bottom: 3px solid #ddd;
+  }
+  
+.event-manage tbody tr:hover {
+    background-color: #1b1b1b;
+    cursor: default;
+  }
+  
+.event-manage tbody tr:last-child td {
+    border: none;
+  }
+  
+.event-manage tbody td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+.event-manage td:last-child {
+    padding-right: 10px;
+  }
+  
+.event-manage .button {
+    color: #aaa;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: -4px;
+    text-align: center;
+    padding-right: 5px;
+  }
+  
+.event-manage  .edit:hover {
+    color: #0a79df;
+  }
+  
+.event-manage  .delete:hover {
+    color: #dc2a2a;
+  }
