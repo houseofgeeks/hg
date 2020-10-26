@@ -1,3 +1,6 @@
+.footer-component .modal-content {
+  border: 2px solid #ee2a7b;
+}
 .contributor-image {
   width: 90%;
   height: auto;
@@ -5,7 +8,7 @@
   margin: 40px 5%;
 }
 
-.contributor-container:hover .image-hover {
+.image-hover:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -25,15 +28,17 @@
   color: #1eabd6;
   transform: translate(0, -1px);
 }
-
+.image-container {
+  position: relative;
+}
 .image-hover {
   position: absolute;
-  top: 40px;
-  bottom: 40px;
-  left: 7%;
+  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
-  height: 65%;
-  width: 85%;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: 0.5s ease;
   border-radius: 50%;
@@ -42,7 +47,7 @@
   color: #fff;
   font-weight: 400;
   font-size: 1.6rem;
-  width: 20vw;
+  width: 90%;
   border: 1px solid #ee2a7b;
   border-radius: 20px;
   border-width: 1.6px;
@@ -82,21 +87,18 @@
 
 @media (max-width: 855px) {
   .username {
-    width: 30vw;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     font-weight: 200;
   }
 }
 @media (max-width: 650px) {
   .username {
-    width: 60vw;
     font-size: 2rem;
   }
 }
 
 @media (max-width: 500px) {
   .username {
-    width: 70vw;
     font-size: 1.6rem;
   }
   .text-pink {
@@ -110,16 +112,14 @@
 
 @media (min-width: 1400px) {
   .username {
-    width: 23vw;
-    font-size: 4vh;
+    font-size: 2vw;
     border: 2.5px solid #ee2a7b;
   }
 }
 
 @media (min-width: 2500px) {
   .username {
-    width: 22vw;
-    font-size: 4vh;
+    font-size: 2vw;
     border: 3.5px solid #ee2a7b;
   }
 }

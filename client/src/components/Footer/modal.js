@@ -39,15 +39,14 @@ function Modal() {
             {userData.map((item) => (
               <div key={item.id} className="col-lg-4 col-md-12">
                 <div className="contributor-container ">
-                  <img
-                    className="contributor-image"
-                    src={item.avatar_url}
-                    alt="items"
-                  />
-                  <ShowName prop={item.url}></ShowName>
-                  <div className="image-hover">
+                  <div className="image-container">
+                    <img
+                      className="contributor-image"
+                      src={item.avatar_url}
+                      alt="items"
+                    />
                     <a
-                      className="items-link"
+                      className=" image-hover"
                       target="_blank"
                       href={item.html_url}
                       rel="noopener noreferrer"
@@ -55,6 +54,7 @@ function Modal() {
                       <h2 className="username">{item.login}</h2>
                     </a>
                   </div>
+                  <ShowName prop={item.url}></ShowName>
                 </div>
               </div>
             ))}
