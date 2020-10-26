@@ -26,7 +26,7 @@ function Modal() {
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-xl ">
+      <div className="modal-dialog modal-lg ">
         <div className="modal-content modal-back">
           <div className="modal-body row">
             <h5 className="text-pink col-12" id="exampleModalLabel">
@@ -37,7 +37,7 @@ function Modal() {
             </p>
 
             {userData.map((item) => (
-              <div key={item.id} className="col-lg-4 col-md-12">
+              <div key={item.id} className="col-lg-4 col-md-6 col-12">
                 <div className="contributor-container ">
                   <div className="image-container">
                     <img
