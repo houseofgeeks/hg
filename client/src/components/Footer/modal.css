@@ -33,12 +33,12 @@
 }
 .image-hover {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  top: 40px;
+  bottom: 40px;
+  left: 5%;
+  right: 5%;
+  height: auto;
+  width: 90%;
   opacity: 0;
   transition: 0.5s ease;
   border-radius: 50%;
@@ -58,6 +58,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  overflow: hidden;
 }
 
 .modal-back {
@@ -119,7 +120,7 @@
 
 @media (min-width: 2500px) {
   .username {
-    font-size: 2vw;
+    font-size: 1.5vw;
     border: 3.5px solid #ee2a7b;
   }
 }
