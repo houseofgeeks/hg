@@ -21,7 +21,7 @@ function Modal() {
   return (
     <div
       className="modal fade "
-      id="exampleModal"
+      id="WebTeamModal"
       tabIndex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"

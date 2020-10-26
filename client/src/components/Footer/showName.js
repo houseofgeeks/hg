@@ -10,7 +10,8 @@ function ShowName({ prop }) {
 
   useEffect(() => {
     getGitHubUserWithFetch();
-  });
+    // eslint-disable-next-line
+  }, []);
 
   const getGitHubUserWithFetch = async () => {
     const response = await fetch(prop);
@@ -23,21 +24,24 @@ function ShowName({ prop }) {
       <h3>{userInfo.name}</h3>
       <div className="row icon-row">
         <div className="col-lg-12 text-center">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={"https://twitter.com/" + userInfo.twitter_username}
-          >
-            <Twitter className="icon"></Twitter>
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={"mailto:" + userInfo.mail}
-          >
-            <Mail className="icon"></Mail>
-          </a>
+          {userInfo.twitter_username && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={"https://twitter.com/" + userInfo.twitter_username}
+            >
+              <Twitter className="icon"></Twitter>
+            </a>
+          )}
+          {userInfo.mail && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={"mailto:" + userInfo.mail}
+            >
+              <Mail className="icon"></Mail>
+            </a>
+          )}
           <a target="_blank" rel="noopener noreferrer" href={userInfo.html_url}>
             <Github className="icon"></Github>
           </a>
