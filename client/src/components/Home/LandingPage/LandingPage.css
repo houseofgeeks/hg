@@ -175,7 +175,7 @@
     background-attachment: scroll, scroll, scroll;
     background-size: 25vw, 50vw, cover;
     pointer-events: none;
-    background-position: left top, right top, center;
+    background-position: left 1vw top 1vh, right top, center;
     background-repeat: no-repeat, no-repeat, no-repeat;
     height: 93vh;
   }

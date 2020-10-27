@@ -154,6 +154,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Ampit",
+      "name": "Amarpreet Singh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2737004?v=4",
+      "profile": "https://github.com/Ampit",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,

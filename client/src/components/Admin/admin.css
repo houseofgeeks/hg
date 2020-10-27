@@ -1,7 +1,8 @@
 .admin{
     z-index: 1010;
     color: white;
-    padding: 1em;
+    padding-top: 1.5em;
+    margin-bottom: 5rem;
 }
 .admin-details{
     border: solid #1e354d 3px;
@@ -10,10 +11,6 @@
 
 .admin-details label, b{
     font-size: 1.3rem;
-}
-
-.admin-tables{
-    min-height: 100vh;
 }
 
 .logout-button{
@@ -31,4 +28,26 @@
     border-radius: 20px;
     cursor: pointer;
     transition-duration: .2s;
+}
+
+.admin-create-button{
+    margin: 10px auto;
+    display: block;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: #ed1c40;
+    padding: 10px 20px;
+    border: 1px solid #20bf6b !important;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+}
+.admin-create-button:active{
+    transform: translateY(2px);
+}
+.admin-create-button:disabled{
+    background: #9b9797;
+}
+.admin-create{
+    margin: 1em auto;
 }

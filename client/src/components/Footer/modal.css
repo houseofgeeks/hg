@@ -1,0 +1,112 @@
+.footer-component .modal-content {
+  border: 2px solid #ee2a7b;
+}
+.contributor-image {
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
+  margin: 40px 5%;
+}
+
+.image-hover:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contributor-container .items-link {
+  text-decoration: none;
+}
+
+.icon-row .icon {
+  height: 30px;
+  color: #fff;
+  width: 20%;
+  transition: ease 0.5s;
+}
+
+.icon:hover {
+  color: #1eabd6;
+  transform: translate(0, -1px);
+}
+.image-container {
+  position: relative;
+}
+.image-hover {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 5%;
+  right: 5%;
+  height: auto;
+  width: 90%;
+  opacity: 0;
+  transition: 0.5s ease;
+  border-radius: 50%;
+}
+.username {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 90%;
+  border: 1px solid #ee2a7b;
+  border-radius: 20px;
+  border-width: 1.6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.modal-back {
+  background-image: url(../Error/Images/overlay_stars.svg),
+    linear-gradient(168.18deg, #000018 20.02%, #420c33 114.21%, #881851 137.38%);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: left top;
+}
+
+.modal-back .close-button {
+  position: absolute;
+  top: 0px;
+  right: 27px;
+  color: #ee2a7b;
+  font-size: 40px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.text-pink {
+  color: #ee2a7b;
+  font-size: xx-large;
+  text-align: center;
+}
+
+@media (max-width: 855px) {
+  .username {
+    font-size: 3vw;
+    font-weight: 200;
+  }
+}
+@media (max-width: 650px) {
+  .username {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .username {
+    font-size: 1.6rem;
+  }
+  .text-pink {
+    font-size: x-large;
+  }
+  .modal-back .close-button {
+    font-size: 30px;
+    top: 10px;
+  }
+}
