@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './UpcomingEvents.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import './PastEvents.css';
 
-function UpcomingEvents(props) {
+function PastEvents(props) {
 
     const [events, setEvents] = useState([
         {
@@ -10,15 +11,15 @@ function UpcomingEvents(props) {
         }
     ]);
     useEffect(() => {
-        if (props.events != null)
+        if(props.events != null)
             setEvents(props.events);
         console.log(events);
-    }, [props.events, events]);
+    }, [props.events, events])
 
     return (
-        <div className="table-1">
+        <div className="table-2">
             <div className="table-title">
-                Upcoming Events
+                Past Events
             </div>
             <table className="table">
                 <thead>
@@ -33,7 +34,7 @@ function UpcomingEvents(props) {
                         events.map((event, id) => {
                             var currentDate = new Date();
                             var date = new Date(event.eventDate);
-                            if (date >= currentDate) {
+                            if (date < currentDate) {
                                 return (
                                     <tr key={id} >
                                         <td className="event-title">
@@ -60,4 +61,4 @@ function UpcomingEvents(props) {
     );
 }
 
-export default UpcomingEvents;
+export default PastEvents;
