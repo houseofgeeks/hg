@@ -58,21 +58,26 @@ const EventManage = () => {
   };
 
   const handleDelete = (_id, idx) => {
-    axios.delete(`${process.env.REACT_APP_API || ''}/event/${_id}`, {
-      headers: {
-        authorization: `Bearer ${window.localStorage.getItem("token")}`
-      }
-    })
-      .then((res) => {
-        const tempEvents = [...events];
-        tempEvents.splice(idx, 1);
-        fillEvents([...tempEvents]);
-        Notify("Event deleted!", "success");
+    if(window.confirm("Delete event?")){
+      Notify("Deleting event . . .!", "info");
+      axios.delete(`${process.env.REACT_APP_API || ''}/event/${_id}`, {
+        headers: {
+          authorization: `Bearer ${window.localStorage.getItem("token")}`
+        }
       })
-      .catch((err) => {
-        console.log(err);
-        Notify("Deleting Failed, try again!", "err");
-      })
+        .then((res) => {
+          const tempEvents = [...events];
+          tempEvents.splice(idx, 1);
+          fillEvents([...tempEvents]);
+          Notify("Event deleted!", "success");
+        })
+        .catch((err) => {
+          console.log(err);
+          Notify("Deleting Failed, try again!", "err");
+        })
+    }else{
+        Notify("Deleting Aborted!", "info");
+    }
   }
 
   return (
