@@ -12,6 +12,11 @@ const Notify = (message, type) => {
         position: toast.POSITION.TOP_CENTER,
       });
       break;
+    case "info":
+      toast.info(message, {
+        position: toast.POSITION.TOP_CENTER,
+      });
+      break;
     default:
       break;
   }

@@ -74,7 +74,7 @@ const EventModal = (props) => {
             />
             <br />
             <span style={{ display: "block", width: "280px" }}>
-              For changing time first use backspace they enter number or use
+              For changing time first use backspace then enter number or use
               arrow keys
             </span>
           </div>
