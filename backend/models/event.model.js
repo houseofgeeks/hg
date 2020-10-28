@@ -2,26 +2,21 @@ const mongoose = require('mongoose');
 
 const eventSchema = new mongoose.Schema({
     community: {
-        required: true,
+        required: [true, "Please enter a community."],
         type: String,
         trim: true
     },
     title: {
-        required: true,
+        required: [true, "Please enter a title."],
         type: String,
         trim: true
     },
-    createdAt: {
-        required: true,
-        type: Date,
-        default: Date.now
-    },
     eventDate: {
-        required: true,
+        required: [true, "Please enter event date."],
         type: Date
     },
     description: {
-        required: true,
+        required: [true, "Please enter a description"],
         type: String,
         trim: true
     },
@@ -37,6 +32,6 @@ const eventSchema = new mongoose.Schema({
         type: String,
         trim: true
     }
-});
+}, {timestamps: true});
 
-module.exports = new mongoose.model('Event', eventSchema);
+module.exports = mongoose.model('Event', eventSchema);
