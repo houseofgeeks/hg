@@ -1,0 +1,67 @@
+.community-header-head {
+      text-align: center;
+      color: #EE2A7B;
+      font-weight: 400;
+      margin-top: 50px;
+      font-size: 6vh;
+      font-family: 'Montserrat', sans-serif;
+}
+
+.header-line {
+      width: 25vw;
+      margin-bottom: 40px;
+}
+
+.header-line-top {
+      width: 50vw;
+      margin-top: 100px;
+}
+
+.planet-img-member {
+      animation: myOrbit 4s linear infinite;
+      pointer-events: none;
+      position: absolute;
+      width: 28vw;
+      margin-top: 80px;
+      margin-left: -10vw;
+      /* margin-right: 50vw; */
+      z-index: -1;
+}
+
+.planet-img-member-1 {
+      animation: myOrbit 4s linear infinite;
+      pointer-events: none;
+      position: absolute;
+      width: 10vw;
+      margin-top: 25vh;
+      margin-left: 60vw;
+      /* margin-right: 50vw; */
+      z-index: -1;
+}
+
+.planet-img-member-2 {
+      animation: myOrbit 4s linear infinite;
+      pointer-events: none;
+      position: absolute;
+      width: 15vw;
+      margin-top: 80vh;
+      margin-left: 75vw;
+      /* margin-right: 50vw; */
+      z-index: -1;
+}
+
+.planet-img-member-3 {
+      animation: myOrbit 4s linear infinite;
+      pointer-events: none;
+      position: absolute;
+      width: 15vw;
+      margin-top: -35vh;
+      margin-left: 75vw;
+      /* margin-right: 50vw; */
+      z-index: -1;
+}
+
+.head-members{
+margin-left: 0;
+margin-right: 0;
+}
