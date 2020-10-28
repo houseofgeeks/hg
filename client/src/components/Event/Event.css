@@ -7,7 +7,7 @@
     background-position: center, left top -55vh;
     background-attachment: fixed, local;
     background-repeat: no-repeat, no-repeat;
-    height: 100vh;
+    height: auto;
 }
 
 .event-component .event-title {
@@ -35,7 +35,13 @@
 }
 
 .event-component .main-table .table-1 {
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.event-component .main-table .table-2 {
+    margin-bottom: 5vh;
     text-align: center;
     justify-content: center;
 }

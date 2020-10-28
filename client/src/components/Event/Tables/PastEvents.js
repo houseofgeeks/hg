@@ -13,7 +13,6 @@ function PastEvents(props) {
     useEffect(() => {
         if(props.events != null)
             setEvents(props.events);
-        console.log(events);
     }, [props.events, events])
 
     return (
@@ -25,7 +24,7 @@ function PastEvents(props) {
                 <thead>
                     <tr>
                         <th scope="col">EVENT NAME</th>
-                        <th scope="col">DATE</th>
+                        <th scope="col">DATE | TIME</th>
                         <th scope="col">COMMUNITY</th>
                     </tr>
                 </thead>
@@ -46,13 +45,13 @@ function PastEvents(props) {
                                                 {`${event.title}`}
                                             </a>
                                         </td>
-                                        <td>{`${event.eventDate}`}</td>
+                                        <td>{`${date.toLocaleDateString()} | ${date.toLocaleTimeString().substring(0, 5)}`}</td>
                                         <td>{`${event.community}`}</td>
                                     </tr>
                                 )
                             }
                             else {
-                                return(<tr></tr>);
+                                return(<tr key={id} ></tr>);
                             }
                     })}
                 </tbody>

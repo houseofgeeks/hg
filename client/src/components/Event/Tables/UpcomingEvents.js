@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './UpcomingEvents.css';
 
 function UpcomingEvents(props) {
@@ -10,10 +11,9 @@ function UpcomingEvents(props) {
         }
     ]);
     useEffect(() => {
-        if (props.events != null)
+        if(props.events != null)
             setEvents(props.events);
-        console.log(events);
-    }, [props.events, events]);
+    }, [props.events, events])
 
     return (
         <div className="table-1">
@@ -24,7 +24,7 @@ function UpcomingEvents(props) {
                 <thead>
                     <tr>
                         <th scope="col">EVENT NAME</th>
-                        <th scope="col">DATE</th>
+                        <th scope="col">DATE | TIME</th>
                         <th scope="col">COMMUNITY</th>
                     </tr>
                 </thead>
@@ -45,13 +45,13 @@ function UpcomingEvents(props) {
                                                 {`${event.title}`}
                                             </a>
                                         </td>
-                                        <td>{`${event.eventDate}`}</td>
+                                        <td>{`${date.toLocaleDateString()} | ${date.toLocaleTimeString().substring(0, 5)}`}</td>
                                         <td>{`${event.community}`}</td>
                                     </tr>
                                 )
                             }
                             else {
-                                return(<tr></tr>);
+                                return(<tr key={id} ></tr>);
                             }
                     })}
                 </tbody>

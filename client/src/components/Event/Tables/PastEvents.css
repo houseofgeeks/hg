@@ -2,10 +2,24 @@
     margin-top: 3vh;
     margin-bottom: 5vh;
     text-align: center;
+    margin-left: 0;
 }
 
 .table-2 a {
     text-decoration: none;
+}
+
+.table-2 thead
+{
+    background-color: #1eabd686;
+    text-align: center;
+    align-content: center;
+}
+
+.table-2 tr
+{
+    text-align: center;
+    align-content: center;
 }
 
 .table-2 .table-title {
@@ -28,7 +42,7 @@
 }
 
 .table-2 .event-title a, .table-2 .event-title {
-    font-size: 1.5vw;
+    font-size: 110%;
     font-weight: bold;
     color: white;
     transition: color 0.5s;
@@ -37,6 +51,7 @@
 .table-2 tr
 {
     color:white;
+    font-size: 110%;
 }
 
 .table-2 .event-title:hover a:hover {

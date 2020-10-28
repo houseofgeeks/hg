@@ -1,9 +1,25 @@
 .table-1 {
     margin-top: 3vh;
-    margin-bottom: 1vh;
-    justify-content: center;
+    margin-bottom: 5vh;
+    text-align: center;
+    margin-left: 0;
+}
+
+.table-1 a {
+    text-decoration: none;
+}
+
+.table-1 thead
+{
+    background-color: #1eabd686;
+    text-align: center;
     align-content: center;
-    align-self: center;
+}
+
+.table-1 tr
+{
+    text-align: center;
+    align-content: center;
 }
 
 .table-1 .table-title {
@@ -11,24 +27,22 @@
     font-size: 4vh;
 }
 
-.table-1 a {
-    text-decoration: none;
-}
-
 .table-1 table {
+    text-align: center;
     border-collapse: collapse;
     width: 80%;
     margin-left: 10vw;
 }
 
 .table-1 td, .table-1 th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 .table-1 .event-title a, .table-1 .event-title {
-    font-size: 1.5vw;
+    font-size: 110%;
     font-weight: bold;
     color: white;
     transition: color 0.5s;
@@ -37,8 +51,9 @@
 .table-1 tr
 {
     color:white;
+    font-size: 110%;
 }
 
-.table-1 .event-title a:hover {
+.table-1 .event-title:hover a:hover {
     color: #EE2A7B;
 }
