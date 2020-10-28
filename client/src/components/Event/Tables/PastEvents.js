@@ -20,7 +20,7 @@ function PastEvents(props) {
             <div className="table-title">
                 Past Events
             </div>
-            <table className="table">
+            <table className="table table-responsive-sm">
                 <thead>
                     <tr>
                         <th scope="col">EVENT NAME</th>

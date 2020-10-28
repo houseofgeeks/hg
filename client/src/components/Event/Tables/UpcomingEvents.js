@@ -20,7 +20,7 @@ function UpcomingEvents(props) {
             <div className="table-title">
                 Upcoming Events
             </div>
-            <table className="table">
+            <table className="table table-responsive-sm">
                 <thead>
                     <tr>
                         <th scope="col">EVENT NAME</th>
