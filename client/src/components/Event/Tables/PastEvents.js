@@ -5,28 +5,20 @@ import './PastEvents.css';
 
 function PastEvents(props) {
 
-    const [events, setEvents] = useState([
-        {
-            title: "Coming soon..",
-            eventDate: new Date()
-        }
-    ]);
+    const [events, setEvents] = useState([]);
+    const [isLoading, setLoading] = useState(true);
     useEffect(() => {
-        if(props.events != null)
+        if (props.events !== undefined) {
             setEvents(props.events);
-    }, [props.events, events])
-
-    function tConvert(time) {
-        // Check correct time format and split into components
-        time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
-
-        if (time.length > 1) { // If time format correct
-            time = time.slice (1);  // Remove full string match value
-            time[5] = +time[0] < 12 ? 'AM' : 'PM'; // Set AM/PM
-            time[0] = +time[0] % 12 || 12; // Adjust hours
+            setLoading(props.isLoading);
         }
-        return time.join (''); // return adjusted time or original string
-    }
+    }, [props.events, props.isLoading])
+
+    var options = {
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true
+    };
 
     return (
         <div className="table-2">
@@ -43,13 +35,13 @@ function PastEvents(props) {
                 </thead>
                 <tbody>
                     {
-                        events.map((event, id) => {
+                        isLoading?<tr><td colSpan="3">Retrieving Events...</td></tr>:events.map((event, id) => {
                             var currentDate = new Date();
                             var date = new Date(event.eventDate);
                             if (date < currentDate) {
                                 return (
                                     <tr key={id} >
-                                        <td className="event-title">
+                                        <td colSpan="1" className="event-title">
                                             <a
                                                 rel="noopener noreferrer"
                                                 href={`${event.eventLink}`}
@@ -59,8 +51,8 @@ function PastEvents(props) {
                                                 <BiLinkExternal/>
                                             </a>
                                         </td>
-                                        <td>{`${date.toLocaleDateString() } | ${ tConvert(date.toLocaleTimeString().substr(0, 5))}`}</td>
-                                        <td>{`${event.community}`}</td>
+                                        <td colSpan="1">{`${date.toLocaleDateString() } | ${ date.toLocaleString('en-US', options) }`}</td>
+                                        <td colSpan="1">{`${event.community}`}</td>
                                     </tr>
                                 )
                             }

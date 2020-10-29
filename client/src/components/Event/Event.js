@@ -7,12 +7,14 @@ import UpcomingEvents from './Tables/UpcomingEvents';
 
 function Event() {
     const [events, setEvents] = useState([]);
+    const [isLoading, setLoading] = useState(true);
     useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API || ''}/event/all`)
       .then((res) => {
         const { result } = res.data;
         setEvents([...result]);
+        setLoading(false);
       })
       .catch((err) => {
         setEvents([
@@ -39,10 +41,10 @@ function Event() {
             </div>
             <div className="main-table">
                 <div className="table-1">
-                    <UpcomingEvents events={events} />
+                    <UpcomingEvents events={events} isLoading={isLoading}/>
                 </div>
                 <div className="table-2">
-                    <PastEvents events={events} />
+                    <PastEvents events={events} isLoading={isLoading}/>
                 </div>
             </div>
         </div>
