@@ -1,0 +1,60 @@
+.table-2 {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    margin-left: 0;
+}
+
+.table-2 a {
+    text-decoration: none;
+}
+
+.table-2 thead
+{
+    background-color: #1eabd686;
+    text-align: center;
+    align-content: center;
+}
+
+.table-2 tr
+{
+    text-align: center;
+    align-content: center;
+}
+
+.table-2 .table-title {
+    text-align: center;
+    font-size: 4vh;
+    margin-bottom: 2vh;
+}
+
+.table-2 table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10vw;
+}
+
+.table-2 td, .table-2 th {
+    text-align: center;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table-2 .event-title a, .table-2 .event-title {
+    font-size: 110%;
+    font-weight: bold;
+    color: white;
+    transition: color 0.5s;
+}
+
+.table-2 tr
+{
+    color:white;
+    font-size: 110%;
+}
+
+.table-2 .event-title:hover a:hover {
+    color: #EE2A7B;
+}

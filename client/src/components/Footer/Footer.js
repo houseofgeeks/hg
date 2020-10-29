@@ -69,7 +69,7 @@ function Footer() {
         <div className="row">
           <div className="col-12 col-md-4 col-sm-4 text-center text-white">
             <p
-              class="trigger-modal"
+              className="trigger-modal"
               data-toggle="modal"
               data-target="#WebTeamModal"
             >
