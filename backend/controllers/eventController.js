@@ -19,7 +19,7 @@ module.exports.create_event = async (req, res) => {
 
 module.exports.get_event = async (req, res) => {
     try {
-        const {query, sort = {createdAt: -1}, limit} = req.body.options || {}
+        const {query, sort = {eventDate: -1}, limit} = req.body.options || {}
         const result = await Event.find(query)
             .sort(sort)
             .limit(limit)
