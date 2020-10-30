@@ -79,6 +79,16 @@ function Event({ page }) {
                   );
                 })}
               </ul>
+              <div className="know-more">
+                    <a
+                        rel="noopener noreferrer"
+                        href={"/event"}
+                        className="item-title"
+                      >
+                     Know More..
+                      </a>
+                    
+                  </div>
             </div>
           )}
         </div>
