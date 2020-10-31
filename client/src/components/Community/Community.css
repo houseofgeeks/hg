@@ -108,12 +108,12 @@
   .community-component .title {
     font-family: "Raleway";
     color: #ee2a7b;
-    font-size: 5vh;
+    font-size: 6vh;
     width: auto;
     height: auto;
     opacity: 1;
     margin-bottom: 5vh;
-    margin-left: 2vw;
+    text-align: center;
   }
 
   .community-component .community-card {
