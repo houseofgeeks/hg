@@ -9,9 +9,9 @@ function Community() {
   return (
     <div className="community-component">
       <div className="side-banner">Wings of House of Geeks</div>
+      <div className="title">Communities of House of Geeks</div>
       <div className="container-fluid main">
-        <div className="row justify-content-around">
-          <div className="title">Communities of House of Geeks</div>
+        <div className="row justify-content-around">         
           <div className="col-12" />
           {list.map((item) => {
             return (
