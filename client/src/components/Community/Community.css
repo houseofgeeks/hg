@@ -20,10 +20,15 @@
 }
 
 .community-component .title {
+  opacity: 1;
+  width: 20em;
+  height: 0;
+  pointer-events: none;
+  margin: 3em;
+  padding: 0;
   color: #ee2a7b;
   font-size: 8vh;
   text-align: center;
-  margin-top: 3em;
 }
 
 .community-component .community-card {
