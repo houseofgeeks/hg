@@ -10,7 +10,7 @@
 
 .partners-title {
       color: #EE2A7B;
-      font-size: 7vh;
+      font-size: 6vh;
       text-align: center;
       margin-bottom: 10vh;
       margin-top: 10vh;
@@ -98,7 +98,6 @@ text-decoration: none;
 }
 @media(max-width:650px) {
       .partners-title {
-            font-size: 6vh;
             text-align: center;
             margin-left: 0;
       }

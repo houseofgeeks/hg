@@ -10,7 +10,7 @@
 .about-us-section .title {
       color: #EE2A7B;
       font-size: 6vh;
-      margin-left: 8vw;
+      text-align: center;
       margin-bottom: 5vh;
       margin-top: 8vh;
 }
@@ -36,10 +36,6 @@
 @media screen and (max-width: 426px) {
       .about-us-section {
             border: none;
-      }
-
-      .about-us-section .title {
-            margin-left: 0;
       }
 
       .about-us-section .content {
