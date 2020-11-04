@@ -19,25 +19,6 @@ export const HeadMembersLists = [{
       },
       {
             id: 2,
-            img: './images/ravi.jpg',
-            name: 'Ravi Kumar',
-            position: 'Technical Head ECE',
-            mail: 'mailto:ravikr.btech.ec17@iiitranchi.ac.in',
-            github: '',
-            linkedin: 'https://www.linkedin.com/in/ravi-kumar-5b9a8b149'
-      },
-
-      {
-            id: 3,
-            img: './images/anshuman.jfif',
-            name: 'Anshuman Tripathi',
-            position: 'Overseer',
-            mail: '',
-            github: '',
-            linkedin: 'linkedin.com/in/ats1available'
-      },
-      {
-            id: 4,
             img: './images/devansh.jfif',
             name: 'Devansh Srivastava',
             position: 'Joint Secretary',
@@ -45,7 +26,24 @@ export const HeadMembersLists = [{
             github: 'https://github.com/devansh-srivastav-kashyap',
             linkedin: 'https://www.linkedin.com/in/devansh-srivastava-958766167'
       },
-
+      {
+            id: 3,
+            img: './images/ravi.jpg',
+            name: 'Ravi Kumar',
+            position: 'Technical Head ECE',
+            mail: 'mailto:ravikr.btech.ec17@iiitranchi.ac.in',
+            github: '',
+            linkedin: 'https://www.linkedin.com/in/ravi-kumar-5b9a8b149'
+      },
+      {
+            id: 4,
+            img: './images/anshuman.jfif',
+            name: 'Anshuman Tripathi',
+            position: 'Overseer',
+            mail: '',
+            github: '',
+            linkedin: 'linkedin.com/in/ats1available'
+      },
       {
             id: 5,
             img: './images/reddit.png',
@@ -55,8 +53,5 @@ export const HeadMembersLists = [{
             github: '',
             linkedin: ''
       }
-
-
-
 
 ];

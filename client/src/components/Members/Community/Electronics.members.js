@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import {ReactComponent as Github} from "../img/github-brands.svg";
 import {ReactComponent as LinkedIn} from "../img/linkedin-brands.svg";
 import {ReactComponent as Email} from "../img/mail.svg";
 import {ElcMembersLists as elcLists} from './ElcMembersList.js';

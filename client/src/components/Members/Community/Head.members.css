@@ -24,7 +24,6 @@
       width: 28vw;
       margin-top: 80px;
       margin-left: -10vw;
-      /* margin-right: 50vw; */
       z-index: -1;
 }
 
@@ -35,7 +34,6 @@
       width: 10vw;
       margin-top: 25vh;
       margin-left: 60vw;
-      /* margin-right: 50vw; */
       z-index: -1;
 }
 
@@ -46,7 +44,6 @@
       width: 15vw;
       margin-top: 80vh;
       margin-left: 75vw;
-      /* margin-right: 50vw; */
       z-index: -1;
 }
 
@@ -57,7 +54,6 @@
       width: 15vw;
       margin-top: -35vh;
       margin-left: 75vw;
-      /* margin-right: 50vw; */
       z-index: -1;
 }
 

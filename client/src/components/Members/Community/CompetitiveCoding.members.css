@@ -11,8 +11,9 @@
 
 .cp-img {
       border-radius: 100%;
-      width: 15vw;
+      width: 18vw;
       margin-top: 25px;
+      border: 0.38rem solid #EE2A7B;
 }
 
 .icons-members {
@@ -71,7 +72,6 @@
       width: 10vw;
       margin-top: 80vh;
       margin-left: 75vw;
-      /* margin-right: 50vw; */
       z-index: -1;
 }
 
@@ -114,6 +114,7 @@
       margin-left: -16vw;
       z-index: -1;
 }
+
 @media (min-width:2560px) {
       .cp-img {
             border-radius: 100%;
@@ -147,6 +148,13 @@
             height: 25px;
             width: 4vw;
       }
+
+      .cp-img {
+            border-radius: 100%;
+            width: 30vw;
+            margin-top: 30px;
+            border: 0.3rem solid #EE2A7B;
+      }
 }
 
 @media(max-width:550px) {
@@ -158,13 +166,15 @@
             border-radius: 100%;
             width: 50vw;
             margin-top: 30px;
+            border: 0.3rem solid #EE2A7B;
       }
-.cp-img-div{
-margin-left: 0;
-margin-right: 0;
-padding-left: 0;
-padding-right: 0;
-}
+
+      .cp-img-div {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+      }
 
       .icons-members {
             height: 35px;

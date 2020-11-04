@@ -17,5 +17,4 @@ export const MlMembersLists = [{
             linkedin: 'https://www.linkedin.com/in/vishal19111999'
       }
 
-
 ];
