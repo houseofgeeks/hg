@@ -1,0 +1,16 @@
+.event-component{
+margin-top: 0;
+position: relative;
+}
+
+.event-component .event-section{
+position: relative;
+}
+.event-component .title {
+    font-family: 'Raleway';
+    color: #EE2A7B;
+    font-size: 8vh;
+    opacity: 1;
+    margin: 5vh 0;
+    text-align: center;
+}
