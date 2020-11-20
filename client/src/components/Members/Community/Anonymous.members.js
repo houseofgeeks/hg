@@ -10,7 +10,7 @@ function AnonymousMembers() {
 
       const renderedItems = anonLists.map((anonList, index) => {
 
-            return (<div className="anon-members">
+            return (<div className="anon-members" key={anonList.id}>
                   <div className="cp-img-div">
                         <img className="cp-img" src={anonList.img} alt="cpm"/>
                         <h3 className="member-name">{anonList.name}</h3>

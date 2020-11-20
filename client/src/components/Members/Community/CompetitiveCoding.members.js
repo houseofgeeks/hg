@@ -12,7 +12,7 @@ function CompetitiveCodingMembers() {
 
       const renderedItems = cpLists.map((cpList, index) => {
 
-            return (<div className="cp-members">
+            return (<div className="cp-members" key={cpList.id}>
                   <div className="cp-img-div">
                         <img className="cp-img" src={cpList.img} alt="cpm"/>
                         <h3 className="member-name">{cpList.name}</h3>

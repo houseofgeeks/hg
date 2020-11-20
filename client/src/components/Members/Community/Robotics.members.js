@@ -13,7 +13,7 @@ function RoboticsMembers() {
 
 
       return (
-      <div className="rob-members">
+      <div className="rob-members" key={robList.id}>
       <div className="cp-img-div">
       <img className="cp-img" src={robList.img} alt="cpm" />
       <h3 className="member-name">{robList.name}</h3>

@@ -8,7 +8,7 @@ import {IotMembersLists as iotLists} from './IotMembersList.js';
 function IotMembers() {
       const renderedItems = iotLists.map((iotList, index) => {
 
-            return (<div className="iot-members">
+            return (<div className="iot-members" key={iotList.id}>
                   <div className="cp-img-div">
                         <img className="cp-img" src={iotList.img} alt="cpm"/>
                         <h3 className="member-name">{iotList.name}</h3>
