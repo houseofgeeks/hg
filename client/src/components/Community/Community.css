@@ -5,7 +5,7 @@
 }
 
 .community-component .main {
-  margin-top: 30vh;
+  margin-top: 10vh;
 }
 
 .community-component .side-banner {
@@ -20,12 +20,15 @@
 }
 
 .community-component .title {
-  opacity: 0;
-  width: 0;
+  opacity: 1;
+  width: 20em;
   height: 0;
   pointer-events: none;
-  margin: 0;
+  margin-bottom: 3em;
   padding: 0;
+  color: #ee2a7b;
+  font-size: 8vh;
+  text-align: center;
 }
 
 .community-component .community-card {
