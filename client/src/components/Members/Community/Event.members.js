@@ -9,7 +9,7 @@ function EventMembers() {
 
       const renderedItems = evnLists.map((evnList, index) => {
 
-            return (<div className="evn-members">
+            return (<div className="evn-members" key={evnList.id}>
                   <div className="cp-img-div">
                         <img className="cp-img" src={evnList.img} alt="cpm"/>
                         <h3 className="member-name">{evnList.name}</h3>

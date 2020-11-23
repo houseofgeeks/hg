@@ -9,7 +9,7 @@ import planet from "../img/planet_2.svg";
 function MachineLearningMembers() {
       const renderedItems = mlLists.map((mlList, index) => {
 
-            return (<div className="cp-members">
+            return (<div className="cp-members" key={mlList.id}>
                   <div className="cp-img-div">
                         <img className="cp-img" src={mlList.img} alt="cpm"/>
                         <h3 className="member-name">{mlList.name}</h3>
