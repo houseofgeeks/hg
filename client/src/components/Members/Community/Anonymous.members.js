@@ -16,15 +16,15 @@ function AnonymousMembers() {
                         <h3 className="member-name">{anonList.name}</h3>
                         <h5 className="member-position">{anonList.position}</h5>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={anonList.linkedin}>
-                              <LinkedIn className="icons-members"></LinkedIn>
+                              {anonList.linkedin && <LinkedIn className="icons-members"></LinkedIn>}
 
                         </a>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={anonList.github}>
-                              <Github className="icons-members"></Github>
+                              {anonList.github && <Github className="icons-members"></Github>}
 
                         </a>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={"mailto:" + anonList.mail}>
-                              <Email className="icons-members"></Email>
+                              {anonList.mail && <Email className="icons-members"></Email>}
 
                         </a>
 

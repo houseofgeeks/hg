@@ -1,9 +1,9 @@
 export const HeadMembersLists = [{
             id: 0,
-            img: './images/reddit.png',
-            name: 'Loren ipsum',
+            img: './images/Jayadeep.jpg',
+            name: 'Dr. Jayadeep Pati',
             position: 'Faculty',
-            mail: '',
+            mail: 'jayadeeppati@iiitranchi.ac.in',
             github: '',
             linkedin: ''
 
@@ -46,12 +46,12 @@ export const HeadMembersLists = [{
       },
       {
             id: 5,
-            img: './images/reddit.png',
+            img: './images/Shivam.jpg',
             name: 'Shivam Kesharwani',
             position: 'Technical Head CSE',
             mail: '',
             github: '',
-            linkedin: ''
+            linkedin: 'https://www.linkedin.com/in/shivam-kesarwani-93b788191/'
       }
 
 ];
