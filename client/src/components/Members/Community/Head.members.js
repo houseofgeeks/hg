@@ -35,16 +35,15 @@ function HeadMembers() {
                                           <h3 className="member-name">{headList.name}</h3>
                                           <h5 className="member-position">{headList.position}</h5>
                                           <a className="text-white" target="_blank" rel="noopener noreferrer" href={headList.linkedin}>
-                                                <LinkedIn className="icons-members"></LinkedIn>
+                                                {headList.linkedin && <LinkedIn className="icons-members"></LinkedIn>}
                                           </a>
 
                                           <a className="text-white" target="_blank" rel="noopener noreferrer" href={headList.github}>
-                                                <Github className="icons-members"></Github>
-
+                                                {headList.github && <Github className="icons-members"></Github>}
                                           </a>
 
                                           <a className="text-white" target="_blank" rel="noopener noreferrer" href={"mailto:" + headList.mail}>
-                                                <Email className="icons-members"></Email>
+                                                {headList.mail && <Email className="icons-members"></Email>}
 
                                           </a>
 
