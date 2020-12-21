@@ -7,10 +7,17 @@ function PastEvents(props) {
 
     const [events, setEvents] = useState([]);
     const [isLoading, setLoading] = useState(true);
+    const [message, setMessage] = useState("Retrieving Events...")
+
     useEffect(() => {
         if (props.events !== undefined) {
-            setEvents(props.events);
-            setLoading(props.isLoading);
+            const today = new Date();
+            if(props.events.some(e => new Date(e.eventDate) >= today)){
+                setMessage("No upcoming events found!");
+            }else{
+                setEvents(props.events);
+                setLoading(props.isLoading);
+            }
         }
     }, [props.events, props.isLoading])
 
@@ -35,7 +42,7 @@ function PastEvents(props) {
                 </thead>
                 <tbody>
                     {
-                        isLoading?<tr><td colSpan="3">Retrieving Events...</td></tr>:events.map((event, id) => {
+                        isLoading?<tr><td colSpan="3">{message}</td></tr>:events.map((event, id) => {
                             var currentDate = new Date();
                             var date = new Date(event.eventDate);
                             if (date < currentDate) {

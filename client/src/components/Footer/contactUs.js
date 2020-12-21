@@ -62,7 +62,7 @@ const Contact = () => {
               aria-describedby="emailHelp"
               placeholder="Your Email"
               required
-              autoComplete
+              autoComplete="true"
             />
           </div>
           <div className="form-group col-12">

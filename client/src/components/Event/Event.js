@@ -6,7 +6,7 @@ import PastEvents from './Tables/PastEvents';
 import UpcomingEvents from './Tables/UpcomingEvents';
 
 function Event() {
-    const [events, setEvents] = useState([]);
+    const [events, setEvents] = useState(undefined);
     const [isLoading, setLoading] = useState(true);
     useEffect(() => {
     axios

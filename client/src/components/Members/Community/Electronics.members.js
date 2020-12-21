@@ -8,7 +8,7 @@ import planet from "../img/planet_2.svg";
 function ElectronicsMembers() {
       const renderedItems = elcLists.map((elcList, index) => {
 
-            return (<div className="elc-members">
+            return (<div className="elc-members" key={elcList.id}>
                   <div className="cp-img-div">
                         <img className="cp-img" src={elcList.img} alt="cpm"/>
                         <h3 className="member-name">{elcList.name}</h3>

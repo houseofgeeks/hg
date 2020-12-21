@@ -11,7 +11,7 @@ function CreaxnMembers() {
 
       const renderedItems = cxnLists.map((cxnList, index) => {
 
-            return (<div className="cxn-members">
+            return (<div className="cxn-members" key={cxnList.id}>
                   <div className="cp-img-div">
                         <img className="cp-img" src={cxnList.img} alt="cpm"/>
                         <h3 className="member-name">{cxnList.name}</h3>

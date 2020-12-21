@@ -46,8 +46,6 @@ function LoginForm(props) {
     e.preventDefault();
     const err = validate();
     setErrors({ ...errors, ...err });
-
-    // console.log(errors);
     if (errors.password !== "") return;
     const payload = {
       pass: `${account.password}`,

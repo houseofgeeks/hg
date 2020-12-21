@@ -1,11 +1,11 @@
 export const MlMembersLists = [{
             id: 0,
-            img: './images/reddit.png',
+            img: './images/Sarthak.jpg',
             name: 'Sarthak Srivastava',
             position: 'Community Head',
             mail: '',
             github: '',
-            linkedin: ''
+            linkedin: 'https://www.linkedin.com/in/sarthak-srivastava-bb3608157/'
       },
       {
             id: 1,
