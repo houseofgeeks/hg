@@ -99,6 +99,10 @@
   width: calc(100% - 45vw - 64px);
 }
 
+.event-comp {
+  min-height: 100vh;
+}
+
 .event-section-home {
   margin-bottom: 64px;
   width: calc(100% - 45vw - 64px);
