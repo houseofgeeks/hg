@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import planet from "./planet_2.svg";
 import "./Event.css";
 import union from "./union.svg";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 function Event({ page }) {
   const [events, setEvent] = useState([
     { title: "fetching events", description: ". . ." },
@@ -12,7 +12,7 @@ function Event({ page }) {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API || ''}/event`)
+      .get(`${process.env.REACT_APP_API || ""}/event`)
       .then((res) => {
         const { result } = res.data;
         setEvent([...result]);
@@ -31,7 +31,7 @@ function Event({ page }) {
   }, []);
 
   return (
-    <div>
+    <div className="event-comp">
       <img
         src={planet}
         className={`planet-img ${page === "Home" ? "planet-img-home" : ""}`}
@@ -81,10 +81,8 @@ function Event({ page }) {
                 })}
               </ul>
               <div className="know-more">
-              <Link to="/event"> 
-              Know More..
-              </Link>
-                  </div>
+                <Link to="/event">Know More..</Link>
+              </div>
             </div>
           )}
         </div>
