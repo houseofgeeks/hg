@@ -65,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   .union .union-img {
     opacity: 0;
     pointer-events: none;
@@ -73,39 +73,41 @@
     width: 0;
     display: none;
   }
+  .col-1 .planet-img {
+    position: absolute;
+    left: -300px;
+    width: 350px;
+    height: 350px;
+  }
+  .event-section .event-title {
+    text-align: center;
+  }
 }
 
 .planet-img {
   animation: myOrbit 4s linear infinite;
   pointer-events: none;
-  width: 30vw;
-  margin-top: 150px;
-  margin-left: 15vw;
-  margin-right: 64px;
-  float: left;
-}
-
-.planet-img-home {
-  width: 30vw;
-  margin-top: 150px;
-  margin-left: 15vw;
-  margin-right: 64px;
-  float: left;
+  margin-top: 50px;
+  width: 50vw;
+  height: 50vw;
+  max-width: 380px;
+  max-height: 380px;
+  float: right;
+  margin-right: -20px;
 }
 
 .event-section {
   display: inline-block;
   min-height: 384px;
-  width: calc(100% - 45vw - 64px);
 }
 
 .event-comp {
   min-height: 100vh;
+  margin-right: -30px;
 }
 
 .event-section-home {
   margin-bottom: 64px;
-  width: calc(100% - 45vw - 64px);
 }
 .event-section .event-content .event-list {
   color: white;
@@ -113,104 +115,10 @@
   margin-left: 15px;
 }
 
-@media (max-width: 768px) {
-  .event-section .event-content .event-list {
-    margin-left: 0px;
-  }
-}
-@media (max-width: 450px) {
-  .planet-img {
-    margin-left: calc(0vw);
-    margin-right: 48px;
-  }
-  .event-section {
-    width: calc(100% - 30vw - 48px);
-  }
-
-  .event-section .event-content .event-list {
-    margin-left: 0px;
-  }
-}
-
-@media (max-width: 425px) {
-  .event-section .event-title {
-    color: #1eabd6;
-    font-size: 4vh;
-  }
-
-  .event-section .event-content .title {
-    color: white;
-    font-size: 2.9vh;
-  }
-
-  .event-section .event-content .event-list {
-    color: white;
-    font-size: 2.5vh;
-    margin-left: 5px;
-  }
-
-  .event-section {
-    margin: 0 10vw;
-    width: 80vw;
-  }
-
-  .event-section-home {
-    margin: 0 0;
-    width: 80vw;
-  }
-  .event-list {
-    margin-left: 64px !important;
-  }
-
-  .planet-img {
-    width: 64vw;
-    position: absolute;
-    margin-top: 32vh;
-    margin-left: calc(15vw);
-    left: calc(-32vw - 64px);
-  }
-}
-
-@media (max-width: 414px) {
-  .event-section {
-    margin-bottom: 64px;
-  }
-
-  .event-section-home {
-    margin-bottom: 32px;
-    min-height: 416px !important;
-  }
-}
-
-@media (max-width: 240px) {
-  .planet-img-home {
-    width: 64vw;
-    position: absolute;
-    margin-top: 32vh;
-    left: calc(-32vw - 48px);
-  }
-
-  .event-section-home .event-list {
-    margin-left: 32px !important;
-  }
-
-  .planet {
-    margin-left: 40px;
-  }
-
-  .planet .planet-img {
-    margin-top: 40px;
-  }
-
-  .event-section {
-    min-height: 256px;
-    margin-bottom: 16px;
-  }
-}
-
 .event-section .event-title {
   color: #1eabd6;
   font-size: 4vh;
+  margin-left: 15px;
 }
 
 .event-section .event-content .title {
