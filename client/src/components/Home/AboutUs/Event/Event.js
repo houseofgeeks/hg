@@ -3,7 +3,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import planet from "./planet_2.svg";
 import "./Event.css";
-import union from "./union.svg";
+
 import { Link } from "react-router-dom";
 function Event({ page }) {
   const [events, setEvent] = useState([
@@ -33,28 +33,26 @@ function Event({ page }) {
   return (
     <div className="event-comp container-fluid">
       <div className="row">
-        <div className="col-1 col-md-6">
-          <img
-            src={planet}
-            className={`planet-img ${page === "Home" ? "planet-img-home" : ""}`}
-            alt="planet"
-          />
+        <div className="col-1 col-md-4">
+          {!isLoading && (
+            <img
+              src={planet}
+              className={`planet-img ${
+                page === "Home" ? "planet-img-home" : ""
+              }`}
+              alt="planet"
+            />
+          )}
         </div>
 
-        {page === "Home" && (
-          <div className="union">
-            <img src={union} className="union-img" alt="union" />
-          </div>
-        )}
-
         <div
-          className={`event-section col-11 col-md-6 ${
+          className={`event-section col-11 col-md-8 ${
             page === "Home" ? "event-section-home" : ""
           }`}
         >
           <div className="event-title">From the Geeks' Satellite..</div>
           <div className="event-content">
-            <div className="title">
+            <div className="mb-3">
               <span className="receiving">Recieving signals...</span>
               <span className="decrypting"> Decrypting...</span>
               <span className="latest-news"> Latest Events...</span>

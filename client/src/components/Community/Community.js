@@ -4,16 +4,22 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Community.css";
 import list from "./CommunityList";
 import loader from "./loader.svg";
+import union from "./union.svg";
 
 function Community() {
-  const currentloc = String(window.location); 
-  let currenttab = currentloc.substring(currentloc.lastIndexOf("/") + 1); 
+  const currentloc = String(window.location);
+  let currenttab = currentloc.substring(currentloc.lastIndexOf("/") + 1);
   return (
     <div className="community-component">
       <div className="side-banner">Wings of House of Geeks</div>
       <div className="container-fluid main">
         <div className="row justify-content-around">
-          {currenttab === "community" && ( <div className="title">Communities of House of Geeks</div> )}
+          {currenttab === "community" && (
+            <div className="title">Communities of House of Geeks</div>
+          )}
+          <div className="union col-12">
+            <img src={union} className="union-img" alt="union" />
+          </div>
           <div className="col-12" />
           {list.map((item) => {
             return (
