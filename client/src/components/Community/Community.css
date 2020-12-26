@@ -236,3 +236,78 @@
     transform: rotate(360deg);
   }
 }
+.union .union-img {
+  position: absolute;
+  height: 120vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+  pointer-events: none;
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+  .union .union-img {
+    height: 145vh !important;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+  .union .union-img {
+    height: 160vh !important;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  .union .union-img {
+    height: 160vh !important;
+  }
+}
+@media (max-width: 1280px) and (max-height: 720px) {
+  .union .union-img {
+    height: 160vh !important;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  .union .union-img {
+    height: 155vh !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .union .union-img {
+    height: 160vh;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .union .union-img {
+    height: 155vh;
+  }
+}
+
+@media (max-width: 834px) and (max-height: 1112px) {
+  .union .union-img {
+    height: 160vh !important;
+  }
+}
+@media (max-width: 768px) and (max-height: 1024px) {
+  .union .union-img {
+    height: 210vh !important;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 1280px) {
+  .union .union-img {
+    height: 240vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .union .union-img {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    width: 0;
+    display: none;
+  }
+}
