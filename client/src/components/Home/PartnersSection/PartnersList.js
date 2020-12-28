@@ -1,34 +1,34 @@
 export const PartnersList = [{
             id: 0,
             name: 'Coding Blocks',
-            img: './images/codingblocks.svg',
+            img: './images/Sponsors/svg/codingblocks.svg',
             link: '/sponsors'
       },
       {
             id: 1,
             name: 'Chefs Club IIIT Ranchi',
-            img: './images/chefclub.svg',
+            img: './images/Sponsors/svg/chefclub.svg',
             link: '/sponsors'
 
       },
       {
             id: 2,
             name: 'IEEE Student Branch',
-            img: './images/ieee.svg',
+            img: './images/Sponsors/svg/ieee.svg',
             link: '/sponsors'
 
       },
       {
             id: 3,
             name: 'OSA Student Branch',
-            img: './images/osa.svg',
+            img: './images/Sponsors/svg/osa.svg',
             link: '/sponsors'
 
       },
       {
             id: 4,
             name: 'OUTSCAL',
-            img: './images/outscal.svg',
+            img: './images/Sponsors/svg/outscal.svg',
             link: '/sponsors'
       }
 

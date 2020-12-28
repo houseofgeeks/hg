@@ -1,6 +1,6 @@
 export const IotMembersLists = [{
             id: 0,
-            img: './images/Ashwani.jpg',
+            img: './images/Members/IoT/Ashwani.jpg',
             name: 'Ashwani Kumar',
             position: 'Community Head',
             mail: '',

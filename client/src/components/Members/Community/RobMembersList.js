@@ -2,7 +2,7 @@ export const RobMembersLists = [
 
       {
             id: 0,
-            img: './images/ved.jfif',
+            img: './images/Members/Robotics/ved.jfif',
             name: 'Ved Prakash',
             position: 'Community Head',
             mail: 'ved.btech.ec17@iiitranchi.ac.in',
@@ -11,7 +11,7 @@ export const RobMembersLists = [
       },
       {
             id: 1,
-            img: './images/sudhanshu.jpeg',
+            img: './images/Members/Robotics/sudhanshu.jpeg',
             name: 'Sudhanshu Jaiswal',
             position: 'Community Co-ordinator',
             mail: 'sudha.btech.cs18@iiitranchi.ac.in',

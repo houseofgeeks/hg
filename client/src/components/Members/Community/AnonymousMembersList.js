@@ -1,6 +1,6 @@
 export const AnonymousMembersLists = [{
             id: 0,
-            img: './images/reddit.png',
+            img: './images/Members/Anonymous/reddit.png',
             name: 'Lakshith',
             position: 'Team Head',
             mail: '',

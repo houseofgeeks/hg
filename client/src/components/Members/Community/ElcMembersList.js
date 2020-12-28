@@ -2,7 +2,7 @@ export const ElcMembersLists = [
 
       {
             id: 0,
-            img: './images/vipul.jpg',
+            img: './images/Members/Core Electronics/vipul.jpg',
             name: 'Vipul Pandey',
             position: 'Community Head',
             mail: 'https://www.linkedin.com/in/vipul-pandey-3b0728192',
@@ -10,7 +10,7 @@ export const ElcMembersLists = [
       },
       {
             id: 1,
-            img: './images/devansh.jfif',
+            img: './images/Members/Core Electronics/devansh.jfif',
             name: 'Devansh Srivastava',
             position: 'Community Co-ordinator',
             mail: 'devansh.btech.ec18@iiitranchi.ac.in',
