@@ -1,6 +1,6 @@
 export const CreaxnMembersLists = [{
             id: 0,
-            img: './images/shubham.png',
+            img: './images/Members/Creaxn/shubham.png',
             name: 'Shubham Kushwaha',
             position: 'Team Head',
             mail: 'shub.kush.kundan.1@gmail.com',
