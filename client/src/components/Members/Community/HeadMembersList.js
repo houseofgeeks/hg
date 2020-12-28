@@ -1,6 +1,6 @@
 export const HeadMembersLists = [{
             id: 0,
-            img: './images/Jayadeep.jpg',
+            img: './images/Members/Core/Jayadeep.jpg',
             name: 'Dr. Jayadeep Pati',
             position: 'Faculty',
             mail: 'jayadeeppati@iiitranchi.ac.in',
@@ -10,7 +10,7 @@ export const HeadMembersLists = [{
       },
       {
             id: 1,
-            img: './images/sameer.jpeg',
+            img: './images/Members/Core/sameer.jpeg',
             name: 'Sameer Jha',
             position: 'Secretary',
             mail: 'sameer.btech.cs17@iiitranchi.ac.in',
@@ -19,7 +19,7 @@ export const HeadMembersLists = [{
       },
       {
             id: 2,
-            img: './images/devansh.jfif',
+            img: './images/Members/Core/devansh.jfif',
             name: 'Devansh Srivastava',
             position: 'Joint Secretary',
             mail: 'devansh.btech.ec18@iiitranchi.ac.in',
@@ -28,7 +28,7 @@ export const HeadMembersLists = [{
       },
       {
             id: 3,
-            img: './images/ravi.jpg',
+            img: './images/Members/Core/ravi.jpg',
             name: 'Ravi Kumar',
             position: 'Technical Head ECE',
             mail: 'mailto:ravikr.btech.ec17@iiitranchi.ac.in',
@@ -37,7 +37,7 @@ export const HeadMembersLists = [{
       },
       {
             id: 4,
-            img: './images/anshuman.jfif',
+            img: './images/Members/Core/anshuman.jfif',
             name: 'Anshuman Tripathi',
             position: 'Overseer',
             mail: '',
@@ -46,7 +46,7 @@ export const HeadMembersLists = [{
       },
       {
             id: 5,
-            img: './images/Shivam.jpg',
+            img: './images/Members/Core/Shivam.jpg',
             name: 'Shivam Kesharwani',
             position: 'Technical Head CSE',
             mail: '',
