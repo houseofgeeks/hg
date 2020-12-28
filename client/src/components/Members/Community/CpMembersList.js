@@ -1,6 +1,6 @@
 export const CpMembersLists = [{
             id: 0,
-            img: './images/shubhamsahu.jpeg',
+            img: './images/Members/Competitive Coding/shubhamsahu.jpeg',
             name: 'Shubham Kr Sahu',
             position: 'Community Head',
             mail: 'shubhamsahu.15011998@gmail.com',
@@ -9,7 +9,7 @@ export const CpMembersLists = [{
       },
       {
             id: 1,
-            img: './images/rishabh.jfif',
+            img: './images/Members/Competitive Coding/rishabh.jfif',
             name: 'Rishabh Kumar',
             position: 'Community Co-ordinator',
             mail: 'rishabh0lucky@gmail.com',
