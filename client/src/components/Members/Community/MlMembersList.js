@@ -1,6 +1,6 @@
 export const MlMembersLists = [{
             id: 0,
-            img: './images/Sarthak.jpg',
+            img: './images/Members/Machine Learning/Sarthak.jpg',
             name: 'Sarthak Srivastava',
             position: 'Community Head',
             mail: '',
@@ -9,7 +9,7 @@ export const MlMembersLists = [{
       },
       {
             id: 1,
-            img: './images/vishal.jfif',
+            img: './images/Members/Machine Learning/vishal.jfif',
             name: 'Vishal Pratap Singh',
             position: 'Community Co-ordinator',
             mail: 'vishal19111999@hotmail.com',
