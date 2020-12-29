@@ -52,7 +52,7 @@ function Event({ page }) {
         >
           <div className="event-title">From the Geeks' Satellite..</div>
           <div className="event-content">
-            <div className="mb-3">
+            <div className="mb-3 receiving-msg">
               <span className="receiving">Recieving signals...</span>
               <span className="decrypting"> Decrypting...</span>
               <span className="latest-news"> Latest Events...</span>

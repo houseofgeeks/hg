@@ -5,6 +5,10 @@
     width: 350px;
     height: 350px;
   }
+  .event-section .event-title,
+  .event-section .receiving-msg {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 392px) {
   .col-1 .planet-img {
@@ -42,7 +46,6 @@
 
 .event-comp {
   min-height: auto;
-  margin-right: -30px;
 }
 
 .event-section-home {
@@ -60,9 +63,10 @@
   margin-left: 15px;
 }
 
-.event-section .event-content .title {
+.event-section .event-content .mb-3 {
   color: white;
   font-size: 3vh;
+  margin-left: 15px;
 }
 
 .event-section .event-content .event-loading {
