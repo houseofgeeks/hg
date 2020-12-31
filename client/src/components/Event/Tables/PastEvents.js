@@ -11,13 +11,10 @@ function PastEvents(props) {
 
     useEffect(() => {
         if (props.events !== undefined) {
-            const today = new Date();
-            if(props.events.some(e => new Date(e.eventDate) >= today)){
-                setMessage("No upcoming events found!");
-            }else{
+
                 setEvents(props.events);
                 setLoading(props.isLoading);
-            }
+            
         }
     }, [props.events, props.isLoading])
 
