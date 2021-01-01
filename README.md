@@ -70,6 +70,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/lixiaoqity"><img src="https://avatars0.githubusercontent.com/u/59097971?v=4" width="100px;" alt=""/><br /><sub><b>Xiaoqi Li</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=lixiaoqity" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/sb2356-iiitr"><img src="https://avatars0.githubusercontent.com/u/69338695?v=4" width="100px;" alt=""/><br /><sub><b>Soumyabrata Bairagi</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=sb2356-iiitr" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://www.alvarobelmonte.com/"><img src="https://avatars1.githubusercontent.com/u/6875299?v=4" width="100px;" alt=""/><br /><sub><b>Álvaro Belmonte</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=alvarobelmonte" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
