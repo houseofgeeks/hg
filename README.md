@@ -1,6 +1,6 @@
 # House of Geeks - Official Technical Communtiy of IIITR
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo consists of the source code for website of House of Geeks,
@@ -67,6 +67,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Ampit"><img src="https://avatars3.githubusercontent.com/u/2737004?v=4" width="100px;" alt=""/><br /><sub><b>Amarpreet Singh</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=Ampit" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/kychok98"><img src="https://avatars0.githubusercontent.com/u/73032498?v=4" width="100px;" alt=""/><br /><sub><b>kychok98</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=kychok98" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/spirtskhalava"><img src="https://avatars0.githubusercontent.com/u/2458353?v=4" width="100px;" alt=""/><br /><sub><b>Sandro Pirtskhalava</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=spirtskhalava" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sb2356-iiitr"><img src="https://avatars0.githubusercontent.com/u/69338695?v=4" width="100px;" alt=""/><br /><sub><b>Soumyabrata Bairagi</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=sb2356-iiitr" title="Code">💻</a></td>
   </tr>
 </table>
 
