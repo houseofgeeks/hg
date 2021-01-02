@@ -53,7 +53,7 @@ function PastEvents(props) {
                                                 <BiLinkExternal/>
                                             </a>
                                         </td>
-                                        <td colSpan="1">{`${date.toLocaleDateString() } | ${ date.toLocaleString('en-US', options) }`}</td>
+                                        <td colSpan="1">{`${date.toLocaleDateString('en-GB') } | ${ date.toLocaleString('en-US', options) }`}</td>
                                         <td colSpan="1">{`${event.community}`}</td>
                                     </tr>
                                 )
