@@ -12,7 +12,11 @@ function Event({ page }) {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API || ""}/event`)
+      .get(`${process.env.REACT_APP_API || ""}/event`, {
+        options: {
+          limit:5
+        }
+      })
       .then((res) => {
         const { result } = res.data;
         setEvent([...result]);

@@ -10,7 +10,7 @@ function Event() {
     const [isLoading, setLoading] = useState(true);
     useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API || ''}/event/all`)
+      .get(`${process.env.REACT_APP_API || ''}/event`)
       .then((res) => {
         const { result } = res.data;
         setEvents([...result]);
