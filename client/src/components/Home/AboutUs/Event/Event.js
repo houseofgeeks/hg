@@ -12,14 +12,10 @@ function Event({ page }) {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API || ""}/event`, {
-        options: {
-          limit:5
-        }
-      })
+      .get(`${process.env.REACT_APP_API || ""}/event`)
       .then((res) => {
         const { result } = res.data;
-        setEvent([...result]);
+        setEvent([...result].slice(0, 5));
         setIsLoading(false);
       })
       .catch((err) => {
@@ -43,7 +39,7 @@ function Event({ page }) {
               src={planet}
               className={`planet-img ${
                 page === "Home" ? "planet-img-home" : ""
-              }`}
+                }`}
               alt="planet"
             />
           )}
@@ -52,7 +48,7 @@ function Event({ page }) {
         <div
           className={`event-section col-11 col-md-8 ${
             page === "Home" ? "event-section-home" : ""
-          }`}
+            }`}
         >
           <div className="event-title">From the Geeks' Satellite..</div>
           <div className="event-content">
