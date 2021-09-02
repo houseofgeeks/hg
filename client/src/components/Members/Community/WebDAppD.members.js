@@ -23,7 +23,7 @@ function WebDAppDMembers() {
                               const active = index
 
                               if (active === 0) {
-                                    return (<div className="cp-img-div col-lg-12 col-md-12" key={webList.id}>
+                                    return (<div className="cp-img-div col-lg-6 col-md-12" key={webList.id}>{/*formerly col-lg-12 for delta-type design*/}
 
                                           <img className="cp-img" src={webList.img} alt="cpm"/>
                                           <h3 className="member-name">{webList.name}</h3>

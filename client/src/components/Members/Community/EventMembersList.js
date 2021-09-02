@@ -1,6 +1,6 @@
 export const EventMembersLists = [{
             id: 0,
-            img: './images/Members/Team Event/jaiveer.jfif',
+            img: './images/Members/TeamEvent/jaiveer.jfif',
             name: 'Jaiveer Singh',
             position: 'Team Head',
             mail: 'mailto:1999jaiveersingh@gmail.com',

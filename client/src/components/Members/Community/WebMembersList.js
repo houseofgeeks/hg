@@ -1,29 +1,30 @@
-export const WebMembersLists = [{
-            id: 0,
-            img: './images/Members/Web and App Dev/pankaj.jfif',
-            name: 'Pankaj Waghela',
-            position: 'Community Head',
-            mail: 'vpankaj1998official@gmail.com',
-            github: '',
-            linkedin: 'linkedin.com/in/iampankajvaghela'
-      },
+export const WebMembersLists = [
+      // {
+      //       id: 0,
+      //       img: './images/Members/WebandAppDev/pankaj.jfif',
+      //       name: 'Pankaj Waghela',
+      //       position: 'Community Head',
+      //       mail: 'vpankaj1998official@gmail.com',
+      //       github: '',
+      //       linkedin: 'linkedin.com/in/iampankajvaghela'
+      // },
       {
             id: 1,
-            img: './images/Members/Web and App Dev/ankit.jfif',
-            name: 'Ankit Raj',
+            img: './images/Members/WebandAppDev/YASH-PANDEY-WEBDCOMMUNITY.jfif',
+            name: 'Yash Pandey',
             position: 'Community Co-ordinator',
-            mail: 'ankitatiiitr@gmail.com',
-            github: 'https://github.com/ankiiitraj',
-            linkedin: ' https://linkedin.com/in/ankiiitraj'
+            mail: 'yash.btech.cs19@iiitranchi.ac.in',
+            github: 'https://github.com/EmperorYP7',
+            linkedin: 'https://www.linkedin.com/in/emperoryp'
       },
       {
             id: 2,
-            img: './images/Members/Web and App Dev/prithvi.jpg',
-            name: 'Prithwiraj Samantha',
+            img: './images/Members/WebandAppDev/TUSHAR-JAIN-WEBDCOMMUNITY.png',
+            name: 'Tushar Jain',
             position: 'Community Co-ordinator',
-            mail: 'prskid1000@gmail.com',
-            github: 'https://github.com/prskid1000/',
-            linkedin: 'https://www.linkedin.com/in/prskid1000/'
+            mail: 'tusharjain.btech.cs19@iiitranchi.ac.in',
+            github: 'https://github.com/tusharjain0022',
+            linkedin: 'https://www.linkedin.com/in/tusharjain0022/'
       }
 
 
