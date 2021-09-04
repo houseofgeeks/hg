@@ -1,13 +1,4 @@
 export const WebMembersLists = [
-      // {
-      //       id: 0,
-      //       img: './images/Members/WebandAppDev/pankaj.jfif',
-      //       name: 'Pankaj Waghela',
-      //       position: 'Community Head',
-      //       mail: 'vpankaj1998official@gmail.com',
-      //       github: '',
-      //       linkedin: 'linkedin.com/in/iampankajvaghela'
-      // },
       {
             id: 1,
             img: './images/Members/WebandAppDev/YASH-PANDEY-WEBDCOMMUNITY.jpeg',
