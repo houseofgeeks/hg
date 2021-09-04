@@ -10,7 +10,7 @@ export const WebMembersLists = [
       // },
       {
             id: 1,
-            img: './images/Members/WebandAppDev/YASH-PANDEY-WEBDCOMMUNITY.jfif',
+            img: './images/Members/WebandAppDev/YASH-PANDEY-WEBDCOMMUNITY.jpeg',
             name: 'Yash Pandey',
             position: 'Community Co-ordinator',
             mail: 'yash.btech.cs19@iiitranchi.ac.in',
