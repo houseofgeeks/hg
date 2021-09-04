@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {ReactComponent as LinkedIn} from "../img/linkedin-brands.svg";
+import {ReactComponent as Github} from "../img/github-brands.svg";
 import {ReactComponent as Email} from "../img/mail.svg";
 import {ElcMembersLists as elcLists} from './ElcMembersList.js';
 import planet from "../img/planet_2.svg";
@@ -15,6 +16,10 @@ function ElectronicsMembers() {
                         <h5 className="member-position">{elcList.position}</h5>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={elcList.linkedin}>
                               <LinkedIn className="icons-members"></LinkedIn>
+
+                        </a>
+                        <a className="text-white" target="_blank" rel="noopener noreferrer" href={elcList.github}>
+                                                <Github className="icons-members"></Github>
 
                         </a>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={"mailto:" + elcList.mail}>
