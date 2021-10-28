@@ -1,6 +1,6 @@
 # House of Geeks - Official Technical Communtiy of IIITR
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This repo consists of the source code for website of House of Geeks,
@@ -73,6 +73,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://www.alvarobelmonte.com/"><img src="https://avatars1.githubusercontent.com/u/6875299?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Álvaro Belmonte</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=alvarobelmonte" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AK-codingmaniac"><img src="https://avatars.githubusercontent.com/u/79621650?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ANSHAJ KHARE</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=AK-codingmaniac" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/SrijanSriv"><img src="https://avatars.githubusercontent.com/u/79690889?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Srijan Srivastava</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=SrijanSriv" title="Code">💻</a></td>
   </tr>
 </table>
 
