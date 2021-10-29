@@ -191,6 +191,7 @@
         "code"
       ]
     },
+    {
       "login": "sb2356-iiitr",
       "name": "Soumyabrata Bairagi",
       "avatar_url": "https://avatars0.githubusercontent.com/u/69338695?v=4",
@@ -204,6 +205,24 @@
       "name": "Álvaro Belmonte",
       "avatar_url": "https://avatars1.githubusercontent.com/u/6875299?v=4",
       "profile": "http://www.alvarobelmonte.com/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "AK-codingmaniac",
+      "name": "ANSHAJ KHARE",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79621650?v=4",
+      "profile": "https://github.com/AK-codingmaniac",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "SrijanSriv",
+      "name": "Srijan Srivastava",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79690889?v=4",
+      "profile": "https://github.com/SrijanSriv",
       "contributions": [
         "code"
       ]
