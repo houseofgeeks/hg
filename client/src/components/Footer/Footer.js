@@ -72,8 +72,9 @@ function Footer() {
               className="trigger-modal"
               data-toggle="modal"
               data-target="#WebTeamModal"
+              style={{textDecorationLine:'underline'}}
             >
-              WebDev Team House Of Geeks
+               Contributors
             </p>
           </div>
           <div className="col-12 col-md-4 col-sm-4 text-center text-white">
