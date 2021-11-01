@@ -72,7 +72,7 @@ function Footer() {
               className="trigger-modal"
               data-toggle="modal"
               data-target="#WebTeamModal"
-              style={{textDecorationLine:'underline'}}
+              style={{textDecorationLine:'none'}}
             >
                Contributors
             </p>
