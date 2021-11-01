@@ -1,4 +1,5 @@
 # House of Geeks - Official Technical Communtiy of IIITR
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-25-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -72,6 +73,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://www.alvarobelmonte.com/"><img src="https://avatars1.githubusercontent.com/u/6875299?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Álvaro Belmonte</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=alvarobelmonte" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/cod500"><img src="https://avatars.githubusercontent.com/u/28515467?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Clay</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=cod500" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AK-codingmaniac"><img src="https://avatars.githubusercontent.com/u/79621650?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ANSHAJ KHARE</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=AK-codingmaniac" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/SrijanSriv"><img src="https://avatars.githubusercontent.com/u/79690889?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Srijan Srivastava</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=SrijanSriv" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/abhishekrathi16"><img src="https://avatars.githubusercontent.com/u/82315852?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abhishek Rathi</b></sub></a><br /><a href="https://github.com/houseofgeeks/hg/commits?author=abhishekrathi16" title="Code">💻</a></td>
