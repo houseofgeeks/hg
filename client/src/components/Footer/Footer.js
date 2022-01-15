@@ -87,7 +87,7 @@ function Footer() {
             </p>
 
             <p>
-              The website is designed by{" "}
+              This website is designed by{" "}
               <a className="credit" href="https://github.com/EricLiclair">
                 {" "}
                 @EricLiclair.
