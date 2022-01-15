@@ -46,6 +46,16 @@
   color: #1eabd6;
   transform: translate(0, -1px);
 }
+
+.credit {
+  text-decoration: none;
+  color: inherit;
+}
+.credit:hover {
+  text-decoration: none;
+  color: #ee2a7b;
+}
+
 @media (min-width: 1700px) {
   .icons {
     height: 35px;
@@ -107,5 +117,4 @@
   .footer-component {
     margin-top: 80px;
   }
-
 }

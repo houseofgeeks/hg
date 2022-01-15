@@ -72,9 +72,9 @@ function Footer() {
               className="trigger-modal"
               data-toggle="modal"
               data-target="#WebTeamModal"
-              style={{textDecorationLine:'none'}}
+              style={{ textDecorationLine: "none" }}
             >
-               Contributors
+              Contributors
             </p>
           </div>
           <div className="col-12 col-md-4 col-sm-4 text-center text-white">
@@ -84,6 +84,14 @@ function Footer() {
                 ❤️️
               </span>
               and open-sourced
+            </p>
+
+            <p>
+              This website is designed by{" "}
+              <a className="credit" href="https://github.com/EricLiclair">
+                {" "}
+                @EricLiclair.
+              </a>
             </p>
           </div>
           <div className="col-12 col-md-4 col-sm-4 text-center text-white">
