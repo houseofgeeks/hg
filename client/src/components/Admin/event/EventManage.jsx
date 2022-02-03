@@ -17,7 +17,7 @@ const EventManage = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API || ''}/event/all`)
+      .get(`${process.env.REACT_APP_API || ''}/event`)
       .then((res) => {
         fillEvents([...res.data.result]);
         updateLoadStatus({ message: "Loaded" });
