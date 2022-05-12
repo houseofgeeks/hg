@@ -51,7 +51,7 @@ function ElectronicsMembers() {
             </div>)
 
       });
-      return (window.innerWidth > 1000 ? (<div className="electronics-members">
+      return (windowDimensions.width > 990 ? (<div className="electronics-members">
             <hr className="header-line-top" />
 
             <h1 className="community-header">

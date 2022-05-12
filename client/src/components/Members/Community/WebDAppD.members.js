@@ -30,7 +30,7 @@ function WebDAppDMembers() {
       }, []);
 
 
-      return (window.innerWidth > 990 ? (<div className="electronics-members">
+      return (windowDimensions.width > 990 ? (<div className="electronics-members">
             <hr className="header-line-top" />
 
             <h1 className="community-header">

@@ -50,7 +50,7 @@ function MachineLearningMembers() {
             </div>)
 
       });
-      return (window.innerWidth > 1000 ? (<div className="machine-learning-members">
+      return (windowDimensions.width > 1000 ? (<div className="machine-learning-members">
             <hr className="header-line-top" />
 
             <h1 className="community-header">

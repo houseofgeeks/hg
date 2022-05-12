@@ -31,7 +31,7 @@ function CompetitiveCodingMembers() {
       }, []);
 
 
-      return (window.innerWidth > 990 ? (<div className="competitive-coding-members">
+      return (windowDimensions.width > 990 ? (<div className="competitive-coding-members">
             <hr className="header-line-top" />
             <h1 className="community-header">
                   Competitive Coding Members

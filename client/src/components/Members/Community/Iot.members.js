@@ -53,7 +53,7 @@ function IotMembers() {
             </div>)
 
       });
-      return (window.innerWidth > 990 ? (<div className="iot-members">
+      return (windowDimensions.width > 990 ? (<div className="iot-members">
             <hr className="header-line-top" />
             <h1 className="community-header">
                   IoT Community Members
