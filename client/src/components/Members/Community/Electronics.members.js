@@ -31,7 +31,7 @@ function ElectronicsMembers() {
 
             return (<div className="elc-members" key={elcList.id}>
                   <div className="cp-img-div">
-                        <img className="cp-img" src={elcList.img} alt="cpm" />
+                        <img className="cp-img" src={elcList.img} alt="cpm" style={{height:"35vw"}}/>
                         <h3 className="member-name">{elcList.name}</h3>
                         <h5 className="member-position">{elcList.position}</h5>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={elcList.linkedin}>

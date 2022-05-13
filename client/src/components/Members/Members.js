@@ -5,12 +5,12 @@ import HeadMembers from './Community/Head.members';
 import WebDAppDMembers from './Community/WebDAppD.members';
 import CompetitiveCodingMembers from './Community/CompetitiveCoding.members';
 import MachineLearningMembers from './Community/MachineLearning.members';
-import RoboticsMembers from './Community/Robotics.members';
+// import RoboticsMembers from './Community/Robotics.members';
 import IotMembers from './Community/Iot.members';
 import ElectronicsMembers from './Community/Electronics.members';
-import CreaxnMembers from './Community/Creaxn.members';
-import AnonymousMembers from './Community/Anonymous.members';
-import EventMembers from './Community/Event.members';
+// import CreaxnMembers from './Community/Creaxn.members';
+// import AnonymousMembers from './Community/Anonymous.members';
+// import EventMembers from './Community/Event.members';
 import BlockchainMembers from './Community/BlockchainMembers';
 
 function Members() {
@@ -22,10 +22,10 @@ function Members() {
             <IotMembers/>
             <MachineLearningMembers/>
             <BlockchainMembers/>
-            <RoboticsMembers/>
-            <AnonymousMembers/>
-            <CreaxnMembers/>
-            <EventMembers/>
+            {/* <RoboticsMembers/> */}
+            {/* <AnonymousMembers/> */}
+            {/* <CreaxnMembers/> */}
+            {/* <EventMembers/> */}
       </div>);
 }
 
