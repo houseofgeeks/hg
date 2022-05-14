@@ -32,7 +32,7 @@ function BlockchainMembers() {
       return (windowDimensions.width > 990 ? (<div className="competitive-coding-members">
             <hr className="header-line-top" />
             <h1 className="community-header">
-                  Blockchain Community Members
+                  Cybersecurity, Cryptography And Blockchain Community Members
             </h1>
             <hr className="header-line" />
             <img src={planet} className="planet-img-member-web" alt="planet" />
@@ -129,7 +129,7 @@ function BlockchainMembers() {
       </div>) : (<div className="competitive-coding-members">
             <hr className="header-line-top" />
             <h1 className="community-header">
-                  Blockchain Community Members
+            Cybersecurity, Cryptography And Blockchain Community Members
             </h1>
             <hr className="header-line" />
             <img src={planet} className="planet-img-member-web" alt="planet" />
@@ -144,7 +144,7 @@ function BlockchainMembers() {
                               if (active === 0) {
                                     return (<div className="cp-img-div col-lg-6 col-md-12" key={bcMember.id}>{/*formerly col-lg-12 for delta-type design*/}
 
-                                          <img className="cp-img" src={bcMember.img} alt="cpm" />
+                                          <img className="cp-img" src={bcMember.img} alt="cpm" style={{height:"35vw"}}/>
                                           <h3 className="member-name">{bcMember.name}</h3>
                                           <h5 className="member-position">{bcMember.position}</h5>
                                           <a className="text-white" target="_blank" rel="noopener noreferrer" href={bcMember.linkedin}>
@@ -165,7 +165,7 @@ function BlockchainMembers() {
                               else {
                                     return (<div className="cp-img-div col-lg-6 col-md-12" key={bcMember.id}>
 
-                                          <img className="cp-img" src={bcMember.img} alt="cpm" />
+                                          <img className="cp-img" src={bcMember.img} alt="cpm" style={{height:"35vw"}}/>
                                           <h3 className="member-name">{bcMember.name}</h3>
                                           <h5 className="member-position">{bcMember.position}</h5>
                                           <a className="text-white" target="_blank" rel="noopener noreferrer" href={bcMember.linkedin}>

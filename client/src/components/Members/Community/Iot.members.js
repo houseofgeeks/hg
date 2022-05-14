@@ -33,7 +33,7 @@ function IotMembers() {
 
             return (<div className="iot-members" key={iotList.id}>
                   <div className="cp-img-div">
-                        <img className="cp-img" src={iotList.img} alt="cpm" />
+                        <img className="cp-img" src={iotList.img} alt="cpm" style={{height:"35vw"}}/>
                         <h3 className="member-name">{iotList.name}</h3>
                         <h5 className="member-position">{iotList.position}</h5>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={iotList.linkedin}>
@@ -56,7 +56,7 @@ function IotMembers() {
       return (windowDimensions.width > 990 ? (<div className="iot-members">
             <hr className="header-line-top" />
             <h1 className="community-header">
-                  IoT Community Members
+                  Robotics And IoT Community Members
             </h1>
             <hr className="header-line" />
             <div style={{ display: "flex", flexDirection: "column" }}>
@@ -128,7 +128,7 @@ function IotMembers() {
       </div>) : (<div className="iot-members">
             <hr className="header-line-top" />
             <h1 className="community-header">
-                  IoT Community Members
+            Robotics And IoT Community Members
             </h1>
             <hr className="header-line" />
             {renderedItems}

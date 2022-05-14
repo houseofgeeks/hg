@@ -30,7 +30,7 @@ function MachineLearningMembers() {
 
             return (<div className="cp-members" key={mlList.id}>
                   <div className="cp-img-div">
-                        <img className="cp-img" src={mlList.img} alt="cpm" />
+                        <img className="cp-img" src={mlList.img} alt="cpm" style={{height:"35vw"}}/>
                         <h3 className="member-name">{mlList.name}</h3>
                         <h5 className="member-position">{mlList.position}</h5>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={mlList.linkedin}>
