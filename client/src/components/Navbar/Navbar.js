@@ -9,7 +9,7 @@ function Navbar() {
   let currenttab = currentloc.substring(currentloc.lastIndexOf("/") + 1); //Gets current element from navbar
 
   if (currenttab[currenttab.length - 1] === "?") {
-    //When search bar is used, preventing bug of nothing being active in navbar
+    //When search bar is used, pring bug of nothing being active in navbar
     currenttab = currenttab.substring(0, currenttab.length - 1); //Removing ? sign when search bar used
   }
 
@@ -103,7 +103,7 @@ function Navbar() {
                 toggleNav(!navOpen);
               }}
             >
-              Event
+              Events
             </li>
           </Link>
 
