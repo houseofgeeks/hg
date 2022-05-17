@@ -103,7 +103,7 @@ function Navbar() {
                 toggleNav(!navOpen);
               }}
             >
-              Event
+              Events
             </li>
           </Link>
 
