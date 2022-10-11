@@ -107,6 +107,23 @@ function Navbar() {
             </li>
           </Link>
 
+          {/* <Link className="navLink">
+            {/* <li
+              className={
+                active === "community" ? "nav-item active " : "nav-item "
+              }
+              onClick={() => {
+                setActive("");
+                toggleNav(!navOpen);
+              }}
+            ></li> */}
+          {/* </Link> */} */}
+          <a
+            href="https://hgresources.netlify.app/" style={{textDecoration: "none"}}
+          >
+            Resources
+          </a>
+
           <Link to="/community" className="navLink">
             <li
               className={
