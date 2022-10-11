@@ -119,7 +119,8 @@
 @media (min-width:2560px) {
       .cp-img {
             border-radius: 100%;
-            width: 16vw;
+            width: 16vh;
+            height: 16vh;
             margin-top: 50px;
       }
 
@@ -152,7 +153,8 @@
 
       .cp-img {
             border-radius: 100%;
-            width: 30vw;
+            width: 200px;
+            height: 200px;
             margin-top: 30px;
             border: 0.3rem solid #EE2A7B;
       }
@@ -165,7 +167,8 @@
 
       .cp-img {
             border-radius: 100%;
-            width: 50vw;
+            width: 200px;
+            height: 200px;
             margin-top: 30px;
             border: 0.3rem solid #EE2A7B;
       }

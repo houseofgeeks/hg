@@ -33,7 +33,8 @@ function IotMembers() {
 
             return (<div className="iot-members" key={iotList.id}>
                   <div className="cp-img-div">
-                        <img className="cp-img" src={iotList.img} alt="cpm" style={{height:"35vw"}}/>
+                  {/* style={{height:"35vw"}} */}
+                        <img className="cp-img" src={iotList.img} alt="cpm" />
                         <h3 className="member-name">{iotList.name}</h3>
                         <h5 className="member-position">{iotList.position}</h5>
                         <a className="text-white" target="_blank" rel="noopener noreferrer" href={iotList.linkedin}>
