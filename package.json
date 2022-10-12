@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "all-contributors-cli": "^6.17.4"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
   }
 }
