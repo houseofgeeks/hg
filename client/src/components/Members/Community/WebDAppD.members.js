@@ -120,8 +120,8 @@ function WebDAppDMembers() {
 
                               if (active === 0) {
                                     return (<div className="cp-img-div col-lg-6 col-md-12" key={webList.id}>{/*formerly col-lg-12 for delta-type design*/}
-
-                                          <img className="cp-img" src={webList.img} alt="cpm" style={{height:"35vw"}}/>
+{/* style={{height:"35vw"}} */}
+                                          <img className="cp-img" src={webList.img} alt="cpm" />
                                           <h3 className="member-name">{webList.name}</h3>
                                           <h5 className="member-position">{webList.position}</h5>
                                           <a className="text-white" target="_blank" rel="noopener noreferrer" href={webList.linkedin}>
@@ -141,7 +141,7 @@ function WebDAppDMembers() {
                               } else {
                                     return (<div className="cp-img-div col-lg-6 col-md-12" key={webList.id}>
 
-                                          <img className="cp-img" src={webList.img} alt="cpm" style={{height:"35vw"}}/>
+                                          <img className="cp-img" src={webList.img} alt="cpm" />
                                           <h3 className="member-name">{webList.name}</h3>
                                           <h5 className="member-position">{webList.position}</h5>
                                           <a className="text-white" target="_blank" rel="noopener noreferrer" href={webList.linkedin}>

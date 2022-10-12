@@ -114,8 +114,8 @@ function HeadMembers() {
 
                                     if (active < 3) {
                                           return (<div className="cp-img-div col-lg-12 col-md-12" key={headList.id}>
-
-                                                <img className="cp-img" src={headList.img} alt="cpm" style={{height:"35vw"}}/>
+{/* style={{height:"35vw"}} */}
+                                                <img className="cp-img" src={headList.img} alt="cpm" />
                                                 <h3 className="member-name">{headList.name}</h3>
                                                 <h5 className="member-position">{headList.position}</h5>
                                                 <a className="text-white" target="_blank" rel="noopener noreferrer" href={headList.linkedin}>
@@ -135,7 +135,7 @@ function HeadMembers() {
                                     } else {
                                           return (<div className="cp-img-div col-lg-4 col-md-12" key={headList.id}>
 
-                                                <img className="cp-img" src={headList.img} alt="cpm" style={{height:"35vw"}}/>
+                                                <img className="cp-img" src={headList.img} alt="cpm" />
                                                 <h3 className="member-name">{headList.name}</h3>
                                                 <h5 className="member-position">{headList.position}</h5>
                                                 <a className="text-white" target="_blank" rel="noopener noreferrer" href={headList.linkedin}>
