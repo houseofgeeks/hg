@@ -106,6 +106,17 @@ function Navbar() {
               Event
             </li>
           </Link>
+          <Link to={{pathname: "https://hgresources.netlify.app/"}} target="_parent" className="navLink">
+            <li
+              className={active === "resources" ? "nav-item active " : "nav-item "}
+              onClick={() => {
+                setActive("resources");
+                toggleNav(!navOpen);
+              }}
+            >
+              Resources
+            </li>
+          </Link>
 
           <Link to="/community" className="navLink">
             <li
