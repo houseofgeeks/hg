@@ -95,7 +95,8 @@
 
 @media (max-width: 640px) {
   .icons {
-    width: 20vh;
+    width: 5vh;
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
   }
