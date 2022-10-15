@@ -5,16 +5,24 @@
   font-weight: normal;
   margin: 40px 30px;
 }
+.formDisplay{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.wid{
+      width: 60vw;
+}
 .input-box {
   background-color: transparent;
   color: rgba(252, 253, 255, 0.6);
 }
 .submit {
-  width: 50%;
-  margin: 30px auto 30px 15px;
-  color: #1eabd6;
-  border: 0.7px solid white;
-  z-index: 1;
+      margin-top: 50px;
+      margin-bottom: 60px;
+      color: #1eabd6;
+      border: 0.7px solid white;
+      z-index: 1;
 }
 .submit:hover {
   background-color: black;
@@ -28,7 +36,6 @@
       }
 
       .submit {
-            width: 40%;
             font-size: 0.8rem;
       }
 }
@@ -39,7 +46,6 @@
       }
 
       .submit {
-            width: 30%;
             font-size: 0.8rem;
       }
 }
@@ -50,7 +56,6 @@
       }
 
       .submit {
-            width: 25%;
             font-size: 0.8rem;
       }
 }

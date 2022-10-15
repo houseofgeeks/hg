@@ -35,9 +35,9 @@ const Contact = () => {
             handleSubmit();
           }}
         >
-      <div className="row text-white">
+      <div className="row text-white formDisplay">
        
-          <div className="form-group col-12 col-md-6">
+          <div className="form-group wid">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -50,7 +50,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="form-group col-12 col-md-6">
+          <div className="form-group wid">
             <label htmlFor="exampleInputEmail1">Email address</label>
             <input
               type="email"
@@ -65,7 +65,7 @@ const Contact = () => {
               autoComplete="true"
             />
           </div>
-          <div className="form-group col-12">
+          <div className="form-group wid">
             <label htmlFor="message">Message</label>
             <textarea
               className="form-control input-box"
@@ -78,7 +78,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button disabled={sentStatus.status !== 'sending' ? false: true} tybuttone="submit" className="submit btn ">
+          <button className="submit btn wid" disabled={sentStatus.status !== 'sending' ? false: true} tybuttone="submit">
             {sentStatus.status === 'sending' ? 'Sending...' : 'Submit'}
           </button>
           {sentStatus.status !== '' && <div className="err-msg" style={{color: sentStatus.color}}>{sentStatus.message}</div>}
