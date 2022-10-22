@@ -6,6 +6,7 @@ import { ReactComponent as Insta } from "./img/instagram-brands.svg";
 import { ReactComponent as Facebook } from "./img/facebook-brands.svg";
 import { ReactComponent as Youtube } from "./img/youtube-brands.svg";
 import { ReactComponent as LinkedIn } from "./img/linkedin-brands.svg";
+import { ReactComponent as Twitter } from "./img/twitter-brands.svg";
 import footerSurface from "./img/footer-surface.svg";
 import Modal from "./modal";
 
@@ -63,6 +64,15 @@ function Footer() {
               href="https://www.linkedin.com/company/hgiiitranchi/"
             >
               <LinkedIn className="icons fa-7x"></LinkedIn>
+            </a>
+
+            <a
+              className="text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/_houseofgeeks/"
+            >
+              <Twitter className="icons"></Twitter>
             </a>
           </div>
         </div>
