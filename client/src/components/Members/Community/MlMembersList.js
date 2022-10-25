@@ -23,7 +23,7 @@ export const MlMembersLists = [{
       position: 'Community Co-ordinator',
       mail: '',
       github: '',
-      linkedin: 'https://www.linkedin.com/in/kaustubhshukla84/'
+      linkedin: 'https://www.linkedin.com/in/kausmos/'
 },
 
 ];

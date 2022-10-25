@@ -32,7 +32,7 @@ export const CpMembersLists = [{
       position: 'Community Co-ordinator',
       mail: 'shaurya20.ugcs20@iiitranchi.ac.in',
       github: 'https://github.com/sahebcse',/////
-      linkedin: 'https://www.linkedin.com/in/sandesh-dudhabaware-3b5839196/' /////
+      linkedin: 'https://www.linkedin.com/in/shaurya-bhalla-aa3bb7212/' /////
 },
 
 
