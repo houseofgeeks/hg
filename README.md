@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/98d0288a-adad-4eaa-a7ba-df3bdb426d34/deploy-status)](https://app.netlify.com/sites/houseofgeeks/deploys)
 # House of Geeks - Official Technical Communtiy of IIITR
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
