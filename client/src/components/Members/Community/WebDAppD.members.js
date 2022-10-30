@@ -61,7 +61,7 @@ function WebDAppDMembers() {
                               </div>
                         </div>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly" }}>
+                  {/* <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly" }}>
                         <div className="elc-members" key={webLists[1].id}>
                               <div className="cp-img-div">
                                     <img className="cp-img" src={webLists[1].img} alt="cpm" />
@@ -102,7 +102,7 @@ function WebDAppDMembers() {
 
                               </div>
                         </div>
-                  </div>
+                  </div> */}
             </div>
       </div>) : (<div className="head-div">
             <hr className="header-line-top" />

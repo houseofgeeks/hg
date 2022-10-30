@@ -10,21 +10,21 @@ export const HeadMembersLists = [{
 },
 {
       id: 1,
-      img: './images/Members/updated/Prithwiraj.jpg',
-      name: 'Prithwiraj Samanta',
+      img: './images/Members/updated_new/shubham.jpeg',
+      name: 'Shubham Kushwaha',
       position: 'Secretary',
-      mail: 'psamanta.btech.cs18@iiitranchi.ac.in',
-      github: '',
-      linkedin: 'https://www.linkedin.com/in/prskid1000/',
+      mail: 'Shubham Kushwaha <shubham.btech.cs19@iiitranchi.ac.in>',
+      github: 'https://github.com/EricLiclair',
+      linkedin: 'https://www.linkedin.com/in/shwoobham/',
 },
 {
       id: 2,
-      img: './images/Members/updated/wridheeman.jpg',
-      name: 'Wridheeman Bhattacharya',
+      img: './images/Members/updated_new/anish.jpeg',
+      name: 'Anish Bhardwaj',
       position: 'General Secretary & Disciplinary Head',
-      mail: 'wridheeman.btech.ec19@iiitranchi.ac.in',
-      github: '',
-      linkedin: 'https://www.linkedin.com/in/wridheeman-bhattacharya-540738192/'
+      mail: 'anish44.ugec20@iiitranchi.ac.in',
+      github: 'https://github.com/anish853',
+      linkedin: 'https://www.linkedin.com/in/anish-bhardwaj-15b69182/'
 },
 {
       id: 3,
