@@ -103,7 +103,7 @@ function Navbar() {
                 toggleNav(!navOpen);
               }}
             >
-              Event
+              Events
             </li>
           </Link>
           <Link to={{pathname: "https://hgresources.netlify.app/"}} target="_parent" className="navLink">
