@@ -102,7 +102,7 @@ function MachineLearningMembers() {
 
                               </div>
                         </div>
-                        <div className="elc-members" key={mlLists[2].id}>
+                        {/* <div className="elc-members" key={mlLists[2].id}>
                               <div className="cp-img-div">
                                     <img className="cp-img" src={mlLists[2].img} alt="cpm" />
                                     <h3 className="member-name">{mlLists[2].name}</h3>
@@ -121,7 +121,7 @@ function MachineLearningMembers() {
                                     </a>
 
                               </div>
-                        </div>
+                        </div> */}
                   </div>
             </div>
       </div>) : (

@@ -63,7 +63,7 @@ function CompetitiveCodingMembers() {
                               </div>
                         </div>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
+                  {/* <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
                         <div className="elc-members" key={cpLists[1].id}>
                               <div className="cp-img-div">
                                     <img className="cp-img" src={cpLists[1].img} alt="cpm" />
@@ -78,26 +78,6 @@ function CompetitiveCodingMembers() {
 
                                     </a>
                                     <a className="text-white" target="_blank" rel="noopener noreferrer" href={"mailto:" + cpLists[1].mail}>
-                                          <Email className="icons-members"></Email>
-
-                                    </a>
-
-                              </div>
-                        </div>
-                        <div className="elc-members" key={cpLists[3].id}>
-                              <div className="cp-img-div">
-                                    <img className="cp-img" src={cpLists[3].img} alt="cpm" />
-                                    <h3 className="member-name">{cpLists[3].name}</h3>
-                                    <h5 className="member-position">{cpLists[3].position}</h5>
-                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={cpLists[3].linkedin}>
-                                          <LinkedIn className="icons-members"></LinkedIn>
-
-                                    </a>
-                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={cpLists[3].github}>
-                                          <Github className="icons-members"></Github>
-
-                                    </a>
-                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={"mailto:" + cpLists[3].mail}>
                                           <Email className="icons-members"></Email>
 
                                     </a>
@@ -124,7 +104,7 @@ function CompetitiveCodingMembers() {
 
                               </div>
                         </div>
-                  </div>
+                  </div> */}
             </div>
 
 

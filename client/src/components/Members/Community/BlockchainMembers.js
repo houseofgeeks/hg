@@ -82,6 +82,26 @@ function BlockchainMembers() {
 
                               </div>
                         </div>
+                        <div className="elc-members" key={bcMembers[2].id}>
+                              <div className="cp-img-div">
+                                    <img className="cp-img" src={bcMembers[2].img} alt="cpm" />
+                                    <h3 className="member-name">{bcMembers[2].name}</h3>
+                                    <h5 className="member-position">{bcMembers[2].position}</h5>
+                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={bcMembers[2].linkedin}>
+                                          <LinkedIn className="icons-members"></LinkedIn>
+
+                                    </a>
+                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={bcMembers[2].github}>
+                                          <Github className="icons-members"></Github>
+
+                                    </a>
+                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={"mailto:" + bcMembers[2].mail}>
+                                          <Email className="icons-members"></Email>
+
+                                    </a>
+
+                              </div>
+                        </div>
                         <div className="elc-members" key={bcMembers[3].id}>
                               <div className="cp-img-div">
                                     <img className="cp-img" src={bcMembers[3].img} alt="cpm" />
@@ -102,20 +122,20 @@ function BlockchainMembers() {
 
                               </div>
                         </div>
-                        <div className="elc-members" key={bcMembers[2].id}>
+                        <div className="elc-members" key={bcMembers[4].id}>
                               <div className="cp-img-div">
-                                    <img className="cp-img" src={bcMembers[2].img} alt="cpm" />
-                                    <h3 className="member-name">{bcMembers[2].name}</h3>
-                                    <h5 className="member-position">{bcMembers[2].position}</h5>
-                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={bcMembers[2].linkedin}>
+                                    <img className="cp-img" src={bcMembers[4].img} alt="cpm" />
+                                    <h3 className="member-name">{bcMembers[4].name}</h3>
+                                    <h5 className="member-position">{bcMembers[4].position}</h5>
+                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={bcMembers[4].linkedin}>
                                           <LinkedIn className="icons-members"></LinkedIn>
 
                                     </a>
-                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={bcMembers[2].github}>
+                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={bcMembers[4].github}>
                                           <Github className="icons-members"></Github>
 
                                     </a>
-                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={"mailto:" + bcMembers[2].mail}>
+                                    <a className="text-white" target="_blank" rel="noopener noreferrer" href={"mailto:" + bcMembers[4].mail}>
                                           <Email className="icons-members"></Email>
 
                                     </a>

@@ -19,7 +19,7 @@ export const ElcMembersLists = [
       },
       {
             id: 2,
-            img: './images/Members/updated/Vikas.jpg',
+            img: './images/Members/updated/VIKAS.jpg',
             name: 'Vikas Kumar',
             position: 'Community Co-ordinator',
             mail: 'vikas18.ugec20@iiitranchi.ac.in',

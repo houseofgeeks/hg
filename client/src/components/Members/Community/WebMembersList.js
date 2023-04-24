@@ -1,12 +1,12 @@
 export const WebMembersLists = [
       {
             id: 1,
-            img: './images/Members/WebandAppDev/YASH-PANDEY-WEBDCOMMUNITY.jpeg',
-            name: 'Yash Pandey',
+            img: './images/Members/updated_new/srijan.jpeg',
+            name: 'Srijan Srivastava',
             position: 'Community Head',
-            mail: 'yash.btech.cs19@iiitranchi.ac.in',
-            github: 'https://github.com/EmperorYP7',
-            linkedin: 'https://www.linkedin.com/in/emperoryp'
+            mail: 'srijan38.ugcs20@iiitranchi.ac.inn',
+            github: 'https://github.com/SrijanSriv',
+            linkedin: 'https://www.linkedin.com/in/srijansriv/'
       },
       {
             id: 2,
@@ -17,14 +17,5 @@ export const WebMembersLists = [
             github: 'https://github.com/tusharjain0022',
             linkedin: 'https://www.linkedin.com/in/tusharjain0022/'
       },
-      {
-            id: 3,
-            img: './images/Members/updated/Srijan.jpg',
-            name: 'Srijan Srivastava',
-            position: 'Community Co-ordinator',
-            mail: 'srijan38.ugcs20@iiitranchi.ac.in',
-            github: 'https://github.com/SrijanSriv',
-            linkedin: 'https://www.linkedin.com/in/srijansriv/'
-      }
 
 ];
